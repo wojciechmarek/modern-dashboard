@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@employee-dashboard/api/controllers": [
+        "libs/api/controllers/src/index.ts"
+      ],
+      "@employee-dashboard/common/models": ["libs/common/models/src/index.ts"],
+      "@employee-dashboard/web/components": ["libs/web/components/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
