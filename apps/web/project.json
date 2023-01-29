@@ -1,7 +1,7 @@
 {
   "name": "web",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/web/src",
+  "sourceRoot": "apps/web/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -10,7 +10,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "frameworkConfigFile": "@nxext/svelte/plugins/vite",
-        "outputPath": "dist/packages/web",
+        "outputPath": "dist/apps/web",
         "assets": [
           {
             "glob": "/*",
@@ -18,7 +18,7 @@
             "output": "./"
           }
         ],
-        "tsConfig": "packages/web/tsconfig.app.json"
+        "tsConfig": "apps/web/tsconfig.app.json"
       },
       "configurations": {
         "production": {}
@@ -28,7 +28,7 @@
       "executor": "@nxext/vite:dev",
       "options": {
         "frameworkConfigFile": "@nxext/svelte/plugins/vite",
-        "outputPath": "dist/packages/web",
+        "outputPath": "dist/apps/web",
         "assets": [
           {
             "glob": "/*",
@@ -36,27 +36,27 @@
             "output": "./"
           }
         ],
-        "tsConfig": "packages/web/tsconfig.app.json"
+        "tsConfig": "apps/web/tsconfig.app.json"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/web/**/*.{ts,svelte,spec.ts}"]
+        "lintFilePatterns": ["apps/web/**/*.{ts,svelte,spec.ts}"]
       }
     },
     "check": {
       "executor": "nx:run-commands",
       "options": {
         "command": "svelte-check",
-        "cwd": "packages/web"
+        "cwd": "apps/web"
       }
     },
     "test": {
       "executor": "@nxext/vitest:vitest",
       "options": {
-        "vitestConfig": "packages/web/vitest.config.ts"
+        "vitestConfig": "apps/web/vitest.config.ts"
       }
     }
   }

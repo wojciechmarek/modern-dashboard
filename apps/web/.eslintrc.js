@@ -7,7 +7,7 @@ module.exports = {
     {
       files: ['*.ts', '*.js', '*.svelte'],
       parserOptions: {
-        project: ['packages/web/tsconfig.*?.json'],
+        project: ['apps/web/tsconfig.*?.json'],
       },
       rules: {},
     },
