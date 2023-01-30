@@ -16,6 +16,9 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
     "@nrwl/cypress": "15.0.10",
@@ -47,7 +50,10 @@
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "jsdom": "~20.0.3",
+    "node-sass": "^8.0.0",
     "nx": "15.6.3",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.0.1",
     "prettier": "^2.6.2",
     "svelte": "^3.52.0",
     "svelte-check": "^2.8.0",
