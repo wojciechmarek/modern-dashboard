@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Test from './Test.svelte';
+  import { Test } from '@employee-dashboard/web/components';
 </script>
 
 <main>
