@@ -1,16 +1,16 @@
 <script lang="ts">
-  import { Test } from '@employee-dashboard/web/components';
+  import { Layout } from '@employee-dashboard/web/views';
 </script>
 
-<main>
-  <h1 class="text-center bg-purple-500 text-9xl font-extrabold ">
-    Hello World
-  </h1>
-  <Test />
-</main>
+<Layout />
 
 <style global lang="postcss">
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
 </style>
