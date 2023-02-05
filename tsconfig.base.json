@@ -19,6 +19,7 @@
         "libs/api/controllers/src/index.ts"
       ],
       "@employee-dashboard/common/models": ["libs/common/models/src/index.ts"],
+      "@employee-dashboard/web/assets": ["libs/web/assets/src/index.ts"],
       "@employee-dashboard/web/components": [
         "libs/web/components/src/index.ts"
       ],
