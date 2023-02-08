@@ -38,7 +38,7 @@
         <Icon icon={ChevronDownIcon} class="group-hover:rotate-180 h-6 w-6" />
       </Button>
       {#if manageOpen}
-        <dialog open class="h-40 w-72 bg-gray-200 absolute top-12">
+        <dialog open class="h-40 w-72 bg-gray-700 absolute top-12">
           <ul>
             <li class="hover:bg-slate-500">
               <a href="/manage">Manage</a>
