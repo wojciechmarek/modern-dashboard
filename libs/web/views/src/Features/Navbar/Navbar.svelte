@@ -20,23 +20,23 @@
   </div>
 
   <div
-    class="hidden md:flex justify-center items-center gap-10 cursor-pointer h-4/6"
+    class="hidden md:flex justify-center items-center gap-10 cursor-pointer h-5/6"
   >
     <div class="flex justify-center items-center gap-3 h-full">
       <img src={LogoImage} alt="logo" class="h-8" />
-      <p class="text-gray-200 uppercase text-2xl font-extrabold">MicroChip</p>
+      <p class="text-gray-200 text-2xl font-extrabold">Company Ltd.</p>
     </div>
 
     <ul class="flex justify-center items-center gap-3 h-full">
       {#each menu as item}
-        <li class=" h-full flex items-center rounded-lg group relative">
+        <li class="h-full flex items-center rounded-lg group relative">
           <p
             class="mx-3 hover:no-underline text-gray-100 group-hover:text-gray-400"
           >
             {item}
           </p>
           <div
-            class="h-fit w-96 absolute top-14 hidden group-hover:flex bg-white rounded-md"
+            class="h-fit w-96 absolute top-16 -left-5 hidden group-hover:flex bg-white rounded-md"
           >
             <ul class="w-full">
               {#each links as item}
