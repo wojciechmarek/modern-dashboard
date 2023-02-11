@@ -11,7 +11,7 @@
 </script>
 
 <nav
-  class="h-20 bg-gray-200 dark:bg-gray-800 flex justify-between items-center pl-3 pr-5 md:px-16"
+  class="h-20 bg-gray-200 dark:bg-gray-800 flex justify-between items-center pl-3 pr-5 md:px-6 lg:px-10"
 >
   <div class="h-10 w-10 md:hidden">
     <Button class="hover:bg-gray-700">
@@ -20,7 +20,7 @@
   </div>
 
   <div
-    class="hidden md:flex justify-center items-center gap-10 cursor-pointer h-5/6"
+    class="hidden md:flex justify-center items-center md:gap-5 lg:gap-10 cursor-pointer h-5/6"
   >
     <div class="flex justify-center items-center gap-3 h-full">
       <img src={LogoImage} alt="logo" class="h-8" />
