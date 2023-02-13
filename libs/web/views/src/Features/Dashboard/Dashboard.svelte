@@ -2,8 +2,10 @@
   import { theme } from '@employee-dashboard/web/utils';
 </script>
 
-<div class="flex flex-col items-center bg-gray-900 h-full">
-  <h1 class="text-5xl font-bold text-white mt-10">Dashboard</h1>
+<div class="flex flex-col items-center bg-gray-50 dark:bg-gray-900 h-full">
+  <h1 class="text-5xl font-bold text-gray-800 dark:text-gray-100 mt-10">
+    Dashboard
+  </h1>
   <div class="mt-10 flex gap-10">
     <button
       on:click={() => {

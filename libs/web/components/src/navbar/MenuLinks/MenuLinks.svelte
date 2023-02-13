@@ -37,7 +37,7 @@
   {#each menu as item}
     <li class="h-full flex items-center rounded-lg group relative">
       <p
-        class="mx-3 hover:no-underline text-gray-100 group-hover:text-gray-400"
+        class="mx-3 hover:no-underline text-gray-800 dark:text-gray-200 group-hover:text-gray-400"
       >
         {item}
       </p>
