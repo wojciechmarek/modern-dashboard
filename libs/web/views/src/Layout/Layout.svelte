@@ -4,4 +4,6 @@
 </script>
 
 <Navbar />
-<Dashboard />
+<main class="h-[calc(100%-5em)]">
+  <Dashboard />
+</main>

@@ -1,3 +1,3 @@
-<h1 class="text-center bg-purple-500 text-9xl font-extrabold">
-  I am a projects
-</h1>
+<div class="flex justify-center bg-purple-900 h-full">
+  <h1 class="text-5xl font-bold text-white mt-10">Projects</h1>
+</div>
