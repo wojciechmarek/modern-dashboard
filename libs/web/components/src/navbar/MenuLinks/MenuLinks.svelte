@@ -1,24 +1,32 @@
 <script lang="ts">
   import { MegaMenu } from '@employee-dashboard/web/components';
-  import { UserImage } from '@employee-dashboard/web/assets';
+  import {
+    MenuDashboard,
+    MenuEmployees,
+    MenuProjects,
+    UserImage,
+  } from '@employee-dashboard/web/assets';
 
   const links = [
     {
-      image: UserImage,
-      title: 'Log a time',
-      subtitle: 'Log a time',
+      image: MenuDashboard,
+      title: 'Dashboard',
+      subtitle: 'See your dashboard',
+      url: '/',
     },
 
     {
-      image: UserImage,
-      title: 'Log a time',
-      subtitle: 'Log a time',
+      image: MenuProjects,
+      title: 'Projects',
+      subtitle: 'Manage your projects',
+      url: '/projects',
     },
 
     {
-      image: UserImage,
-      title: 'Log a time',
-      subtitle: 'Log a time',
+      image: MenuEmployees,
+      title: 'Employees',
+      subtitle: 'Manage your employees',
+      url: '/employees',
     },
   ];
 

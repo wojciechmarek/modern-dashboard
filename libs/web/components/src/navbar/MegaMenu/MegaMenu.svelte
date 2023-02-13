@@ -5,6 +5,7 @@
     image: string;
     title: string;
     subtitle: string;
+    url: string;
   }
 
   export let links: MegaMenuProps[];
