@@ -4,6 +4,7 @@
     BrandLogo,
     Hamburger,
     UserProfile,
+    Search,
   } from '@employee-dashboard/web/components';
 </script>
 
@@ -18,5 +19,8 @@
     <MenuLinks />
   </div>
 
-  <UserProfile />
+  <div class="flex gap-8">
+    <Search />
+    <UserProfile />
+  </div>
 </nav>

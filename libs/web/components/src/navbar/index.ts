@@ -4,3 +4,4 @@ export * from './MenuLinks';
 export * from './BrandLogo';
 export * from './Hamburger';
 export * from './UserProfile';
+export * from './Search';

@@ -1,5 +1,5 @@
 <script>
-  import { Router, Link, Route } from 'svelte-routing';
+  import { Router, Route } from 'svelte-routing';
   import Dashboard from '../Features/Dashboard/Dashboard.svelte';
   import Employees from '../Features/Employees/Employees.svelte';
   import Navbar from '../Features/Navbar/Navbar.svelte';
