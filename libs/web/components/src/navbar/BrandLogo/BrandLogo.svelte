@@ -1,10 +1,11 @@
 <script lang="ts">
-  import { LogoImage } from '@employee-dashboard/web/assets';
+  import {
+    LogoLightImage,
+    LogoDarkImage,
+  } from '@employee-dashboard/web/assets';
 </script>
 
 <div class="flex justify-center items-center gap-3 h-full">
-  <img src={LogoImage} alt="logo" class="h-8" />
-  <p class="text-gray-800 dark:text-gray-200 text-2xl font-extrabold">
-    Company Ltd.
-  </p>
+  <img src={LogoLightImage} alt="logo" class="h-10 dark:hidden" />
+  <img src={LogoDarkImage} alt="logo" class="h-10 hidden dark:block" />
 </div>
