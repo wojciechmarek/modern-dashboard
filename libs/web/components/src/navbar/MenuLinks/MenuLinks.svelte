@@ -1,5 +1,8 @@
 <script lang="ts">
-  import { MegaMenu } from '@employee-dashboard/web/components';
+  import {
+    MegaMenu,
+    MegaMenuWithExtraList,
+  } from '@employee-dashboard/web/components';
   import {
     MenuDashboard,
     MenuEmployees,
@@ -34,6 +37,14 @@
 </script>
 
 <ul class="flex justify-center items-center gap-3 h-full">
+  <li class="h-full flex items-center rounded-lg group relative">
+    <p
+      class="mx-3 hover:no-underline text-gray-800 dark:text-gray-200 group-hover:text-gray-400"
+    >
+      Add
+    </p>
+    <MegaMenuWithExtraList {links} extraLinks={links} />
+  </li>
   {#each menu as item}
     <li class="h-full flex items-center rounded-lg group relative">
       <p

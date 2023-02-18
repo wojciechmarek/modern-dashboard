@@ -1,1 +1,1 @@
-export { default as MegaMenuItem } from './MegaMenuItem.svelte';
+export { default as MegaMenu } from './MegaMenuItem.svelte';

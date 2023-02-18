@@ -1,5 +1,6 @@
+export * from './MegaMenuListItem';
+export * from './MegaMenuItemExtraList';
 export * from './MegaMenuItem';
-export * from './MegaMenu';
 export * from './MenuLinks';
 export * from './BrandLogo';
 export * from './Hamburger';

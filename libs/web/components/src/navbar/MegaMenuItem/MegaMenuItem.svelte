@@ -1,18 +1,25 @@
 <script lang="ts">
-  import { Link } from 'svelte-routing';
+  import { MegaMenuItem } from '../MegaMenuListItem';
+  import { MegaMenuWithExtraList } from '../MegaMenuItemExtraList';
 
-  export let image: string;
-  export let title: string;
-  export let subtitle: string;
-  export let url: string;
+  interface MegaMenuProps {
+    image: string;
+    title: string;
+    subtitle: string;
+    url: string;
+  }
+
+  export let links: MegaMenuProps[];
 </script>
 
-<li class="h-20 w-full hover:bg-slate-200 dark:hover:bg-slate-600">
-  <Link class="w-full h-full flex items-center px-8" to={url}>
-    <img src={image} alt="avatar" class="h-12 w-12 rounded-lg" />
-    <div class="text-gray-800 ml-6">
-      <h3 class="font-bold text-gray-800 dark:text-gray-200">{title}</h3>
-      <p class="text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>
-    </div>
-  </Link>
-</li>
+<div
+  class={`${
+    $$props.class || ''
+  } h-fit w-96 absolute top-16 -left-5 hidden group-hover:flex bg-white dark:bg-slate-700 rounded-md`}
+>
+  <ul class="w-full">
+    {#each links as link}
+      <MegaMenuItem {...link} />
+    {/each}
+  </ul>
+</div>
