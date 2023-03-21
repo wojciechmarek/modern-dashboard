@@ -1,6 +1,6 @@
-# Employee Dashboard
+# Modern Dashboard
 
-A modern dashboard to manage employees.
+A modern dashboard to modern companies.
 
 ## Purpose
 

@@ -15,16 +15,16 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@employee-dashboard/api/controllers": [
+      "@modern-dashboard/api/controllers": [
         "libs/api/controllers/src/index.ts"
       ],
-      "@employee-dashboard/common/models": ["libs/common/models/src/index.ts"],
-      "@employee-dashboard/web/assets": ["libs/web/assets/src/index.ts"],
-      "@employee-dashboard/web/components": [
+      "@modern-dashboard/common/models": ["libs/common/models/src/index.ts"],
+      "@modern-dashboard/web/assets": ["libs/web/assets/src/index.ts"],
+      "@modern-dashboard/web/components": [
         "libs/web/components/src/index.ts"
       ],
-      "@employee-dashboard/web/utils": ["libs/web/utils/src/index.ts"],
-      "@employee-dashboard/web/views": ["libs/web/views/src/index.ts"]
+      "@modern-dashboard/web/utils": ["libs/web/utils/src/index.ts"],
+      "@modern-dashboard/web/views": ["libs/web/views/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -16,10 +16,10 @@ async function bootstrap() {
   app.setGlobalPrefix(globalPrefix);
 
   const config = new DocumentBuilder()
-    .setTitle('Employee Dashboard')
-    .setDescription('The employee dashboard API')
+    .setTitle('Modern Dashboard')
+    .setDescription('The modern dashboard API')
     .setVersion('1.0')
-    .addTag('employee dashboard')
+    .addTag('modern dashboard')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);

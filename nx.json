@@ -1,5 +1,5 @@
 {
-  "npmScope": "employee-dashboard",
+  "npmScope": "modern-dashboard",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
