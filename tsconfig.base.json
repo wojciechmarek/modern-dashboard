@@ -20,9 +20,7 @@
       ],
       "@modern-dashboard/common/models": ["libs/common/models/src/index.ts"],
       "@modern-dashboard/web/assets": ["libs/web/assets/src/index.ts"],
-      "@modern-dashboard/web/components": [
-        "libs/web/components/src/index.ts"
-      ],
+      "@modern-dashboard/web/components": ["libs/web/components/src/index.ts"],
       "@modern-dashboard/web/utils": ["libs/web/utils/src/index.ts"],
       "@modern-dashboard/web/views": ["libs/web/views/src/index.ts"]
     }
