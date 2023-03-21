@@ -1,16 +1,10 @@
 {
   "name": "web-views-user-profile",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/web/views/user-profile/src",
   "projectType": "library",
+  "sourceRoot": "libs/web/views/user-profile/src",
+  "prefix": "modern-dashboard",
   "targets": {
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["libs/web/views/user-profile/**/*.ts"]
-      }
-    },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
@@ -23,6 +17,16 @@
           "ci": true,
           "codeCoverage": true
         }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/views/user-profile/**/*.ts",
+          "libs/web/views/user-profile/**/*.html"
+        ]
       }
     }
   },

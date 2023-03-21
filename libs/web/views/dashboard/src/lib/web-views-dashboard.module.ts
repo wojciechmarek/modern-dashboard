@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 const routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
-  declarations: [HomeComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
+  declarations: [HomeComponent],
 })
-export class WebViewsUserProfileModule {}
+export class WebViewsDashboardModule {}

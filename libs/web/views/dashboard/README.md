@@ -1,4 +1,4 @@
-# web-modules-dashboard
+# web-views-dashboard
 
 This library was generated with [Nx](https://nx.dev).
 

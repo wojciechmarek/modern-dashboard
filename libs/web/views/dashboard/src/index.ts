@@ -1,1 +1,1 @@
-export * from './lib/web-modules-dashboard.module';
+export * from './lib/web-views-dashboard.module';
