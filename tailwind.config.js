@@ -20,7 +20,7 @@ module.exports = {
   /**
    * Enable dark mode
    */
-  // darkMode: 'class',
+  darkMode: 'class',
   theme: {
     extend: {},
   },

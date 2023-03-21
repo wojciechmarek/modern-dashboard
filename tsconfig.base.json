@@ -23,6 +23,7 @@
       "@employee-dashboard/web/components": [
         "libs/web/components/src/index.ts"
       ],
+      "@employee-dashboard/web/utils": ["libs/web/utils/src/index.ts"],
       "@employee-dashboard/web/views": ["libs/web/views/src/index.ts"]
     }
   },
