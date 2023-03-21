@@ -4,8 +4,8 @@ module.exports = {
   mode: 'jit',
   purge: {
     content: [
-      './apps/**/*.{html,svelte,tsx,ts,jsx,js,pcss,scss,css}',
-      './libs/**/*.{html,svelte,tsx,ts,jsx,js,pcss,scss,css}',
+      './apps/**/*.{html,tsx,ts,jsx,js,pcss,scss,css}',
+      './libs/**/*.{html,tsx,ts,jsx,js,pcss,scss,css}',
     ],
     // PurgeCSS options
     // Reference: https://purgecss.com/
@@ -14,7 +14,6 @@ module.exports = {
       rejected: true,
       printRejected: true,
       safelist: ['html', 'body', 'dark'],
-      safelistPatterns: [/svelte-/],
     },
   },
   /**

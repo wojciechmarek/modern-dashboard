@@ -4,17 +4,17 @@ A modern dashboard to manage employees.
 
 ## Purpose
 
-To learn the Svelte and NestJS frameworks
+To learn the Angular 15 and NestJS frameworks.
 
 ## Demo
 
 ## Used technologies
 
 - 🎁 **Repository:** Monorepo with NX
-- 🧰 **Frameworks:** Svelte, NestJS
+- 🧰 **Frameworks:** Angular 15, NestJS
 - 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook
-- 🎨 **Styling:** tailwind
-- 🧪 **Testing:** jest, react-testing-library, cypress
+- 🎨 **Styling:** scss
+- 🧪 **Testing:** cypress
 - 💎 **Others:** mobile first approach, progressive web app
 
 ## How to run
