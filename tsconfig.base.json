@@ -18,6 +18,7 @@
       "@modern-dashboard/api/controllers": [
         "libs/api/controllers/src/index.ts"
       ],
+      "@modern-dashboard/api/resolvers": ["libs/api/resolvers/src/index.ts"],
       "@modern-dashboard/common/models": ["libs/common/models/src/index.ts"],
       "@modern-dashboard/web/assets": ["libs/web/assets/src/index.ts"],
       "@modern-dashboard/web/components/atoms": [
