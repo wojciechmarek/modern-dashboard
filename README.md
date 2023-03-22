@@ -28,14 +28,16 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 ## How to run
 
 There are two ways to start a project:
+
 - using a classic Node.js environment installed on the local machine,
 - using a development container (the `devcontainer.json` file in the repo).
 
 The classic way:
 
 1. Install [Node.js](https://nodejs.org/en/download/).
-2. Install [Yarn](https://classic.yarnpkg.com/en/docs/install/).
+2. Install [pnpm](https://pnpm.io/installation).
 3. Clone the repository.
-4. Type and run: `yarn` in the root directory.
-5. Type and run: `yarn dev` in the root directory.
-6. Open `http://localhost:5173` in your browser to see the app.
+4. Type and run: `pnpm install` in the root directory.
+5. Type and run: `pnpm dev` in the root directory.
+6. Open `http://localhost:4200` in your browser to see the frontend app.
+7. Open `http://localhost:3333` in your browser to see the backend app.
