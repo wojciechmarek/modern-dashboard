@@ -27,6 +27,12 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 
 ## How to run
 
+There are two ways to start a project:
+- using a classic Node.js environment installed on the local machine,
+- using a development container (the `devcontainer.json` file in the repo).
+
+The classic way:
+
 1. Install [Node.js](https://nodejs.org/en/download/).
 2. Install [Yarn](https://classic.yarnpkg.com/en/docs/install/).
 3. Clone the repository.
