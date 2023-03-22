@@ -34,10 +34,10 @@ There are two ways to start a project:
 
 The classic way:
 
-1. Install [Node.js](https://nodejs.org/en/download/).
-2. Install [pnpm](https://pnpm.io/installation).
+1. Install [node.js](https://nodejs.org/en/download/).
+2. Install [yarn](https://classic.yarnpkg.com/en/docs/install).
 3. Clone the repository.
-4. Type and run: `pnpm install` in the root directory.
-5. Type and run: `pnpm dev` in the root directory.
+4. Type and run: `yarn` in the root directory.
+5. Type and run: `yarn dev` in the root directory.
 6. Open `http://localhost:4200` in your browser to see the frontend app.
 7. Open `http://localhost:3333` in your browser to see the backend app.
