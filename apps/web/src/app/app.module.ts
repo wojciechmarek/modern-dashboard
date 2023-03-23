@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
+import { WebViewsMainLayoutModule } from '@modern-dashboard/web/views/main-layout';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    WebViewsMainLayoutModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],

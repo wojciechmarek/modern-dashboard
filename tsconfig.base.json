@@ -1,42 +1,31 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@modern-dashboard/api/controllers": [
-        "libs/api/controllers/src/index.ts",
-      ],
-      "@modern-dashboard/api/resolvers": ["libs/api/resolvers/src/index.ts"],
-      "@modern-dashboard/common/models": ["libs/common/models/src/index.ts"],
-      "@modern-dashboard/web/assets": ["libs/web/assets/src/index.ts"],
-      "@modern-dashboard/web/components/atoms": [
-        "libs/web/components/atoms/src/index.ts"
-      ],
-      "@modern-dashboard/web/components/molecules": [
-        "libs/web/components/molecules/src/index.ts"
-      ],
-      "@modern-dashboard/web/components/organisms": [
-        "libs/web/components/organisms/src/index.ts"
-      ],
-      "@modern-dashboard/web/views/dashboard": [
-        "libs/web/views/dashboard/src/index.ts"
-      ],
-      "@modern-dashboard/web/views/user-profile": [
-        "libs/web/views/user-profile/src/index.ts"
-      ]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@modern-dashboard/api/controllers": ["libs/api/controllers/src/index.ts"],
+            "@modern-dashboard/api/resolvers": ["libs/api/resolvers/src/index.ts"],
+            "@modern-dashboard/common/models": ["libs/common/models/src/index.ts"],
+            "@modern-dashboard/web/assets": ["libs/web/assets/src/index.ts"],
+            "@modern-dashboard/web/components/atoms": ["libs/web/components/atoms/src/index.ts"],
+            "@modern-dashboard/web/components/molecules": ["libs/web/components/molecules/src/index.ts"],
+            "@modern-dashboard/web/components/organisms": ["libs/web/components/organisms/src/index.ts"],
+            "@modern-dashboard/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
+            "@modern-dashboard/web/views/main-layout": ["libs/web/views/main-layout/src/index.ts"],
+            "@modern-dashboard/web/views/user-profile": ["libs/web/views/user-profile/src/index.ts"]
+        }
     },
-  },
-  "exclude": ["node_modules", "tmp"]
+    "exclude": ["node_modules", "tmp"]
 }
