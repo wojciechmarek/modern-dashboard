@@ -13,7 +13,6 @@ import { UserResolver } from './user';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
-      //autoSchemaFile: join(process.cwd(), 'src/graphql-schema/schema.gql'),
     }),
   ],
 })
