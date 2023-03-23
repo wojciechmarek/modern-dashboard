@@ -27,6 +27,9 @@
       "@modern-dashboard/web/components/molecules": [
         "libs/web/components/molecules/src/index.ts"
       ],
+      "@modern-dashboard/web/components/organisms": [
+        "libs/web/components/organisms/src/index.ts"
+      ],
       "@modern-dashboard/web/views/dashboard": [
         "libs/web/views/dashboard/src/index.ts"
       ],
