@@ -23,7 +23,7 @@
             "@modern-dashboard/web/components/molecules": ["libs/web/components/molecules/src/index.ts"],
             "@modern-dashboard/web/components/organisms": ["libs/web/components/organisms/src/index.ts"],
             "@modern-dashboard/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
-            "@modern-dashboard/web/views/main-layout": ["libs/web/views/main-layout/src/index.ts"],
+            "@modern-dashboard/web/views/layout": ["libs/web/views/layout/src/index.ts"],
             "@modern-dashboard/web/views/user-profile": ["libs/web/views/user-profile/src/index.ts"]
         }
     },

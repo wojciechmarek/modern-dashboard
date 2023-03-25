@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-    displayName: 'web-views-main-layout',
+    displayName: 'web-views-layout',
     preset: '../../../../jest.preset.js',
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-    coverageDirectory: '../../../../coverage/libs/web/views/main-layout',
+    coverageDirectory: '../../../../coverage/libs/web/views/layout',
     transform: {
         '^.+\\.(ts|mjs|js|html)$': [
             'jest-preset-angular',

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
-import { WebViewsMainLayoutModule } from '@modern-dashboard/web/views/main-layout';
+import { WebViewsMainLayoutModule } from '@modern-dashboard/web/views/layout';
 
 @NgModule({
   declarations: [AppComponent],
