@@ -1,29 +1,12 @@
 .button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 1px solid #000;
-  border-radius: 0.25rem;
-  background-color: #fff;
-  color: #000;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  transition: all 0.2s ease-in-out;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+
   &:hover {
-    background-color: #000;
-    color: #fff;
-  }
-  &:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
-  }
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+    background-color: #222;
+    color: #eee;
   }
 }

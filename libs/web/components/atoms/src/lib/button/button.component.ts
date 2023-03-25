@@ -1,8 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component({
-  selector: 'modern-dashboard-button',
+  selector: 'md-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
 })
-export class ButtonComponent {}
+export class ButtonComponent {
+  @Input() label = '';
+
+  @Output() handleClick = new EventEmitter();
+}

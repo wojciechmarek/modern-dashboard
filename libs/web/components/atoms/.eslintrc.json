@@ -9,15 +9,15 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "modernDashboard",
-            "style": "camelCase"
+            "prefix": "md",
+            "style": "kebab-case"
           }
         ],
         "@angular-eslint/component-selector": [
           "error",
           {
             "type": "element",
-            "prefix": "modern-dashboard",
+            "prefix": "md",
             "style": "kebab-case"
           }
         ]
