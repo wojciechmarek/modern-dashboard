@@ -1,1 +1,2 @@
-export * from './root-level.enum';
+export * from './user-profile.enum';
+export * from './user-profile.enum'
