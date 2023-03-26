@@ -1,5 +1,5 @@
-import { ApiControllersModule } from '@modern-dashboard/api/controllers';
-import { ApiResolversModule } from '@modern-dashboard/api/resolvers';
+import { ApiControllersModule } from '@md/api/controllers';
+import { ApiResolversModule } from '@md/api/resolvers';
 import { Module } from '@nestjs/common';
 
 @Module({

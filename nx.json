@@ -1,5 +1,5 @@
 {
-    "npmScope": "modern-dashboard",
+    "npmScope": "md",
     "namedInputs": {
         "default": ["{projectRoot}/**/*", "sharedGlobals"],
         "production": [

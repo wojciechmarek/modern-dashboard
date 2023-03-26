@@ -4,14 +4,14 @@ export const appRoutes: Route[] = [
   {
     path: '',
     loadChildren: () =>
-      import('@modern-dashboard/web/views/dashboard').then(
+      import('@md/web/views/dashboard').then(
         (m) => m.WebViewsDashboardModule
       ),
   },
   {
     path: 'user-profile',
     loadChildren: () =>
-      import('@modern-dashboard/web/views/user-profile').then(
+      import('@md/web/views/user-profile').then(
         (m) => m.WebViewsUserProfileModule
       ),
   },

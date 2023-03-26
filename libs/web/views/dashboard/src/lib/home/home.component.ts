@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'modern-dashboard-home',
+  selector: 'md-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })

@@ -9,7 +9,7 @@
                     "error",
                     {
                         "type": "attribute",
-                        "prefix": "modernDashboard",
+                        "prefix": "md",
                         "style": "camelCase"
                     }
                 ],
@@ -17,9 +17,9 @@
                     "error",
                     {
                         "type": "element",
-                        "prefix": "modern-dashboard",
+                        "prefix": "md",
                         "style": "kebab-case"
-                    }
+                      }
                 ]
             },
             "extends": ["plugin:@nrwl/nx/angular", "plugin:@angular-eslint/template/process-inline-templates"]
