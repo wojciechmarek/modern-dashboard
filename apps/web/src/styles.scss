@@ -1,4 +1,5 @@
-@import 'themes/dark.scss', 'themes/light.scss';
+@import url('./styles/themes/dark.scss');
+@import url('./styles/themes/light.scss');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -63,11 +64,3 @@ h6 {
 }
 
 //-----THEMES------
-
-body.dark {
-  @include dark();
-}
-
-body.light {
-  @include light();
-}

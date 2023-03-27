@@ -1,13 +1,17 @@
 <div class="navbar__container">
   <div class="navbar__logo">
-    <h1>aaa</h1>
+    <h1 class="navbar__logo-text">Unity</h1>
   </div>
   <div class="navbar__content">
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
+    <ul class="navbar__links">
+      <a
+        *ngFor="let link of links"
+        class="navbar__links-link"
+        [routerLink]="link.path"
+        routerLinkActive="navbar__links-link__active"
+      >
+        <li class="navbar__links-item">{{ link.title }}</li>
+      </a>
     </ul>
-    <md-button />
   </div>
 </div>

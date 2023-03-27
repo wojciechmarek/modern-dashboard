@@ -1,9 +1,0 @@
-$bgColor_dark: black;
-$textColor_dark: white;
-$borderColor_dark: white;
-
-@mixin dark() {
-  --bgColor: #{$bgColor_dark};
-  --textColor: #{$textColor_dark};
-  --borderColor: #{$borderColor_dark};
-}

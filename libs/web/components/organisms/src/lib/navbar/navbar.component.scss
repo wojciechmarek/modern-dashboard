@@ -2,16 +2,64 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 10em;
-  padding: 0 1rem;
-  background-color: #fff;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  width: 15em;
+  padding: 0 0.5rem;
+  background-color: var(--bg-color);
+  border-right: 1px solid var(--line-color);
+  transition: background-color 0.2s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    width: 8.5em;
+  }
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 }
 
 .navbar__logo {
-  height: 3em;
+  margin: 1.5em 0 0.5em 1em;
+  color: var(--text-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar__logo-text {
+  font-weight: 800;
 }
 
 .navbar__content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar__links-link {
+  text-decoration: none;
+  border-radius: 0.5em;
+}
+
+.navbar__links-link__active {
+  background-color: #413697;
+}
+
+.navbar__links-item {
+  display: flex;
+  align-items: center;
+  padding: 1em 1em 1em 0.5em;
+  color: var(--text-color);
+
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6456ce;
+  }
 }

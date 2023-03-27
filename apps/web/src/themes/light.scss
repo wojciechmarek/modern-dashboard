@@ -1,9 +1,0 @@
-$bgColor_light: white;
-$textColor_light: black;
-$borderColor_light: black;
-
-@mixin light() {
-  --bgColor: #{$bgColor_light};
-  --textColor: #{$textColor_light};
-  --borderColor: #{$borderColor_light};
-}

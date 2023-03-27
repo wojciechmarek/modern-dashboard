@@ -1,5 +1,5 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common'
+import { Component, Inject } from '@angular/core'
 
 @Component({
   selector: 'md-root',
@@ -7,23 +7,19 @@ import { Component, Inject } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'web';
+  title = 'web'
 
-  constructor(@Inject(DOCUMENT) private document: Document) {
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
-  }
-
-  isDark = false;
+  isDark = false
 
   themeToggle() {
     if (this.isDark) {
-      document.body.classList.remove('light');
-      document.body.classList.add('dark');
+      document.body.setAttribute('theme', 'light')
     } else {
-      document.body.classList.remove('dark');
-      document.body.classList.add('light');
+      document.body.setAttribute('theme', 'dark')
     }
 
-    this.isDark = !this.isDark;
-  };
+    this.isDark = !this.isDark
+  }
 }
