@@ -1,17 +1,23 @@
 <div class="navbar__container">
   <div class="navbar__logo">
-    <h1 class="navbar__logo-text">Unity</h1>
+    <div class="navbar__logo-image__container">
+      <img class="navbar__logo-image" src="./assets/logo.png" alt="gas-soft" />
+    </div>
+    <h1 class="navbar__logo-text">Gas-soft</h1>
   </div>
   <div class="navbar__content">
     <ul class="navbar__links">
-      <a
+      <li
         *ngFor="let link of links"
-        class="navbar__links-link"
+        class="navbar__links-item"
         [routerLink]="link.path"
-        routerLinkActive="navbar__links-link__active"
       >
-        <li class="navbar__links-item">{{ link.title }}</li>
-      </a>
+        <a
+          class="navbar__links-link"
+          routerLinkActive="navbar__links-link__active"
+          >{{ link.title }}</a
+        >
+      </li>
     </ul>
   </div>
 </div>

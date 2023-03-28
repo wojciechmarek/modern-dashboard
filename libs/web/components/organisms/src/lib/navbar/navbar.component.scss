@@ -3,9 +3,8 @@
   flex-direction: column;
   height: 100%;
   width: 15em;
-  padding: 0 0.5rem;
   background-color: var(--bg-color);
-  border-right: 1px solid var(--line-color);
+  border-right: 1px solid var(--separator-color);
   transition: background-color 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
@@ -18,48 +17,82 @@
 }
 
 .navbar__logo {
-  margin: 1.5em 0 0.5em 1em;
+  display: flex;
+  align-items: center;
+  margin: 2em auto 1.5em;
   color: var(--text-color);
   transition: background-color 0.2s ease-in-out;
 }
 
+.navbar__logo-image__container {
+  height: 2.5em;
+  width: 2.5em;
+
+  @media screen and (max-width: 768px) {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+.navbar__logo-image {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
 .navbar__logo-text {
+  font-size: 2rem;
+  margin-left: 0.5em;
   font-weight: 800;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 }
 
 .navbar__content {
+  margin: 0 1em;
   display: flex;
   flex-direction: column;
   flex: 1;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 0.5em;
+  }
 }
 
 .navbar__links {
+  list-style: none;
   display: flex;
   flex-direction: column;
   flex: 1;
-  list-style: none;
-  padding: 0;
-}
-
-.navbar__links-link {
-  text-decoration: none;
-  border-radius: 0.5em;
-}
-
-.navbar__links-link__active {
-  background-color: #413697;
 }
 
 .navbar__links-item {
+  cursor: pointer;
+  margin: 0.125em 0;
+}
+
+.navbar__links-link {
   display: flex;
   align-items: center;
-  padding: 1em 1em 1em 0.5em;
+  height: 3.25em;
+  text-decoration: none;
+  border-radius: 0.5em;
+  padding-left: 1em;
   color: var(--text-color);
-
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: #6456ce;
+    background-color: var(--menu-item-hover-color);
   }
+
+  @media screen and (max-width: 768px) {
+    height: 2.5em;
+  }
+}
+
+.navbar__links-link__active {
+  background-color: var(--menu-item-active-color);
 }
