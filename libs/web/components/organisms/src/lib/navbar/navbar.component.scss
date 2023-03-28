@@ -5,7 +5,7 @@
   width: 15em;
   background-color: var(--bg-color);
   border-right: 1px solid var(--separator-color);
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border-right 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
     width: 8.5em;

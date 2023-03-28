@@ -1,9 +1,14 @@
 main {
   display: flex;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
 }
