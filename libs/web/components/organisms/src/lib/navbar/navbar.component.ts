@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { DOCUMENT } from '@angular/common'
+import { Component, Inject } from '@angular/core'
 
 @Component({
   selector: 'md-navbar',
@@ -11,4 +12,19 @@ export class NavbarComponent {
     { path: '/drive', icon: 'drive', title: 'Drive' },
     { path: '/user-profile', icon: 'profile', title: 'Profile' },
   ]
+
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+
+  isDark = false
+
+  themeToggle() {
+    if (this.isDark) {
+      this.document.body.setAttribute('theme', 'light')
+    } else {
+      this.document.body.setAttribute('theme', 'dark')
+    }
+
+    this.isDark = !this.isDark
+  }
+
 }

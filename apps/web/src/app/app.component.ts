@@ -7,19 +7,5 @@ import { Component, Inject } from '@angular/core'
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'web'
-
-  constructor(@Inject(DOCUMENT) private document: Document) {}
-
-  isDark = false
-
-  themeToggle() {
-    if (this.isDark) {
-      document.body.setAttribute('theme', 'light')
-    } else {
-      document.body.setAttribute('theme', 'dark')
-    }
-
-    this.isDark = !this.isDark
-  }
+  title = 'web';
 }
