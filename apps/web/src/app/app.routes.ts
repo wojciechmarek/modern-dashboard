@@ -11,6 +11,13 @@ export const rootLevelRoutes: Route[] = [
       ),
   },
   {
+    path: RootLevelPath.Drive,
+    loadChildren: () =>
+      import('@md/web/views/drive').then(
+        (m) => m.WebViewsDriveModule
+      ),
+  },
+  {
     path: RootLevelPath.Dashboard,
     loadChildren: () =>
       import('@md/web/views/dashboard').then((m) => m.WebViewsDashboardModule),

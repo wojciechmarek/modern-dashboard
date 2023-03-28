@@ -1,26 +1,26 @@
 {
-    "name": "common-models",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/common/models/src",
-    "projectType": "library",
-    "targets": {
-        "build": {
-            "executor": "@nrwl/js:tsc",
-            "outputs": ["{options.outputPath}"],
-            "options": {
-                "outputPath": "dist/libs/common/models",
-                "main": "libs/common/models/src/index.ts",
-                "tsConfig": "libs/common/models/tsconfig.lib.json",
-                "assets": ["libs/common/models/*.md"]
-            }
-        },
-        "lint": {
-            "executor": "@nrwl/linter:eslint",
-            "outputs": ["{options.outputFile}"],
-            "options": {
-                "lintFilePatterns": ["libs/common/models/**/*.ts"]
-            }
-        }
+  "name": "common-models",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/common/models/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/common/models",
+        "main": "libs/common/models/src/index.ts",
+        "tsConfig": "libs/common/models/tsconfig.lib.json",
+        "assets": ["libs/common/models/*.md"]
+      }
     },
-    "tags": []
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/common/models/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
 }

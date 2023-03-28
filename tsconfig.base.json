@@ -20,10 +20,17 @@
       "@md/common/models": ["libs/common/models/src/index.ts"],
       "@md/web/assets": ["libs/web/assets/src/index.ts"],
       "@md/web/components/atoms": ["libs/web/components/atoms/src/index.ts"],
-      "@md/web/components/molecules": ["libs/web/components/molecules/src/index.ts"],
-      "@md/web/components/organisms": ["libs/web/components/organisms/src/index.ts"],
-      "@md/web/utilities/constants": ["libs/web/utilities/constants/src/index.ts"],
+      "@md/web/components/molecules": [
+        "libs/web/components/molecules/src/index.ts"
+      ],
+      "@md/web/components/organisms": [
+        "libs/web/components/organisms/src/index.ts"
+      ],
+      "@md/web/utilities/constants": [
+        "libs/web/utilities/constants/src/index.ts"
+      ],
       "@md/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
+      "@md/web/views/drive": ["libs/web/views/drive/src/index.ts"],
       "@md/web/views/layout": ["libs/web/views/layout/src/index.ts"],
       "@md/web/views/user-profile": ["libs/web/views/user-profile/src/index.ts"]
     }
