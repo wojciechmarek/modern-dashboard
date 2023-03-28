@@ -1,9 +1,9 @@
 <div class="navbar__container">
   <div class="navbar__logo">
     <div class="navbar__logo-image__container">
-      <img class="navbar__logo-image" src="./assets/logo.png" alt="gas-soft" />
+      <img class="navbar__logo-image" src="./assets/logo.png" alt="fire flame" />
     </div>
-    <h1 class="navbar__logo-text">Gas-soft</h1>
+    <h1 class="navbar__logo-text">FireFlame</h1>
   </div>
   <div class="navbar__content">
     <ul class="navbar__links">
@@ -15,6 +15,7 @@
         <a
           class="navbar__links-link"
           routerLinkActive="navbar__links-link__active"
+          [routerLinkActiveOptions]= "{exact: true}"
           >{{ link.title }}</a
         >
       </li>
