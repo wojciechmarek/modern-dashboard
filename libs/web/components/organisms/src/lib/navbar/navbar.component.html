@@ -1,5 +1,8 @@
 <div class="navbar__container">
-  <md-brand-logo class="navbar__brand-logo"/>
-  <md-desktop-menu class="navbar__desktop-menu"/>
-  <button (click)="themeToggle()">Toggle theme</button>
+  <md-brand-logo class="navbar__brand-logo" />
+  <md-desktop-menu-links class="navbar__desktop-menu-links" />
+  <md-desktop-menu-buttons
+    class="navbar__desktop-menu-buttons"
+    (handleThemeToggle)="handleThemeToggle()"
+  />
 </div>

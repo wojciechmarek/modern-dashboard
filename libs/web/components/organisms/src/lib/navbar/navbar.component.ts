@@ -11,7 +11,7 @@ export class NavbarComponent {
 
   isDark = false
 
-  themeToggle() {
+  handleThemeToggle() {
     if (this.isDark) {
       this.document.body.setAttribute('theme', 'light')
     } else {

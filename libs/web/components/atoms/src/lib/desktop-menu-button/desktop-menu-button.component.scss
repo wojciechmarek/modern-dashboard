@@ -1,16 +1,15 @@
-.item__container {
+.button {
   cursor: pointer;
-  margin: 0.125em 0;
-}
-
-.item__link {
   display: flex;
+  width: 100%;
   align-items: center;
   height: 3.25em;
   text-decoration: none;
   border-radius: 0.5em;
   padding-left: 1em;
   color: var(--text-color);
+  background-color: var(--bg-color);
+  border: none;
   font-weight: 600;
   transition: background-color 0.2s ease-in-out;
 
@@ -22,8 +21,4 @@
     height: 2.5em;
     padding-left: 0.5em;
   }
-}
-
-.item__link-active {
-  background-color: var(--menu-item-active-color);
 }
