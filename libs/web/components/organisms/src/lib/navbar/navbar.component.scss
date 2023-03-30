@@ -20,49 +20,6 @@
   margin: 0 auto;
 }
 
-.navbar__content {
-  margin: 0 1em;
-  display: flex;
-  flex-direction: column;
+.navbar__desktop-menu {
   flex: 1;
-
-  @media screen and (max-width: 768px) {
-    margin: 0 0.5em;
-  }
-}
-
-.navbar__links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.navbar__links-item {
-  cursor: pointer;
-  margin: 0.125em 0;
-}
-
-.navbar__links-link {
-  display: flex;
-  align-items: center;
-  height: 3.25em;
-  text-decoration: none;
-  border-radius: 0.5em;
-  padding-left: 1em;
-  color: var(--text-color);
-  font-weight: 600;
-  transition: background-color 0.2s ease-in-out;
-
-  &:hover {
-    background-color: var(--menu-item-hover-color);
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 2.5em;
-  }
-}
-
-.navbar__links-link__active {
-  background-color: var(--menu-item-active-color);
 }

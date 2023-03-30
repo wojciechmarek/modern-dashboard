@@ -1,0 +1,9 @@
+<div class="navbar__container">
+  <ul class="navbar__list">
+    <md-desktop-menu-item
+      *ngFor="let link of links"
+      [path]="link.path"
+      [title]="link.title"
+    />
+  </ul>
+</div>

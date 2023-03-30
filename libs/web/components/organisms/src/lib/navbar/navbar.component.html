@@ -1,20 +1,5 @@
 <div class="navbar__container">
   <md-brand-logo class="navbar__brand-logo"/>
-  <div class="navbar__content">
-    <ul class="navbar__links">
-      <li
-        *ngFor="let link of links"
-        class="navbar__links-item"
-        [routerLink]="link.path"
-      >
-        <a
-          class="navbar__links-link"
-          routerLinkActive="navbar__links-link__active"
-          [routerLinkActiveOptions]= "{exact: true}"
-          >{{ link.title }}</a
-        >
-      </li>
-    </ul>
-  </div>
+  <md-desktop-menu class="navbar__desktop-menu"/>
   <button (click)="themeToggle()">Toggle theme</button>
 </div>
