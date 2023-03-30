@@ -16,39 +16,8 @@
   }
 }
 
-.navbar__logo {
-  display: flex;
-  align-items: center;
-  margin: 2em auto 1.5em;
-  color: var(--text-color);
-  transition: background-color 0.2s ease-in-out;
-}
-
-.navbar__logo-image__container {
-  height: 2.5em;
-  width: 2.5em;
-
-  @media screen and (max-width: 768px) {
-    height: 2em;
-    width: 2em;
-  }
-}
-
-.navbar__logo-image {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
-
-.navbar__logo-text {
-  font-size: 2rem;
-  margin-left: 0.5em;
-  font-weight: 800;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.25rem;
-    margin-left: 0.125em;
-  }
+.navbar__brand-logo {
+  margin: 0 auto;
 }
 
 .navbar__content {

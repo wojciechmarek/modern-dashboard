@@ -1,0 +1,28 @@
+.navbar__container {
+  display: flex;
+  align-items: center;
+  margin: 2em auto 1.5em;
+  color: var(--text-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar__icon {
+  height: 2.5em;
+  width: 2.5em;
+
+  @media screen and (max-width: 768px) {
+    height: 2em;
+    width: 2em;
+  }
+}
+
+.navbar__text {
+  font-size: 2rem;
+  margin-left: 0.5em;
+  font-weight: 800;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.25rem;
+    margin-left: 0.125em;
+  }
+}
