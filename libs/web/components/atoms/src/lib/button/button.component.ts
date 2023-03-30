@@ -9,4 +9,8 @@ export class ButtonComponent {
   @Input() label = '';
 
   @Output() handleClick = new EventEmitter();
+
+  onClick() {
+    this.handleClick.emit();
+  }
 }
