@@ -1,19 +1,17 @@
 <main>
   <div class="login__container">
-    <div class="login__header">
-      <h1>Hello user!</h1>
-      <p>User your credentials to login:</p>
-    </div>
+    <md-header-text />
     <div class="login__form">
-      <div class="login__form-username">
-        <label for="username"></label>
-        <input id="username" type="text" placeholder="Username" />
-      </div>
-      <div class="login__form-password">
-        <label for="password"></label>
-        <input id="password" type="text" placeholder="Username" />
-        <a href="#">Forgot password?</a>
-      </div>
+      <md-label-input
+        label="Username:"
+        placeholder="Username"
+        formControlName="username"
+      />
+      <md-label-input
+        label="Password:"
+        placeholder="Password"
+        formControlName="password"
+      />
       <div class="login__form-remember">
         <input id="remember" type="checkbox" />
         <label for="remember">Remember me</label>
