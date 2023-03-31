@@ -18,6 +18,13 @@ export const rootLevelRoutes: Route[] = [
       ),
   },
   {
+    path: RootLevelPath.Auth,
+    loadChildren: () =>
+      import('@md/web/views/auth').then(
+        (m) => m.WebViewsAuthModule
+      ),
+  },
+  {
     path: RootLevelPath.Dashboard,
     loadChildren: () =>
       import('@md/web/views/dashboard').then((m) => m.WebViewsDashboardModule),
