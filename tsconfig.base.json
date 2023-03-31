@@ -29,6 +29,7 @@
       "@md/web/utilities/constants": [
         "libs/web/utilities/constants/src/index.ts"
       ],
+      "@md/web/views/auth": ["libs/web/views/auth/src/index.ts"],
       "@md/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
       "@md/web/views/drive": ["libs/web/views/drive/src/index.ts"],
       "@md/web/views/layout": ["libs/web/views/layout/src/index.ts"],
