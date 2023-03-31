@@ -1,0 +1,18 @@
+.login__container {
+  background-color: var(--bg-color-alternative);
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  padding: 1em 0;
+}
+
+.login__header-text {
+  display: inline-block;
+  margin-left: 1.5em;
+  
+}
+
+.login__form {
+  display: inline-block;
+  margin: 1em 1.5em 0;
+}
