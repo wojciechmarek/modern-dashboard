@@ -18,26 +18,26 @@
   }
 
   &.success-color {
-    background-color: var(--button-success-color);
+    background-color: var(--success-color);
   }
 
   &.danger-color {
-    background-color: var(--button-danger-color);
+    background-color: var(--danger-color);
   }
 
   &.warning-color {
-    background-color: var(--button-warning-color);
+    background-color: var(--warning-color);
   }
 
   &.info-color {
-    background-color: var(--button-info-color);
+    background-color: var(--info-color);
   }
 
   &.flat-color {
-    background-color: var(--button-flat-color);
+    background-color: var(--flat-color);
 
     &:hover {
-      background-color: var(--button-flat-hover-color);
+      background-color: var(--flat-hover-color);
       opacity: 1;
     }
   }

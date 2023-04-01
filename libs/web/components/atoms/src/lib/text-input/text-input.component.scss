@@ -20,7 +20,7 @@
   font-weight: bold;
 
   &:focus {
-    border-color: var(--menu-item-hover-color);
+    border-color: var(--flat-hover-color);
   }
 
   @media screen and (max-width: 768px) {

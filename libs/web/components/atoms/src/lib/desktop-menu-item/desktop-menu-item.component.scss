@@ -15,7 +15,7 @@
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: var(--menu-item-hover-color);
+    background-color: var(--flat-hover-color);
   }
 
   @media screen and (max-width: 768px) {
@@ -25,5 +25,5 @@
 }
 
 .item__link-active {
-  background-color: var(--menu-item-active-color);
+  background-color: var(--flat-active-color);
 }
