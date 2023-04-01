@@ -22,4 +22,8 @@
   &:focus {
     border-color: var(--menu-item-hover-color);
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.9em;
+  }
 }

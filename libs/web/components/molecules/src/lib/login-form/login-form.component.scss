@@ -4,4 +4,8 @@
   width: 100%;
   margin: 2em 0;
   gap: 1em;
+
+  @media screen and (max-width: 768px) {
+    margin: 1.5em 0;
+  }
 }
