@@ -11,7 +11,7 @@
   color: var(--text-color);
   border: none;
   font-weight: 600;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   
   &.left-text-align {
     justify-content: flex-start;
