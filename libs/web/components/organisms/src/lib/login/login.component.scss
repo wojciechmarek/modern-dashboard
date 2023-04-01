@@ -2,17 +2,15 @@
   background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
-  width: 30em;
-  padding: 1em 0;
+  width: 35em;
+  padding: 2em 1.5em;
+  border-radius: 1em;
 }
 
 .login__header-text {
   display: inline-block;
-  margin-left: 1.5em;
-  
 }
 
 .login__form {
   display: inline-block;
-  margin: 1em 1.5em 0;
 }
