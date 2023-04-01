@@ -1,12 +1,53 @@
 .button {
-  padding: 1rem 2rem;
-  background-color: #000;
-  color: #fff;
-  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 3.25em;
+  text-decoration: none;
+  border-radius: 0.5em;
+  padding: 0 1em;
+  color: var(--text-color);
   border: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+  
+  &.left-text-align {
+    justify-content: flex-start;
+  }
+
+  &.success-color {
+    background-color: var(--button-success-color);
+  }
+
+  &.danger-color {
+    background-color: var(--button-danger-color);
+  }
+
+  &.warning-color {
+    background-color: var(--button-warning-color);
+  }
+
+  &.info-color {
+    background-color: var(--button-info-color);
+  }
+
+  &.flat-color {
+    background-color: var(--button-flat-color);
+
+    &:hover {
+      background-color: var(--button-flat-hover-color);
+      opacity: 1;
+    }
+  }
 
   &:hover {
-    background-color: #222;
-    color: #eee;
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 2.5em;
+    padding-left: 0.5em;
   }
 }

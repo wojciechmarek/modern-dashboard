@@ -1,7 +1,9 @@
-<div class="label-input">
-  <label *ngIf="label" [for]="name">{{ label }}</label>
+<div class="container">
+  <label class="label" *ngIf="label" [for]="name">{{ label }}</label>
   <input
+    class="input"
     [id]="name"
+    [type]="type"
     [placeholder]="placeholder"
     aria-label="`${label}` input field"
     [value]="_value"

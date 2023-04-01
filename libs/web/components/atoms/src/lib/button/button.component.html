@@ -1,1 +1,14 @@
-<button class="button" (click)="onClick()">{{label}}</button>
+<button
+  class="button"
+  [ngClass]="{
+    'left-text-align': isTextLeftAligned,
+    'success-color': color === 'success',
+    'info-color': color === 'info',
+    'danger-color': color === 'danger',
+    'warning-color': color === 'warning',
+    'flat-color': color === 'flat'
+  }"
+  (click)="onClick()"
+>
+  {{ label }}
+</button>

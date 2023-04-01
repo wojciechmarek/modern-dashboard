@@ -1,9 +1,10 @@
 <div class="container">
   <input
-  type="checkbox"
-  [id]="name"
-  [value]="_value"
-  (change)="onCheckboxChange($event)"
+    class="checkbox"
+    type="checkbox"
+    [id]="name"
+    [value]="_value"
+    (change)="onCheckboxChange($event)"
   />
-  <label *ngIf="label" [for]="name">{{ label }}</label>
+  <label class="label" *ngIf="label" [for]="name">{{ label }}</label>
 </div>
