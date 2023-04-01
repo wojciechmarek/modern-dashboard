@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { LabelInputComponent } from './label-input.component'
+import { TextInputComponent } from './text-input.component'
 
 describe('LabelInputComponent', () => {
-  let component: LabelInputComponent
-  let fixture: ComponentFixture<LabelInputComponent>
+  let component: TextInputComponent
+  let fixture: ComponentFixture<TextInputComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LabelInputComponent],
+      declarations: [TextInputComponent],
     }).compileComponents()
 
-    fixture = TestBed.createComponent(LabelInputComponent)
+    fixture = TestBed.createComponent(TextInputComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

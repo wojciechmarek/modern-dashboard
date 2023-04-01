@@ -1,8 +1,11 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'md-login-view',
+  selector: 'md-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent {}
+export class LoginComponent {
+
+
+}

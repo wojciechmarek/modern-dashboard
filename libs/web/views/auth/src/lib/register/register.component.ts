@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'md-register',
+  selector: 'md-register-view',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })

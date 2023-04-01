@@ -1,0 +1,10 @@
+<div class="label-input">
+  <label *ngIf="label" [for]="name">{{ label }}</label>
+  <input
+    [id]="name"
+    [placeholder]="placeholder"
+    aria-label="`${label}` input field"
+    [value]="_value"
+    (change)="onInputChange($event)"
+  />
+</div>

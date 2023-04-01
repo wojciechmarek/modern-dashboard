@@ -1,0 +1,12 @@
+<form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <md-text-input label="Email:" placeholder="Email" formControlName="email" />
+  <md-text-input
+    type="password"
+    label="Password:"
+    placeholder="Password"
+    formControlName="password"
+  />
+  <div class="login__form-submit">
+    <button type="submit">Login</button>
+  </div>
+</form>

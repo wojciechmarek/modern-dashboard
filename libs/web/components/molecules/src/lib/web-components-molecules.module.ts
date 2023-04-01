@@ -5,23 +5,24 @@ import { WebComponentsAtomsModule } from '@md/web/components/atoms'
 import { DesktopMenuLinksComponent } from './desktop-menu-links/desktop-menu-links.component'
 import { DesktopMenuButtonsComponent } from './desktop-menu-buttons/desktop-menu-buttons.component'
 import { HeaderTextComponent } from './header-text/header-text.component'
-import { LabelInputComponent } from './label-input/label-input.component'
+import { LoginFormComponent } from './login-form/login-form.component'
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
-  imports: [CommonModule, WebComponentsAtomsModule],
+  imports: [CommonModule, WebComponentsAtomsModule, ReactiveFormsModule],
   declarations: [
     BrandLogoComponent,
     DesktopMenuLinksComponent,
     DesktopMenuButtonsComponent,
     HeaderTextComponent,
-    LabelInputComponent,
+    LoginFormComponent,
   ],
   exports: [
     BrandLogoComponent,
     DesktopMenuLinksComponent,
     DesktopMenuButtonsComponent,
     HeaderTextComponent,
-    LabelInputComponent,
+    LoginFormComponent,
   ],
 })
 export class WebComponentsMoleculesModule {}
