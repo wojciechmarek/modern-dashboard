@@ -1,11 +1,13 @@
 import { Module } from '@nestjs/common';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GraphQLModule } from '@nestjs/graphql';
-import { UserResolver } from './user';
+import { AuthResolver, UserResolver } from './api';
+
 
 @Module({
   controllers: [],
   providers: [
+    AuthResolver,
     UserResolver
   ],
   exports: [],
