@@ -21,9 +21,9 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 - 🎁 **Repository:** Monorepo with NX
 - 🧰 **Frameworks:** Angular 15, NestJS
 - 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, mongodb, graphql, apollo
-- 🎨 **Styling:** scss
-- 🧪 **Testing:** cypress
-- 💎 **Others:** mobile first approach, progressive web app
+- 🎨 **Styling:** scss, css variables, BEM notation
+- 🧪 **Testing:** cypress, jest
+- 💎 **Others:** desktop first approach, progressive web app
 
 ## How to run
 
