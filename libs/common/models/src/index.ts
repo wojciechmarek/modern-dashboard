@@ -1,1 +1,1 @@
-export * from './lib/common-models';
+export * from './lib';

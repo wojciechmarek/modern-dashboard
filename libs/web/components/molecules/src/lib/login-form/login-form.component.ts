@@ -1,5 +1,6 @@
-import { Component } from '@angular/core'
-import { FormBuilder } from '@angular/forms';
+import { Component, EventEmitter, Output } from '@angular/core'
+import { FormBuilder, Validators } from '@angular/forms'
+import { LoginDto } from '@md/common/models'
 
 @Component({
   selector: 'md-login-form',
@@ -7,15 +8,23 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./login-form.component.scss'],
 })
 export class LoginFormComponent {
-  constructor(private readonly fb: FormBuilder) { }
-  
+  @Output() handleLoginSubmit = new EventEmitter<LoginDto>()
+
+  constructor(private readonly fb: FormBuilder) {}
+
   form = this.fb.group({
-    email: this.fb.control('dupa'),
-    password: this.fb.control(''),
+    email: this.fb.control('', {
+      validators: [Validators.required, Validators.email],
+    }),
+    password: this.fb.control('', { validators: [Validators.required] }),
     isRememberMeChecked: this.fb.control(false),
-  });
+  })
 
   onSubmit() {
-    console.log(this.form.value);
+    this.handleLoginSubmit.emit({
+      email: this.form.value.email || '',
+      password: this.form.value.password || '',
+      isRememberMeChecked: this.form.value.isRememberMeChecked || false,
+    })
   }
 }

@@ -1,4 +1,4 @@
 <div class="login__container">
   <md-header-text class="login__header-text" />
-  <md-login-form class="login__form" />
+  <md-login-form class="login__form" (handleLoginSubmit)="handleLoginSubmit.emit($event)" />
 </div>
