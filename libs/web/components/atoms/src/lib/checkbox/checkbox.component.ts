@@ -2,25 +2,23 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
-  selector: 'md-text-input',
-  templateUrl: './text-input.component.html',
-  styleUrls: ['./text-input.component.scss'],
+  selector: 'md-checkbox',
+  templateUrl: './checkbox.component.html',
+  styleUrls: ['./checkbox.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
       multi: true,
-      useExisting: TextInputComponent
+      useExisting: CheckboxComponent
     }
   ]
 })
-export class TextInputComponent implements ControlValueAccessor, OnInit, OnChanges {
+export class CheckboxComponent implements ControlValueAccessor, OnInit, OnChanges {
   @Input() label = '';
-  @Input() placeholder = '';
-  @Input() type: 'text' | 'password' = 'text';
-  @Input() value = '';
+  @Input() value = false;
   @Input() name = '';
 
-  _value = '';
+  _value = false;
   _isTouched = false;
   _isDisabled = false;
 
@@ -34,15 +32,16 @@ export class TextInputComponent implements ControlValueAccessor, OnInit, OnChang
     }
   }
 
-  onInputChange = (value: Event) => {
-    this._value = (value.target as HTMLInputElement).value;
+  onCheckboxChange = (event: Event) => {
+    const checked = (event.target as HTMLInputElement).checked;
+    this._value = checked;
     this.onChange(this._value);
   }
 
-  onChange = (value: any) => { return; }
+  onChange = (value: boolean) => { return; }
   onTouched = () => { return; }
 
-  writeValue(value: string): void {
+  writeValue(value: boolean): void {
     this._value = value;
   }
 

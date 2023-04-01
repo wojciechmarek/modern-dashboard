@@ -9,6 +9,7 @@ import { DesktopMenuButtonComponent } from './desktop-menu-button/desktop-menu-b
 import { HeaderComponent } from './header/header.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { TextInputComponent } from './text-input/text-input.component'
+import { CheckboxComponent } from './checkbox/checkbox.component'
 
 @NgModule({
   imports: [CommonModule, RouterModule, ReactiveFormsModule],
@@ -19,7 +20,8 @@ import { TextInputComponent } from './text-input/text-input.component'
     DesktopMenuButtonComponent,
     HeaderComponent,
     TextInputComponent,
-    TextComponent
+    TextComponent,
+    CheckboxComponent
   ],
   exports: [
     ButtonComponent,
@@ -28,7 +30,8 @@ import { TextInputComponent } from './text-input/text-input.component'
     DesktopMenuButtonComponent,
     HeaderComponent,
     TextInputComponent,
-    TextComponent
+    TextComponent,
+    CheckboxComponent
   ],
 })
 export class WebComponentsAtomsModule {}
