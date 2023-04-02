@@ -1,14 +1,16 @@
 # Modern Dashboard
 
-It is a modern dashboard for modern companies.
+It is a demo application that shows how to build a modern web application with Angular 15 and NestJS.
 
 ## Purpose
 
-To learn the Angular 15 and NestJS frameworks and build a modern application with cutting-edge technologies:
+To learn the Angular 15 and NestJS frameworks and build a modern application with cutting-edge technologies and techniques:
 
-- using the latest Angular 15 features (standalone components, Signals, etc.),
+- using the latest Angular 15 features (standalone components, Signal, etc.),
 - using the latest NestJS features (GraphQL, etc.),
 - using the docker containers to develop and run the application,
+- using the MongoDB database with Change Streams,
+- using the atomic design methodology to build the UI,
 - using real-time communication with GraphQL subscriptions,
 - using Nx to manage the mono repo (to share code between the front end and the backend).
 
@@ -23,7 +25,8 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 - 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, mongodb, graphql, apollo
 - 🎨 **Styling:** scss, css variables, BEM notation
 - 🧪 **Testing:** cypress, jest
-- 💎 **Others:** desktop first approach, progressive web app
+- ☁️ **Database:** MongoDB with Change Streams, typeORM
+- 💎 **Others:** desktop first approach, progressive web app, atomic design
 
 ## How to run
 
@@ -41,3 +44,19 @@ The classic way:
 5. Type and run: `yarn dev` in the root directory.
 6. Open `http://localhost:4200` in your browser to see the frontend app.
 7. Open `http://localhost:3333` in your browser to see the backend app.
+
+The development container way:
+
+1. Install [VS Code](https://code.visualstudio.com/).
+2. Install and run [Docker](https://www.docker.com/products/docker-desktop).
+3. Install a VS Code [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
+4. Clone the repository.
+5. Open the repository in VS Code.
+6. Click on the `><` (Open a Remove Window) button in the bottom left corner of the VS Code window.
+7. Select `Reopen in Container`.
+8. Wait for the container to start.
+9. Open a terminal in VS Code (it will be automatically connected to the container's shell).
+10. Type and run: `yarn` in the root directory.
+11. Type and run: `yarn dev` in the root directory.
+12. Open `http://localhost:4200` in your browser to see the frontend app.
+13. Open `http://localhost:3333` in your browser to see the backend app.
