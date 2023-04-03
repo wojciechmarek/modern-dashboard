@@ -1,11 +1,19 @@
 <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
-  <md-text-input label="Email:" placeholder="Email" formControlName="email" />
+  <md-text-input label="Email:" placeholder="Email" formControlName="email" [errorMessage]="
+    form.get('email')?.hasError('required') ? 'Email is required' :
+    form.get('email')?.hasError('email') ? 'Email is not valid' : ''
+  "/>
   <md-text-input
     type="password"
     label="Password:"
     placeholder="Password"
     formControlName="password"
+    [errorMessage]="
+      form.get('password')?.hasError('required') ? 'Password is required' :
+      form.get('password')?.hasError('minlength') ? 'Password must be at least 8 characters' : ''
+    "
   />
+
   <md-checkbox class="form__checkbox" label="Remember me" formControlName="isRememberMeChecked" />
   <md-button type="submit" color="success" label="LOGIN" />
   <md-button label="Click here to login as a guest" />

@@ -9,4 +9,5 @@
     [value]="_value"
     (change)="onInputChange($event)"
   />
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
 </div>

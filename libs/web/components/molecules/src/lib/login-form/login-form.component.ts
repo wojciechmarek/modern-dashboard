@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core'
-import { FormBuilder, Validators } from '@angular/forms'
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { LoginDto } from '@md/common/models'
 
 @Component({
@@ -12,11 +12,9 @@ export class LoginFormComponent {
 
   constructor(private readonly fb: FormBuilder) {}
 
-  form = this.fb.group({
-    email: this.fb.control('', {
-      validators: [Validators.required, Validators.email],
-    }),
-    password: this.fb.control('', { validators: [Validators.required] }),
+  form = new FormGroup({
+    email: new FormControl(null, [Validators.email]),
+    password: this.fb.control(null, { validators: [Validators.required] }),
     isRememberMeChecked: this.fb.control(false),
   })
 
