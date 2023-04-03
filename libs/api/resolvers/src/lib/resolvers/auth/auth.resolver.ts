@@ -1,17 +1,19 @@
 import { Args, Mutation, Resolver } from '@nestjs/graphql';
 import { LoginInput, LoginOutput } from '../../models';
+import { Observable, of } from 'rxjs';
 
 @Resolver()
 export class AuthResolver {
   @Mutation(() => LoginOutput)
-  login(@Args('data') data: LoginInput ): Promise<LoginOutput> {
+  login(@Args('data') data: LoginInput ): Observable<LoginOutput> {
     console.log('Logging in....:', data);
 
     const response = new LoginOutput();
     response.accessToken = 'access' + Math.random() * 1234;
     response.refreshToken = 'refresh' + Math.random() * 1234;
 
-    return Promise.resolve(response);
+
+    return of(response);
   }
 
   // @Query(() => LoginOutput)
