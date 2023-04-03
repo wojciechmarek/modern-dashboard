@@ -15,8 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@md/api/auth": ["libs/api/auth/src/index.ts"],
       "@md/api/controllers": ["libs/api/controllers/src/index.ts"],
+      "@md/api/domain": ["libs/api/domain/src/index.ts"],
+      "@md/api/persistence": ["libs/api/persistence/src/index.ts"],
       "@md/api/resolvers": ["libs/api/resolvers/src/index.ts"],
+      "@md/api/utilities": ["libs/api/utilities/src/index.ts"],
       "@md/common/models": ["libs/common/models/src/index.ts"],
       "@md/web/assets": ["libs/web/assets/src/index.ts"],
       "@md/web/components/atoms": ["libs/web/components/atoms/src/index.ts"],
