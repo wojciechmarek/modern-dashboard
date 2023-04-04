@@ -31,6 +31,9 @@
       "@md/web/components/organisms": [
         "libs/web/components/organisms/src/index.ts"
       ],
+      "@md/web/components/storybook": [
+        "libs/web/components/storybook/src/index.ts"
+      ],
       "@md/web/utilities/constants": [
         "libs/web/utilities/constants/src/index.ts"
       ],
