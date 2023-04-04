@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { DesktopMenuButtonsComponent } from './desktop-menu-buttons.component';
 
 export default {
-  title: 'DesktopMenuButtonsComponent',
+  title: 'Desktop Menu Buttons',
   component: DesktopMenuButtonsComponent,
 } as Meta<DesktopMenuButtonsComponent>;
 

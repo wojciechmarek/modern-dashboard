@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { LoginComponent } from './login.component';
 
 export default {
-  title: 'LoginComponent',
+  title: 'Login',
   component: LoginComponent,
 } as Meta<LoginComponent>;
 

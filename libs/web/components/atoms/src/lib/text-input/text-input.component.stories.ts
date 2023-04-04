@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { TextInputComponent } from './text-input.component';
 
 export default {
-  title: 'TextInputComponent',
+  title: 'Text Input',
   component: TextInputComponent,
 } as Meta<TextInputComponent>;
 

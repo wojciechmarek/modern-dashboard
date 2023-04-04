@@ -35,7 +35,8 @@
         "port": 4400,
         "configDir": "libs/web/components/atoms/.storybook",
         "browserTarget": "web-components-atoms:build-storybook",
-        "compodoc": false
+        "compodoc": false,
+        "styles": ["libs/web/assets/src/styles/global.scss"]
       },
       "configurations": {
         "ci": {
