@@ -2,10 +2,7 @@ import type { StorybookConfig } from '@storybook/core-common';
 
 const config: StorybookConfig = {
   core: { builder: 'webpack5' },
-  stories: [
-    '../src/app/**/*.stories.mdx',
-    '../src/app/**/*.stories.@(js|jsx|ts|tsx)',
-  ],
+  stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-essentials'],
 };
 

@@ -28,6 +28,47 @@
           "libs/web/components/molecules/**/*.html"
         ]
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/web/components/molecules/.storybook",
+        "browserTarget": "web-components-molecules:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/web-components-molecules",
+        "configDir": "libs/web/components/molecules/.storybook",
+        "browserTarget": "web-components-molecules:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "static-storybook": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "web-components-molecules:build-storybook",
+        "staticFilePath": "dist/storybook/web-components-molecules"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "web-components-molecules:build-storybook:ci"
+        }
+      }
     }
   },
   "tags": []

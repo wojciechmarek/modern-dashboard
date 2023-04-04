@@ -28,6 +28,47 @@
           "libs/web/components/organisms/**/*.html"
         ]
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/web/components/organisms/.storybook",
+        "browserTarget": "web-components-organisms:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/web-components-organisms",
+        "configDir": "libs/web/components/organisms/.storybook",
+        "browserTarget": "web-components-organisms:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "static-storybook": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "web-components-organisms:build-storybook",
+        "staticFilePath": "dist/storybook/web-components-organisms"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "web-components-organisms:build-storybook:ci"
+        }
+      }
     }
   },
   "tags": []
