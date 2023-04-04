@@ -6,7 +6,7 @@
   "prefix": "md",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@angular-devkit/build-angular:browser", 
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/web",
@@ -16,7 +16,7 @@
         "tsConfig": "apps/web/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": ["apps/web/src/favicon.ico", "apps/web/src/assets"],
-        "styles": ["apps/web/src/styles.scss"],
+        "styles": ["libs/web/assets/src/styles/global.scss"],
         "scripts": []
       },
       "configurations": {

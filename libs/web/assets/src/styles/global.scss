@@ -1,5 +1,5 @@
-@import url('./styles/themes/dark.scss');
-@import url('./styles/themes/light.scss');
+@import url('./themes/dark.scss');
+@import url('./themes/light.scss');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -62,5 +62,3 @@ h6 {
 #__next {
   isolation: isolate;
 }
-
-//-----THEMES------
