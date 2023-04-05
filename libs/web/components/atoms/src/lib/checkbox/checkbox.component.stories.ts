@@ -11,7 +11,7 @@ export const Primary = {
     props: args,
   }),
   args: {
-    label: '',
+    label: 'I agree to the terms and conditions to sell my kidney',
     value: false,
     name: '',
   },
