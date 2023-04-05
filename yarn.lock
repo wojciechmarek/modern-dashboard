@@ -3358,6 +3358,20 @@
     dotenv "~10.0.0"
     enquirer "~2.3.6"
 
+"@nrwl/web@15.9.2":
+  version "15.9.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-15.9.2.tgz#1dcd116f9e015230c95a02dbcab39e54e940b8f6"
+  integrity sha512-MzuJExQjLFKntgVP/tXu2m3tNWLUfdZTiJPNA+Kb4fssAPgSkyGmGBNFF8rsb+t6UgYouLj5yeVJXvmf68jJLg==
+  dependencies:
+    "@nrwl/devkit" "15.9.2"
+    "@nrwl/js" "15.9.2"
+    "@nrwl/workspace" "15.9.2"
+    chalk "^4.1.0"
+    chokidar "^3.5.1"
+    http-server "^14.1.0"
+    ignore "^5.0.4"
+    tslib "^2.3.0"
+
 "@nrwl/webpack@15.9.2":
   version "15.9.2"
   resolved "https://registry.yarnpkg.com/@nrwl/webpack/-/webpack-15.9.2.tgz#a616b1e40f79f9f69ec0f661c8246045a8bc950d"
@@ -16534,6 +16548,11 @@ store2@^2.12.0:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.14.2.tgz#56138d200f9fe5f582ad63bc2704dbc0e4a45068"
   integrity sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==
+
+storybook-addon-dark-mode-toggle@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/storybook-addon-dark-mode-toggle/-/storybook-addon-dark-mode-toggle-0.0.6.tgz#058f17089da4590e39c47aaa3e51e8d0446f6d87"
+  integrity sha512-DNAQzfqjl2PLWVArv860uxXWKTPFQAfeAJfWd/kZk0WuJaQ8Z/pIGOg09HYLy3MkmzsA1Fk16cTzYcfMzCZDfw==
 
 stream-browserify@^2.0.1:
   version "2.0.2"

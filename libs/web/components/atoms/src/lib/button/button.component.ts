@@ -12,7 +12,7 @@ export class ButtonComponent {
 
   @Input() color: 'success' | 'info' | 'danger' | 'warning' | 'flat' = 'flat';
 
-  @Input() disabled = false;
+  @Input() isDisabled = false;
 
   @Input() isTextLeftAligned = false;
 

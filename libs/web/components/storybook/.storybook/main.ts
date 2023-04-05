@@ -19,7 +19,7 @@ const config: StorybookConfig = {
       files: "**/*.stories.@(js|jsx|ts|tsx)"
     },
   ],
-  addons: ['@storybook/addon-essentials'],
+  addons: ['@storybook/addon-essentials', 'storybook-addon-dark-mode-toggle'],
 };
 
 module.exports = config;

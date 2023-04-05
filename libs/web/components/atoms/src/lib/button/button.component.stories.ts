@@ -4,6 +4,12 @@ import { ButtonComponent } from './button.component';
 export default {
   title: 'Button',
   component: ButtonComponent,
+  argTypes: {
+    color: {
+      control: 'select',
+      options: ['success', 'info', 'danger', 'warning', 'flat'],
+    },
+  },
 } as Meta<ButtonComponent>;
 
 export const Primary = {
@@ -13,8 +19,7 @@ export const Primary = {
   args: {
     label: 'Press me',
     type: 'button',
-    color: 'flat',
-    disabled: false,
+    isDisabled: false,
     isTextLeftAligned: false,
   },
 };
@@ -27,7 +32,7 @@ export const Info = {
     label: 'Press me',
     type: 'button',
     color: 'info',
-    disabled: false,
+    isDisabled: false,
     isTextLeftAligned: false,
   },
 };
@@ -40,7 +45,7 @@ export const Warning = {
     label: 'Press me',
     type: 'button',
     color: 'warning',
-    disabled: false,
+    isDisabled: false,
     isTextLeftAligned: false,
   },
 };
@@ -53,7 +58,7 @@ export const Danger = {
     label: 'Press me',
     type: 'button',
     color: 'danger',
-    disabled: false,
+    isDisabled: false,
     isTextLeftAligned: false,
   },
 };
@@ -66,12 +71,12 @@ export const Success = {
     label: 'Press me',
     type: 'button',
     color: 'success',
-    disabled: false,
+    isDisabled: false,
     isTextLeftAligned: false,
   },
 };
 
-export const Disabled = {
+export const isDisabled = {
   render: (args: ButtonComponent) => ({
     props: args,
   }),
@@ -79,7 +84,7 @@ export const Disabled = {
     label: 'Press me',
     type: 'button',
     color: 'flat',
-    disabled: true,
+    isDisabled: true,
     isTextLeftAligned: false,
   },
 };
@@ -92,10 +97,7 @@ export const TextLeftAligned = {
     label: 'Press me',
     type: 'button',
     color: 'info',
-    disabled: false,
+    isDisabled: false,
     isTextLeftAligned: true,
   },
 };
-
-
-
