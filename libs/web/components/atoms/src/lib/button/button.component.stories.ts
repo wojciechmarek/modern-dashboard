@@ -9,6 +9,7 @@ export default {
       control: 'select',
       options: ['success', 'info', 'danger', 'warning', 'flat'],
     },
+    handleClick: { action: 'clicked' },
   },
 } as Meta<ButtonComponent>;
 
@@ -29,11 +30,8 @@ export const Info = {
     props: args,
   }),
   args: {
-    label: 'Press me',
-    type: 'button',
+    ...Primary.args,
     color: 'info',
-    isDisabled: false,
-    isTextLeftAligned: false,
   },
 };
 
@@ -42,11 +40,8 @@ export const Warning = {
     props: args,
   }),
   args: {
-    label: 'Press me',
-    type: 'button',
+    ...Primary.args,
     color: 'warning',
-    isDisabled: false,
-    isTextLeftAligned: false,
   },
 };
 
@@ -55,11 +50,8 @@ export const Danger = {
     props: args,
   }),
   args: {
-    label: 'Press me',
-    type: 'button',
+    ...Primary.args,
     color: 'danger',
-    isDisabled: false,
-    isTextLeftAligned: false,
   },
 };
 
@@ -68,11 +60,8 @@ export const Success = {
     props: args,
   }),
   args: {
-    label: 'Press me',
-    type: 'button',
+    ...Primary.args,
     color: 'success',
-    isDisabled: false,
-    isTextLeftAligned: false,
   },
 };
 
@@ -81,11 +70,8 @@ export const isDisabled = {
     props: args,
   }),
   args: {
-    label: 'Press me',
-    type: 'button',
-    color: 'flat',
+    ...Primary.args,
     isDisabled: true,
-    isTextLeftAligned: false,
   },
 };
 
@@ -94,10 +80,7 @@ export const TextLeftAligned = {
     props: args,
   }),
   args: {
-    label: 'Press me',
-    type: 'button',
-    color: 'info',
-    isDisabled: false,
+    ...Primary.args,
     isTextLeftAligned: true,
   },
 };
