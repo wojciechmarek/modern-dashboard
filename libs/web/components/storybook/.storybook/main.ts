@@ -4,22 +4,27 @@ const config: StorybookConfig = {
   core: { builder: 'webpack5' },
   stories: [
     {
-      titlePrefix : "Atoms",
-      directory: "../../atoms/",
-      files: "**/*.stories.@(js|jsx|ts|tsx)"
+      titlePrefix: 'Atoms',
+      directory: '../../atoms/',
+      files: '**/*.stories.@(js|jsx|ts|tsx)',
     },
     {
-      titlePrefix : "Molecules",
-      directory: "../../molecules/",
-      files: "**/*.stories.@(js|jsx|ts|tsx)"
+      titlePrefix: 'Molecules',
+      directory: '../../molecules/',
+      files: '**/*.stories.@(js|jsx|ts|tsx)',
     },
     {
-      titlePrefix : "Organisms",
-      directory: "../../organisms/",
-      files: "**/*.stories.@(js|jsx|ts|tsx)"
+      titlePrefix: 'Organisms',
+      directory: '../../organisms/',
+      files: '**/*.stories.@(js|jsx|ts|tsx)',
     },
   ],
-  addons: ['@storybook/addon-essentials', 'storybook-addon-dark-mode-toggle'],
+  addons: [
+    '@storybook/addon-essentials',
+    'storybook-addon-dark-mode-toggle',
+    'storybook-dark-mode',
+    '@storybook/addon-a11y',
+  ],
 };
 
 module.exports = config;
