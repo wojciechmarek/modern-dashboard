@@ -11,6 +11,6 @@ export const Primary = {
     props: args,
   }),
   args: {
-    text: '',
+    text: 'Hello world',
   },
 };

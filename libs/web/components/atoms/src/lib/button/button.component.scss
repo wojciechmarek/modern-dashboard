@@ -11,7 +11,7 @@
   color: var(--text-color);
   border: none;
   font-weight: 600;
-  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, filter 0.2s ease-in-out;
   
   &.left-text-align {
     justify-content: flex-start;
@@ -27,6 +27,7 @@
 
   &.warning-color {
     background-color: var(--warning-color);
+    color: var(--text-color-contrast);
   }
 
   &.info-color {
@@ -38,16 +39,23 @@
 
     &:hover {
       background-color: var(--flat-hover-color);
-      opacity: 1;
+    }
+
+    &:disabled {
+      background-color: var(--flat-hover-color);
     }
   }
 
   &:hover {
-    opacity: 0.8;
+    filter: brightness(1.15);
+  }
+
+  &:active {
+    filter: brightness(0.9);
   }
 
   &:disabled {
-    opacity: 0.6;
+    filter: brightness(0.6);
     cursor: initial;
   }
 

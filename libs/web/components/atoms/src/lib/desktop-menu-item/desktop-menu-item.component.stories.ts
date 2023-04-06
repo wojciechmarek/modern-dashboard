@@ -11,7 +11,7 @@ export const Primary = {
     props: args,
   }),
   args: {
-    path: '',
-    title: '',
+    path: '/home',
+    title: 'Home',
   },
 };
