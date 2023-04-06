@@ -25,6 +25,7 @@
       "@md/common/models": ["libs/common/models/src/index.ts"],
       "@md/web/assets": ["libs/web/assets/src/index.ts"],
       "@md/web/common": ["libs/web/common/src/index.ts"],
+      "@md/web/common/routing": ["libs/web/common/routing/src/index.ts"],
       "@md/web/components/atoms": ["libs/web/components/atoms/src/index.ts"],
       "@md/web/components/molecules": [
         "libs/web/components/molecules/src/index.ts"
