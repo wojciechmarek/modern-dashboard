@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { Route, RouterModule } from '@angular/router'
-import { RootLevelPath } from '@md/web/utilities/constants'
+import { RootLevelPath } from '@md/web/common'
 
 export const rootLevelRoutes: Route[] = [
   {

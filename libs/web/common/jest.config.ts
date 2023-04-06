@@ -1,10 +1,10 @@
 /* eslint-disable */
 export default {
-  displayName: 'web-utilities-constants',
-  preset: '../../../../jest.preset.js',
+  displayName: 'web-common',
+  preset: '../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../../coverage/libs/web/utilities/constants',
-}
+  coverageDirectory: '../../../coverage/libs/web/common',
+};

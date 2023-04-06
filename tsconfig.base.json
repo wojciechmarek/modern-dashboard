@@ -24,6 +24,7 @@
       "@md/api/utilities": ["libs/api/utilities/src/index.ts"],
       "@md/common/models": ["libs/common/models/src/index.ts"],
       "@md/web/assets": ["libs/web/assets/src/index.ts"],
+      "@md/web/common": ["libs/web/common/src/index.ts"],
       "@md/web/components/atoms": ["libs/web/components/atoms/src/index.ts"],
       "@md/web/components/molecules": [
         "libs/web/components/molecules/src/index.ts"
@@ -33,9 +34,6 @@
       ],
       "@md/web/components/storybook": [
         "libs/web/components/storybook/src/index.ts"
-      ],
-      "@md/web/utilities/constants": [
-        "libs/web/utilities/constants/src/index.ts"
       ],
       "@md/web/views/auth": ["libs/web/views/auth/src/index.ts"],
       "@md/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
