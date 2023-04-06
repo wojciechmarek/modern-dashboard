@@ -1,5 +1,6 @@
-import { DOCUMENT } from '@angular/common'
-import { Component, Inject } from '@angular/core'
+import { Component } from '@angular/core'
+import { changeToDarkThemeAction, changeToLightThemeAction } from '@md/web/common/store';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'md-navbar',
@@ -7,15 +8,16 @@ import { Component, Inject } from '@angular/core'
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(private readonly store: Store) {}
 
-  isDark = false
+  isDark = false;
 
   handleThemeToggle() {
     if (this.isDark) {
-      this.document.body.setAttribute('data-theme', 'light')
-    } else {
-      this.document.body.setAttribute('data-theme', 'dark')
+      this.store.dispatch(changeToDarkThemeAction());
+    }
+    else {
+      this.store.dispatch(changeToLightThemeAction());
     }
 
     this.isDark = !this.isDark

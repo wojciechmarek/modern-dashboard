@@ -10,11 +10,13 @@ import { HttpLink } from 'apollo-angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { InMemoryCache } from '@apollo/client/core';
 import { WebCommonRoutingModule } from '@md/web/common/routing';
+import { WebCommonStoreModule } from '@md/web/common/store';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     RouterModule,
+    WebCommonStoreModule,
     WebCommonRoutingModule,
     WebViewsLayoutModule,
     BrowserModule,

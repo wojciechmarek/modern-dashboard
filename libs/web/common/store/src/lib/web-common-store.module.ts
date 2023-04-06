@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { StoreModule } from '@ngrx/store';
+
+import { themeReducer } from './reducers';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [
+    StoreModule.forRoot({ theme: themeReducer }),
+  ],
 })
 export class WebCommonStoreModule {}
