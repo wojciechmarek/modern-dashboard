@@ -40,9 +40,11 @@ export class TextInputComponent implements ControlValueAccessor, OnInit, OnChang
     }
   }
 
-  onInputChange = (value: Event) => {
+  onKeyUp = (value: Event) => {
     this._value = (value.target as HTMLInputElement).value;
     this.onChange(this._value);
+    console.log("dupa",this._value);
+    
     this.markAsTouched();
   }
 
