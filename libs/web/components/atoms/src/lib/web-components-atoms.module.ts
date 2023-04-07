@@ -9,26 +9,24 @@ import { HeaderComponent } from './header/header.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { TextInputComponent } from './text-input/text-input.component'
 import { CheckboxComponent } from './checkbox/checkbox.component'
+import { LinkComponent } from './link/link.component'
+import { HorizontalLineComponent } from './horizontal-line/horizontal-line.component'
+
+const Components = [
+  ButtonComponent,
+  IconComponent,
+  DesktopMenuItemComponent,
+  HeaderComponent,
+  TextInputComponent,
+  TextComponent,
+  CheckboxComponent,
+  LinkComponent,
+  HorizontalLineComponent
+];
 
 @NgModule({
   imports: [CommonModule, RouterModule, ReactiveFormsModule],
-  declarations: [
-    ButtonComponent,
-    IconComponent,
-    DesktopMenuItemComponent,
-    HeaderComponent,
-    TextInputComponent,
-    TextComponent,
-    CheckboxComponent
-  ],
-  exports: [
-    ButtonComponent,
-    IconComponent,
-    DesktopMenuItemComponent,
-    HeaderComponent,
-    TextInputComponent,
-    TextComponent,
-    CheckboxComponent
-  ],
+  declarations: [...Components],
+  exports: [...Components],
 })
 export class WebComponentsAtomsModule {}

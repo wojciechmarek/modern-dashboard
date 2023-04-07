@@ -3,11 +3,15 @@
   flex-direction: column;
   width: 100%;
   margin: 2em 0;
-  gap: 1em;
+  gap: 0.5em;
 
   @media screen and (max-width: 768px) {
     margin: 1.5em 0;
   }
+}
+
+.form__forgot-password {
+  margin-left: 0.25em;
 }
 
 .form__checkbox {
