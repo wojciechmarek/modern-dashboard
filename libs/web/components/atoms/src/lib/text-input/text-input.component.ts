@@ -43,12 +43,10 @@ export class TextInputComponent implements ControlValueAccessor, OnInit, OnChang
   onKeyUp = (value: Event) => {
     this._value = (value.target as HTMLInputElement).value;
     this.onChange(this._value);
-    console.log("dupa",this._value);
-    
     this.markAsTouched();
   }
 
-  onChange = (value: any) => { return; }
+  onChange = (value: string) => { return; }
   onTouched = () => { return; }
 
   markAsTouched() {
@@ -75,7 +73,10 @@ export class TextInputComponent implements ControlValueAccessor, OnInit, OnChang
   }
 
   validate(control: AbstractControl): ValidationErrors | null {
+    if (this._isTouched) {
       return control.errors;
+    }
+    return null;
   }
 
 }

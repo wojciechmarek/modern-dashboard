@@ -1,0 +1,21 @@
+.register__container {
+  background-color: var(--bg-color-alternative);
+  display: flex;
+  flex-direction: column;
+  width: 35em;
+  padding: 2em 1.5em 0;
+  border-radius: 1em;
+
+  @media screen and (max-width: 768px) {
+    padding: 1em 1.5em 0;
+    width: 25em;
+  }
+}
+
+.register__header-text {
+  
+}
+
+.register__form {
+  
+}

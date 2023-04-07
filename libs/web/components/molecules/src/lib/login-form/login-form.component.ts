@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core'
+import { Component, EventEmitter, Output, inject } from '@angular/core'
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { LoginDto } from '@md/common/models'
 
@@ -10,7 +10,7 @@ import { LoginDto } from '@md/common/models'
 export class LoginFormComponent {
   @Output() handleLoginSubmit = new EventEmitter<LoginDto>()
 
-  constructor(private readonly fb: FormBuilder) {}
+  fb = inject(FormBuilder);
 
   form = new FormGroup({
     email: new FormControl(null, [Validators.email]),

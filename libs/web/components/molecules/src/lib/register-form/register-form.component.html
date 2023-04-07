@@ -1,0 +1,50 @@
+<form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <md-text-input
+    label="Email:"
+    placeholder="Email"
+    formControlName="email"
+    [errorMessage]="
+      form.get('email')?.hasError('required')
+        ? 'Email is required'
+        : form.get('email')?.hasError('email')
+        ? 'Email is not valid'
+        : ''
+    "
+  />
+  <md-text-input
+    type="password"
+    label="Password:"
+    placeholder="Password"
+    formControlName="password"
+    [errorMessage]="
+      form.get('password')?.hasError('required')
+        ? 'Password is required'
+        : form.get('password')?.hasError('minlength')
+        ? 'Password must be at least 8 characters'
+        : ''
+    "
+  />
+
+  <md-text-input
+    type="password"
+    label="Confirm password:"
+    placeholder="Confirm password"
+    formControlName="confirmPassword"
+    [errorMessage]="
+      form.hasError('passwordsNotTheSame') ? 'Passwords are not the same' : ''
+    "
+  />
+
+  <md-checkbox
+    class="form__checkbox"
+    label="I agree to the terms and conditions"
+    formControlName="isTermsChecked"
+  />
+  <md-button
+    type="submit"
+    color="success"
+    label="REGISTER"
+    [isDisabled]="!form.valid"
+  />
+  <md-button label="Have an account? Click here to login" />
+</form>

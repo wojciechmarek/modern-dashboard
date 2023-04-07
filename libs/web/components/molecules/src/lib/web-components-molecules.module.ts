@@ -6,6 +6,7 @@ import { DesktopMenuLinksComponent } from './desktop-menu-links/desktop-menu-lin
 import { DesktopMenuButtonsComponent } from './desktop-menu-buttons/desktop-menu-buttons.component'
 import { HeaderTextComponent } from './header-text/header-text.component'
 import { LoginFormComponent } from './login-form/login-form.component'
+import { RegisterFormComponent } from './register-form/register-form.component'
 import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     DesktopMenuButtonsComponent,
     HeaderTextComponent,
     LoginFormComponent,
+    RegisterFormComponent
   ],
   exports: [
     BrandLogoComponent,
@@ -23,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     DesktopMenuButtonsComponent,
     HeaderTextComponent,
     LoginFormComponent,
+    RegisterFormComponent
   ],
 })
 export class WebComponentsMoleculesModule {}

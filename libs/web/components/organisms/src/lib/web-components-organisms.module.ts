@@ -6,6 +6,7 @@ import { WebComponentsMoleculesModule } from '@md/web/components/molecules'
 import { RouterModule } from '@angular/router'
 import { LoginComponent } from './login/login.component'
 import { ReactiveFormsModule } from '@angular/forms'
+import { RegisterComponent } from './register/register.component'
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     RouterModule,
     ReactiveFormsModule
   ],
-  declarations: [NavbarComponent, LoginComponent],
-  exports: [NavbarComponent, LoginComponent],
+  declarations: [NavbarComponent, LoginComponent, RegisterComponent],
+  exports: [NavbarComponent, LoginComponent, RegisterComponent],
 })
 export class WebComponentsOrganismsModule {}
