@@ -1,35 +1,23 @@
 import { Args, Mutation, Resolver } from '@nestjs/graphql';
 import { LoginInput, LoginOutput } from '../../models';
-import { Observable, of } from 'rxjs';
+import { QueryBus } from '@nestjs/cqrs';
+import {LoginUserQuery} from '@md/api/cqrs'
 
 @Resolver()
 export class AuthResolver {
+  constructor(private queryBus: QueryBus) {}
+
   @Mutation(() => LoginOutput)
-  login(@Args('data') data: LoginInput ): Observable<LoginOutput> {
-    console.log('Logging in....:', data);
+  async login(@Args('data') data: LoginInput): Promise<LoginOutput> {
 
-    const response = new LoginOutput();
-    response.accessToken = 'access' + Math.random() * 1234;
-    response.refreshToken = 'refresh' + Math.random() * 1234;
+    const result =  await this.queryBus.execute(new LoginUserQuery(data.email, data.password));
 
+    console.log('result:', result);
 
-    return of(response);
+    const returnData = new LoginOutput();
+    returnData.accessToken = result;
+    returnData.refreshToken = result;
+
+    return returnData;
   }
-
-  // @Query(() => LoginOutput)
-  // register(@Args('data') data: LoginInput): LoginOutput {
-  //   const response = new LoginOutput();
-
-  //   console.log('Registering....', data);
-
-  //   response.accessToken = 'access' + data.email;
-  //   response.refreshToken = 'refresh' + data.password;
-
-  //   return response;
-  // }
-
-  // @Query()
-  // logout(@Args('data') data: LoginInput) {
-  //   console.log('Logging out....', data);
-  // }
 }
