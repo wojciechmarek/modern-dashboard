@@ -13,5 +13,5 @@
     "jest.config.ts",
     "src/**/*.test.ts"
   ],
-  "include": ["src/**/*.ts", "src/lib/reducers/theme.reducer.tss"]
+  "include": ["src/**/*.ts", "src/lib/auth/theme.reducer.tss"]
 }

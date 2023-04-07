@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { changeToDarkThemeAction, changeToLightThemeAction } from '@md/web/common/store';
+import { ThemeActions } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 
 @Component({
@@ -14,10 +14,10 @@ export class NavbarComponent {
 
   handleThemeToggle() {
     if (this.isDark) {
-      this.store.dispatch(changeToDarkThemeAction());
+      this.store.dispatch(ThemeActions.changeToDark());
     }
     else {
-      this.store.dispatch(changeToLightThemeAction());
+      this.store.dispatch(ThemeActions.changeToLight());
     }
 
     this.isDark = !this.isDark
