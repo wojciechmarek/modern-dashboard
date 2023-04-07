@@ -1,3 +1,7 @@
 .header {
-  color: var(--text-color);
+  font-weight: 900;
+  background: var(--header-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
