@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { LoginDto } from '@md/common/models';
 import { Apollo, gql } from 'apollo-angular';
 
@@ -8,7 +8,7 @@ import { Apollo, gql } from 'apollo-angular';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  constructor(private apollo: Apollo) { }
+  apollo = inject(Apollo);
 
   handleLoginSubmit(data: LoginDto) {
     this.apollo
