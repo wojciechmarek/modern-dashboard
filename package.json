@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nx run-many --target=serve --projects=api,web",
+    "dev": "env-cmd -f ./.development.env nx run-many --target=serve --projects=api,web",
     "storybook": "nx run web-components-storybook:storybook"
   },
   "private": true,
@@ -25,13 +25,16 @@
     "@nestjs/graphql": "^11.0.4",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^6.1.4",
+    "@nestjs/typeorm": "^9.0.1",
     "@ngrx/store": "^15.4.0",
     "apollo-angular": "^4.2.1",
     "axios": "^1.0.0",
     "graphql": "^16.6.0",
+    "mongodb": "^5.2.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
     "tslib": "^2.3.0",
+    "typeorm": "^0.3.13",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
@@ -77,6 +80,7 @@
     "autoprefixer": "^10.4.13",
     "c8": "^7.12.0",
     "cypress": "^12.2.0",
+    "env-cmd": "^10.1.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",

@@ -1,5 +1,6 @@
 import { ApiControllersModule } from '@md/api/controllers';
 import { ApiCqrsModule } from '@md/api/cqrs';
+import { ApiPersistenceModule } from '@md/api/persistence';
 import { ApiResolversModule } from '@md/api/resolvers';
 import { Module } from '@nestjs/common';
 
@@ -7,6 +8,7 @@ import { Module } from '@nestjs/common';
   imports: [
     ApiCqrsModule,
     ApiControllersModule,
+    ApiPersistenceModule,
     ApiResolversModule,
   ],
   controllers: [],

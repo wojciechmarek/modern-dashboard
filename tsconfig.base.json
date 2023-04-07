@@ -19,7 +19,6 @@
       "@md/api/controllers": ["libs/api/controllers/src/index.ts"],
       "@md/api/cqrs": ["libs/api/cqrs/src/index.ts"],
       "@md/api/domain": ["libs/api/domain/src/index.ts"],
-      "@md/api/interfaces": ["libs/api/interfaces/src/index.ts"],
       "@md/api/persistence": ["libs/api/persistence/src/index.ts"],
       "@md/api/resolvers": ["libs/api/resolvers/src/index.ts"],
       "@md/api/utilities": ["libs/api/utilities/src/index.ts"],
