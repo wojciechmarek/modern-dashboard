@@ -28,6 +28,15 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 - ☁️ **Database:** MongoDB with Change Streams, typeORM
 - 💎 **Others:** desktop first approach, progressive web app, atomic design
 
+## Storybook
+
+To see the components in action, run the Storybook.
+
+To start the Storybook:
+
+1. Type and run: `yarn storybook`.
+2. Open `http://localhost:4004` in your browser to see the storybook.
+
 ## How to run
 
 There are two ways to start a project:
