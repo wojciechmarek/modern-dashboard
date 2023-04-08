@@ -1,5 +1,4 @@
-import { Component } from '@angular/core'
-import { RegisterDto } from '@md/common/models'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'md-reset-password-view',
@@ -8,6 +7,6 @@ import { RegisterDto } from '@md/common/models'
 })
 export class ResetPasswordComponent {
   handleRegisterSubmit() {
-    console.log('handleRegisterSubmit')
+    console.log('handleRegisterSubmit');
   }
 }

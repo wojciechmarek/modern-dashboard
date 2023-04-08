@@ -8,7 +8,7 @@ import { RegisterDto } from '@md/common/models'
   styleUrls: ['./reset-password-form.component.scss'],
 })
 export class ResetPasswordFormComponent {
-  @Output() handleRegisterSubmit = new EventEmitter<RegisterDto>()
+  @Output() handleResetPasswordSubmit = new EventEmitter<RegisterDto>()
 
   fb = inject(FormBuilder);
 
@@ -17,7 +17,7 @@ export class ResetPasswordFormComponent {
   })
 
   onSubmit() {
-    this.handleRegisterSubmit.emit({
+    this.handleResetPasswordSubmit.emit({
       email: this.form.value.email || '',
       password: ""
     })
