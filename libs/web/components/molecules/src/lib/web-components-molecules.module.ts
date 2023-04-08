@@ -8,6 +8,7 @@ import { HeaderTextComponent } from './header-text/header-text.component'
 import { LoginFormComponent } from './login-form/login-form.component'
 import { RegisterFormComponent } from './register-form/register-form.component'
 import { ReactiveFormsModule } from '@angular/forms'
+import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component'
 
 @NgModule({
   imports: [CommonModule, WebComponentsAtomsModule, ReactiveFormsModule],
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms'
     DesktopMenuButtonsComponent,
     HeaderTextComponent,
     LoginFormComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    ResetPasswordFormComponent
   ],
   exports: [
     BrandLogoComponent,
@@ -25,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms'
     DesktopMenuButtonsComponent,
     HeaderTextComponent,
     LoginFormComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    ResetPasswordFormComponent
   ],
 })
 export class WebComponentsMoleculesModule {}

@@ -4,10 +4,14 @@ import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
 import { RouterModule } from '@angular/router'
 import { WebComponentsOrganismsModule } from '@md/web/components/organisms'
+import { ResetPasswordComponent } from './reset-password/reset-password.component'
 
 const routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  {
+    path: 'reset-password', component: ResetPasswordComponent
+  }
 ]
 
 @NgModule({
@@ -16,6 +20,6 @@ const routes = [
     WebComponentsOrganismsModule,
     RouterModule.forChild(routes),
   ],
-  declarations: [LoginComponent, RegisterComponent],
+  declarations: [LoginComponent, RegisterComponent, ResetPasswordComponent],
 })
 export class WebViewsAuthModule {}

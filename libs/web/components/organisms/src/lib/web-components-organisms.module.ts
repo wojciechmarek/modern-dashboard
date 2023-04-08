@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router'
 import { LoginComponent } from './login/login.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { RegisterComponent } from './register/register.component'
+import { ResetPasswordComponent } from './reset-password/reset-password.component'
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { RegisterComponent } from './register/register.component'
     RouterModule,
     ReactiveFormsModule
   ],
-  declarations: [NavbarComponent, LoginComponent, RegisterComponent],
-  exports: [NavbarComponent, LoginComponent, RegisterComponent],
+  declarations: [NavbarComponent, LoginComponent, RegisterComponent, ResetPasswordComponent],
+  exports: [NavbarComponent, LoginComponent, RegisterComponent, ResetPasswordComponent],
 })
 export class WebComponentsOrganismsModule {}
