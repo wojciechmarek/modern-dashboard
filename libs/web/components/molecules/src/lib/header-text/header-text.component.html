@@ -1,4 +1,4 @@
 <div class="header-text">
   <md-header [text]="header"></md-header>
-  <md-text [text]="subHeaderText" />
+  <md-text class="sub-header" *ngIf="subHeaderText" [text]="subHeaderText" />
 </div>
