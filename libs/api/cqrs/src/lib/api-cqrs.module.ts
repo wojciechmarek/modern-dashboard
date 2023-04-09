@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
 import { LoginUserQueryHandler } from './queries/login-user.handler';
+import { ApiPersistenceModule } from '@md/api/persistence';
 
 export const QueryHandlers = [
   LoginUserQueryHandler
@@ -10,6 +11,6 @@ export const QueryHandlers = [
   controllers: [],
   providers: [...QueryHandlers],
   exports: [],
-  imports: [CqrsModule],
+  imports: [CqrsModule, ApiPersistenceModule],
 })
 export class ApiCqrsModule {}

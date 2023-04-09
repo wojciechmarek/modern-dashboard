@@ -1,17 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserRepositoryModule } from './repositories';
-import { UserRepoProvider } from './repositories/user/user.provider';
-import { UserRepository } from './repositories/user/user.repository';
-import { UserEntity } from './entities';
-
-const DatabaseEntities = [
-  UserEntity
-];
 
 @Module({
   controllers: [],
-  providers: [UserRepoProvider, UserRepository],
+  providers: [],
   imports: [
     UserRepositoryModule,
     TypeOrmModule.forRoot({
@@ -22,11 +15,11 @@ const DatabaseEntities = [
       replicaSet: process.env.DATABASE_REPLICA_SET,
       useUnifiedTopology: true,
       database: process.env.DATABASE_NAME,
-      //entities: [...DatabaseEntities],
+      entities: [],
       synchronize: true,
     }),
 
   ],
-  exports: [],
+  exports: [UserRepositoryModule],
 })
 export class ApiPersistenceModule {}
