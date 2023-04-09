@@ -27,6 +27,7 @@
     "@nestjs/swagger": "^6.1.4",
     "@nestjs/typeorm": "^9.0.1",
     "@ngrx/store": "^15.4.0",
+    "@ngrx/store-devtools": "^15.4.0",
     "apollo-angular": "^4.2.1",
     "axios": "^1.0.0",
     "graphql": "^16.6.0",
