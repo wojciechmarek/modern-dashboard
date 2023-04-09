@@ -3,18 +3,18 @@ import {
   LoginActions
 } from './auth.actions';
 
-interface AuthState {
-  isLoading: boolean;
+export interface AuthState {
   isLoggedIn: boolean;
   authToken: string;
   refreshToken: string;
+  permissions: string[];
 }
 
 export const initialAuthState: AuthState = {
-  isLoading: false,
   isLoggedIn: false,
   authToken: '',
   refreshToken: '',
+  permissions: [],
 };
 
 export const authReducer = createReducer(

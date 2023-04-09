@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { ThemeActions } from '@md/web/common/store';
+import { RootState, ThemeActions } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 
 @Component({
@@ -8,7 +8,7 @@ import { Store } from '@ngrx/store';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(private readonly store: Store) {}
+  constructor(private readonly store: Store<RootState>) {}
 
   isDark = false;
 

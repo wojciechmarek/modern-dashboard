@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common'
 import { Component, Inject, OnDestroy, OnInit, inject } from '@angular/core'
+import { RootState } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
 
@@ -9,7 +10,7 @@ import { Observable, Subscription } from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  store = inject(Store<{ theme: string }>);
+  store = inject(Store<RootState>);
   document = inject(DOCUMENT);
 
   title = 'web';
@@ -18,12 +19,11 @@ export class AppComponent implements OnInit, OnDestroy {
   subscription: Subscription = new Subscription();
 
   ngOnInit() {
-    this.theme$ = this.store.select((store) => store.theme);
+    this.theme$ = this.store.select((store) => store.theme.value);
 
     this.subscription.add(
-      this.theme$.subscribe((themeObject) => {
-        const isDark = JSON.stringify(themeObject).includes('dark');
-        if (isDark) {
+      this.theme$.subscribe((theme) => {
+        if (theme === 'light') {
           this.document.body.setAttribute('data-theme', 'dark');
         } else {
           this.document.body.setAttribute('data-theme', 'light');

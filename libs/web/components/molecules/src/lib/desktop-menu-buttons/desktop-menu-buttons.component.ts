@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Output } from '@angular/core'
-import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'md-desktop-menu-buttons',
@@ -8,9 +7,6 @@ import { Store } from '@ngrx/store';
 })
 export class DesktopMenuButtonsComponent {
   @Output() handleThemeToggle = new EventEmitter();
-
-  constructor(private readonly store: Store) {    
-  }
 
   themeToggle() {
     this.handleThemeToggle.emit();
