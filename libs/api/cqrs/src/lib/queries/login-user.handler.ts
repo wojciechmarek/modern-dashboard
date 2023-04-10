@@ -1,12 +1,12 @@
 import { IQueryHandler, QueryHandler } from "@nestjs/cqrs";
 import { LoginUserQuery } from "./login-user.query";
-import { IUserRepository } from "@md/api/persistence";
+import { UserRepository } from "@md/api/persistence";
 import { Inject } from "@nestjs/common";
 
 @QueryHandler(LoginUserQuery)
 export class LoginUserQueryHandler implements IQueryHandler<LoginUserQuery> {
 
-  constructor(@Inject('UserRepo') private readonly userRepository: IUserRepository) {}
+  constructor(private readonly userRepository: UserRepository) {}
   
   execute(command: LoginUserQuery): Promise<string> {
     console.log('CreateUserCommand...:', command);
@@ -16,6 +16,5 @@ export class LoginUserQueryHandler implements IQueryHandler<LoginUserQuery> {
     this.userRepository.create(result);
 
     return Promise.resolve(result);
-    
   }
 }
