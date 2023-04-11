@@ -1,22 +1,10 @@
-import { Field, InputType, ObjectType } from '@nestjs/graphql'
-
-@InputType()
-export class UesrInput {
-  @Field(() => String)
-  public username: string
-
-  @Field(() => String)
-  public password: string
-
-  @Field(() => Boolean)
-  public isRememberMeChecked: boolean
-}
+import { Field, ObjectType } from '@nestjs/graphql'
 
 @ObjectType()
-export class UserOutput {
+export class UserInfoOutput {
   @Field(() => String)
-  public accessToken: string
+  public id: string;
 
   @Field(() => String)
-  public refreshToken: string
+  public email: string;
 }

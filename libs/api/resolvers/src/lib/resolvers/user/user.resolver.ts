@@ -1,14 +1,13 @@
 import { Query, Resolver } from '@nestjs/graphql'
+import { UserInfoOutput } from '../../models'
 
 @Resolver()
 export class UserResolver {
-  @Query((returns) => String)
-  getUser(): any {
-    return 'Hello World!'
-  }
-
-  @Query((returns) => String)
-  users(): any {
-    return 'Hello World!'
+  @Query(() => UserInfoOutput)
+  getUserInfo(): Promise<UserInfoOutput> {
+    return Promise.resolve({
+      id: '123',
+      email: 'asdasd',
+    })
   }
 }

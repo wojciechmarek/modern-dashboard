@@ -1,6 +1,7 @@
+import { LoginDto } from "@md/common/models";
+
 export class LoginUserQuery {
   constructor(
-    public readonly email: string,
-    public readonly password: string
+    public data: LoginDto
   ) { }
 }
