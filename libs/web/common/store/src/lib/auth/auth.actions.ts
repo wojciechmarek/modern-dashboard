@@ -1,32 +1,39 @@
+import { TokenDto } from '@md/common/models';
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
 
-export const LoginActions = createActionGroup({
+export const LoginAction = createActionGroup({
   source: 'Login',
   events: {
-    'Action': props<{ email: string; password: string, isRememberMeChecked: boolean }>(),
-    'Success': props<{ authToken: string, refreshToken: string }>(),
+    'Load': props<{ email: string; password: string, isRememberMeChecked: boolean }>(),
+    'Success': props<TokenDto>(),
     'Failure': props<{ error: string }>(),
   },
 })
 
-export const LogoutActions = createActionGroup({
+export const LogoutAction = createActionGroup({
   source: 'Logout',
   events: {
-    'Action': emptyProps(),
+    'Load': emptyProps(),
     'Success': emptyProps(),
     'Failure': props<{ error: string }>(),
   },
 })
 
-export const RegisterActions = createActionGroup({
+export const RegisterAction = createActionGroup({
   source: 'Register',
   events: {
-    'Check If Email Is Available': props<{ email: string }>(),
-    'Check If Email Is Available Success': props<{ isAvailable: boolean }>(),
-    'Check If Email Is Available Failure': props<{ error: string }>(),
-    'Action': props<{ email: string; password: string }>(),
+    'Load': props<{ email: string; password: string }>(),
     'Success': props<{ authToken: string, refreshToken: string }>(),
     'Failure': props<{ error: string }>(),
   },
+})
+
+export const EmailAvailableCheckAction = createActionGroup({
+  source: 'Email Available Check',
+  events: {
+    'Load': props<{ email: string }>(),
+    'Success': props<{ isAvailable: boolean }>(),
+    'Failure': props<{ error: string }>(),
+  }
 })
 

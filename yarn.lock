@@ -3020,6 +3020,13 @@
   dependencies:
     uuid "8.3.2"
 
+"@ngrx/effects@^15.4.0":
+  version "15.4.0"
+  resolved "https://volotea-553367461529.d.codeartifact.eu-west-1.amazonaws.com/npm/npm/@ngrx/effects/-/effects-15.4.0.tgz#31e80aa2ef13953772607b9c6dcb12efce2e1da5"
+  integrity sha512-/8gHhOM9aeGaw8OG2LLwi4I4p84xzG0EU9TqWrvQcW74wn8sFZONjLvUte5YOzJ5502PPFFrfXSOc+lHnVAJUA==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngrx/schematics@^15.4.0":
   version "15.4.0"
   resolved "https://volotea-553367461529.d.codeartifact.eu-west-1.amazonaws.com:443/npm/npm/@ngrx/schematics/-/schematics-15.4.0.tgz#e494e6fea15ad08afe92972ec338a2c5d2f632dd"

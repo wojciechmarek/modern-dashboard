@@ -8,25 +8,5 @@ import { Apollo, gql } from 'apollo-angular';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  apollo = inject(Apollo);
-
-  handleLoginSubmit(data: LoginDto) {
-    this.apollo
-      .mutate({
-        mutation: gql`
-          mutation Login($data: LoginInput!) {
-            login(data: $data) {
-              accessToken
-              refreshToken
-            }
-          }
-        `,
-        variables: {
-          data,
-        },
-      })
-      .subscribe((result) => {
-        console.log('result:', result);
-      });
-  }
+  
 }

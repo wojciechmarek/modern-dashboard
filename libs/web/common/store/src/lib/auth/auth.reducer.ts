@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import {
-  LoginActions
+  LoginAction
 } from './auth.actions';
 
 export interface AuthState {
