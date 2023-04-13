@@ -2,22 +2,19 @@ import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 
 import { AuthState, authReducer } from './auth';
-import { ThemeState, themeReducer } from './theme';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { LanguageState, languageReducer } from './language';
+import { ProfileState, profileReducer } from './profile';
 
 export interface RootState {
-  theme: ThemeState;
-  language: LanguageState;
+  profile: ProfileState;
   auth: AuthState;
 }
 
 @NgModule({
   imports: [
     StoreModule.forRoot<RootState>({
-      theme: themeReducer,
+      profile: profileReducer,
       auth: authReducer,
-      language: languageReducer,
     }),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

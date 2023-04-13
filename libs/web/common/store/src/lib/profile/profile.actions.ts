@@ -7,3 +7,13 @@ export const LanguageActions = createActionGroup({
     'Change To Polish': emptyProps(),
   },
 })
+
+export const ThemeActions = createActionGroup({
+  source: 'Theme',
+  events: {
+    'Change To Light': emptyProps(),
+    'Change To Dark': emptyProps(),
+  },
+})
+
+
