@@ -1,7 +1,7 @@
 {
-  "name": "web-data-access",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/web/data-access/src",
+  "name": "web-data-access-drive",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/web/data-access/drive/src",
   "prefix": "md",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/web/data-access/jest.config.ts",
+        "jestConfig": "libs/web/data-access/drive/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/web/data-access/**/*.ts",
-          "libs/web/data-access/**/*.html"
+          "libs/web/data-access/drive/**/*.ts",
+          "libs/web/data-access/drive/**/*.html"
         ]
       }
     }

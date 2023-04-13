@@ -37,6 +37,11 @@
         "libs/web/components/storybook/src/index.ts"
       ],
       "@md/web/data-access": ["libs/web/data-access/src/index.ts"],
+      "@md/web/data-access/auth": ["libs/web/data-access/auth/src/index.ts"],
+      "@md/web/data-access/drive": ["libs/web/data-access/drive/src/index.ts"],
+      "@md/web/data-access/profile": [
+        "libs/web/data-access/profile/src/index.ts"
+      ],
       "@md/web/views/auth": ["libs/web/views/auth/src/index.ts"],
       "@md/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
       "@md/web/views/drive": ["libs/web/views/drive/src/index.ts"],
