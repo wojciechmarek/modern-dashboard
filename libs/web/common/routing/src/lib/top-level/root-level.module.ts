@@ -6,8 +6,8 @@ export const rootLevelRoutes: Route[] = [
   {
     path: RootLevelPath.UserProfile,
     loadChildren: () =>
-      import('@md/web/views/user-profile').then(
-        (m) => m.WebViewsUserProfileModule
+      import('@md/web/views/profile').then(
+        (m) => m.WebViewsProfileModule
       ),
   },
   {

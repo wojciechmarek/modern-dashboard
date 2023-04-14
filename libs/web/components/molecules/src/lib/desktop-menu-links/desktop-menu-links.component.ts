@@ -9,6 +9,6 @@ export class DesktopMenuLinksComponent {
   links = [
     { path: '/', icon: 'home', title: 'Home' },
     { path: '/drive', icon: 'drive', title: 'Drive' },
-    { path: '/user-profile', icon: 'profile', title: 'Profile' },
+    { path: '/profile', icon: 'profile', title: 'Profile' },
   ]
 }

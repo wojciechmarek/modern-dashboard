@@ -8,5 +8,10 @@ import { Apollo, gql } from 'apollo-angular';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
+
+  handleLoginSubmit(loginDto: LoginDto) {
+    console.log(loginDto);
+    
+  }
   
 }

@@ -23,7 +23,7 @@ export class AuthResolver {
   @Mutation(() => RegisterOutput)
   async register(@Args('data') data: RegisterInput): Promise<RegisterOutput> {
     const result = await this.queryBus.execute(
-      new LoginUserQuery(data.email, data.password)
+      new LoginUserQuery(data as LoginDto)
     );
 
     console.log('result:', result);

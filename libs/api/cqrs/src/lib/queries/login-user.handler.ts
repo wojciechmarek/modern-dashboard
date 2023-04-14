@@ -8,10 +8,10 @@ export class LoginUserQueryHandler implements IQueryHandler<LoginUserQuery> {
 
   constructor(private readonly userRepository: UserRepository) {}
   
-  execute(command: LoginUserQuery): Promise<string> {
-    console.log('CreateUserCommand...:', command);
+  execute({data}: LoginUserQuery): Promise<string> {
+    console.log('CreateUserCommand...:', data);
     
-    const result =  command.email + command.password + 'Hello World';
+    const result =  data.email + data.password + 'Hello World';
 
     this.userRepository.create(result);
 

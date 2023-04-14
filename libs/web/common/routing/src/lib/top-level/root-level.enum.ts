@@ -1,6 +1,6 @@
 export const enum RootLevelPath {
   Dashboard = "",
-  UserProfile = "user-profile",
+  UserProfile = "profile",
   Drive = "drive",
   Auth = "auth",
   NotFound = "**"

@@ -46,7 +46,7 @@
       "@md/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
       "@md/web/views/drive": ["libs/web/views/drive/src/index.ts"],
       "@md/web/views/layout": ["libs/web/views/layout/src/index.ts"],
-      "@md/web/views/user-profile": ["libs/web/views/user-profile/src/index.ts"]
+      "@md/web/views/profile": ["libs/web/views/profile/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -13,4 +13,4 @@ const routes = [
   declarations: [HomeComponent, CalendarComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })
-export class WebViewsUserProfileModule {}
+export class WebViewsProfileModule {}
