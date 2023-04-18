@@ -17,8 +17,8 @@ import { WebCommonStoreModule } from '@md/web/common/store';
   imports: [
     RouterModule,
     WebCommonStoreModule,
-    WebCommonRoutingModule,
     WebViewsLayoutModule,
+    WebCommonRoutingModule,
     BrowserModule,
     ApolloModule,
     HttpClientModule,

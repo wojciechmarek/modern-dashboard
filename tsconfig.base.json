@@ -24,6 +24,7 @@
       "@md/api/utilities": ["libs/api/utilities/src/index.ts"],
       "@md/common/models": ["libs/common/models/src/index.ts"],
       "@md/web/common/assets": ["libs/web/common/assets/src/index.ts"],
+      "@md/web/common/guards": ["libs/web/common/guards/src/index.ts"],
       "@md/web/common/routing": ["libs/web/common/routing/src/index.ts"],
       "@md/web/common/store": ["libs/web/common/store/src/index.ts"],
       "@md/web/components/atoms": ["libs/web/components/atoms/src/index.ts"],
