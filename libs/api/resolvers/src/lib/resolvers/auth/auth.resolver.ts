@@ -41,7 +41,7 @@ export class AuthResolver {
       new LoginUserQuery(data as LoginDto)
     );
 
-    console.log('result:', result);
+    //console.log('result:', result);
 
     const returnData = new LoginOutput();
     returnData.accessToken = result;
@@ -50,12 +50,13 @@ export class AuthResolver {
     return returnData;
   }
 
-  @Mutation()
-  async logout(): Promise<void> {
+  @Mutation(() => Boolean)
+  async logout(): Promise<boolean> {
     console.log('logout');
+    return true;
   }
 
-  @Query(() => RefreshSessionInput)
+  @Query(() => RefreshSessionOutput)
   async refreshSession(
     @Args('data') data: RefreshSessionInput
   ): Promise<RefreshSessionOutput> {
@@ -63,7 +64,7 @@ export class AuthResolver {
     return new RefreshSessionOutput();
   }
 
-  @Mutation(() => ResetPasswordInput)
+  @Mutation(() => ResetPasswordOutput)
   async resetPassword(
     @Args('data') data: ResetPasswordInput
   ): Promise<ResetPasswordOutput> {
