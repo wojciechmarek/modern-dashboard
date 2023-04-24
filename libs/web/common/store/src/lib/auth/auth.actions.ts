@@ -15,7 +15,7 @@ export const LogoutAction = createActionGroup({
   events: {
     'Load': emptyProps(),
     'Success': emptyProps(),
-    'Failure': props<{ error: string }>(),
+    'Failure': props<{ error: string | Error}>(),
   },
 })
 
@@ -24,7 +24,7 @@ export const RegisterAction = createActionGroup({
   events: {
     'Load': props<{ email: string; password: string }>(),
     'Success': props<{ authToken: string, refreshToken: string }>(),
-    'Failure': props<{ error: string }>(),
+    'Failure': props<{ error: string | Error }>(),
   },
 })
 
@@ -33,7 +33,7 @@ export const EmailAvailableCheckAction = createActionGroup({
   events: {
     'Load': props<{ email: string }>(),
     'Success': props<{ isAvailable: boolean }>(),
-    'Failure': props<{ error: string }>(),
+    'Failure': props<{ error: string | Error }>(),
   }
 })
 

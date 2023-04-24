@@ -4,11 +4,15 @@ import { LanguageActions, ThemeActions } from './profile.actions';
 export interface ProfileState {
   language: string;
   theme: string;
+  permissions: string[];
+  email: string;
 }
 
 export const initialProfileState: ProfileState = {
   language: 'en',
   theme: 'light',
+  permissions: [],
+  email: '',
 };
 
 export const profileReducer = createReducer(
