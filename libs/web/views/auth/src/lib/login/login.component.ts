@@ -1,5 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { LoginDto } from '@md/common/models';
+import { LoginAction, RootState } from '@md/web/common/store';
+import { Store } from '@ngrx/store';
 import { Apollo, gql } from 'apollo-angular';
 
 @Component({
@@ -8,10 +10,9 @@ import { Apollo, gql } from 'apollo-angular';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
+  store = inject(Store<RootState>);
 
-  handleLoginSubmit(loginDto: LoginDto) {
-    console.log(loginDto);
-    
+  handleLoginSubmit(data: LoginDto) {
+    this.store.dispatch(LoginAction.load(data))
   }
-  
 }

@@ -18,8 +18,8 @@ export class AuthEffects {
   loadLogins$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(LoginAction.load),
-      concatMap((data: LoginDto) =>
-        this.authService.loginSubmit(data).pipe(
+      concatMap(({email, isRememberMeChecked, password}: LoginDto) =>
+        this.authService.loginSubmit({email, password, isRememberMeChecked}).pipe(
           map((data) => LoginAction.success(data)),
           catchError((error) => of(LoginAction.failure({ error })))
         )

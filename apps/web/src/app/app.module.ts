@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { InMemoryCache } from '@apollo/client/core';
 import { WebCommonRoutingModule } from '@md/web/common/routing';
 import { WebCommonStoreModule } from '@md/web/common/store';
+import { AuthEffects, WebDataAccessAuthModule } from '@md/web/data-access/auth';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +24,7 @@ import { WebCommonStoreModule } from '@md/web/common/store';
     BrowserModule,
     ApolloModule,
     HttpClientModule,
+    WebDataAccessAuthModule
   ],
   providers: [
     {

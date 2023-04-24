@@ -6,6 +6,6 @@ import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   providers: [AuthService],
-  imports: [CommonModule, EffectsModule.forFeature([AuthEffects])],
+  imports: [CommonModule, EffectsModule.forRoot([AuthEffects])],
 })
 export class WebDataAccessAuthModule {}

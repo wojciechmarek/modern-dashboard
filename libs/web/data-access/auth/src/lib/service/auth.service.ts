@@ -1,12 +1,6 @@
 import { Injectable, inject } from '@angular/core';
-import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, map, concatMap } from 'rxjs/operators';
-import { Observable, EMPTY, of } from 'rxjs';
-import {
-  LoginActions,
-  LogoutActions,
-  RegisterActions,
-} from '@md/web/common/store';
+import { map } from 'rxjs/operators';
+
 import { Apollo, gql } from 'apollo-angular';
 import { LoginDto, TokenDto } from '@md/common/models';
 
@@ -15,9 +9,11 @@ export class AuthService {
   apollo = inject(Apollo);
 
   loginSubmit(data: LoginDto) {
-    return this.apollo.mutate<TokenDto>({
-      mutation: gql`
-        mutation Login($data: LoginInput!) {
+    console.log('loginSubmit', data);
+    
+    return this.apollo.query<TokenDto>({
+      query: gql`
+        query Login($data: LoginInput!) {
           login(data: $data) {
             accessToken
             refreshToken

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { RootState, ThemeActions } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 
@@ -8,8 +8,7 @@ import { Store } from '@ngrx/store';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(private readonly store: Store<RootState>) {}
-
+  store = inject(Store<RootState>);
   isDark = false;
 
   handleThemeToggle() {
