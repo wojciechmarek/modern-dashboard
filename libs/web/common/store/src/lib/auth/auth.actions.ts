@@ -1,10 +1,10 @@
-import { TokenDto } from '@md/common/models';
+import { EmailAvailableDto, LoginDto, RegisterDto, TokenDto } from '@md/common/models';
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
 
 export const LoginAction = createActionGroup({
   source: 'Login',
   events: {
-    'Load': props<{ email: string; password: string, isRememberMeChecked: boolean }>(),
+    'Load': props<LoginDto>(),
     'Success': props<TokenDto>(),
     'Failure': props<{ error: string }>(),
   },
@@ -22,8 +22,8 @@ export const LogoutAction = createActionGroup({
 export const RegisterAction = createActionGroup({
   source: 'Register',
   events: {
-    'Load': props<{ email: string; password: string }>(),
-    'Success': props<{ authToken: string, refreshToken: string }>(),
+    'Load': props<RegisterDto>(),
+    'Success': emptyProps(),
     'Failure': props<{ error: string | Error }>(),
   },
 })
@@ -31,7 +31,7 @@ export const RegisterAction = createActionGroup({
 export const EmailAvailableCheckAction = createActionGroup({
   source: 'Email Available Check',
   events: {
-    'Load': props<{ email: string }>(),
+    'Load': props<EmailAvailableDto>(),
     'Success': props<{ isAvailable: boolean }>(),
     'Failure': props<{ error: string | Error }>(),
   }

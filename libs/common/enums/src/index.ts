@@ -1,1 +1,1 @@
-export * from './lib/common-enums';
+export * from './lib/profile';

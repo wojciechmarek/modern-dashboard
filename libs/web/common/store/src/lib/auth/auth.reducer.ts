@@ -18,14 +18,14 @@ export const authReducer = createReducer(
   on(LoginAction.load, (state) => ({ ...state, isLoading: true })),
   on(LoginAction.success, (state, action) => {
     // TODO: fix this
-    const { login: tokens } = action as any;
+    const { login } = action as any;
 
     return {
       ...state,
       isLoading: false,
       isLoggedIn: true,
-      accessToken: tokens.accessToken,
-      refreshToken: tokens.refreshToken,
+      accessToken: login.accessToken,
+      refreshToken: login.refreshToken,
     };
   })
   //   on(loginWithCredentialsFailureAction, (state) => ({
