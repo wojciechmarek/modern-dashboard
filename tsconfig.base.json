@@ -22,6 +22,7 @@
       "@md/api/persistence": ["libs/api/persistence/src/index.ts"],
       "@md/api/resolvers": ["libs/api/resolvers/src/index.ts"],
       "@md/api/utilities": ["libs/api/utilities/src/index.ts"],
+      "@md/common/enums": ["libs/common/enums/src/index.ts"],
       "@md/common/models": ["libs/common/models/src/index.ts"],
       "@md/web/common/assets": ["libs/web/common/assets/src/index.ts"],
       "@md/web/common/guards": ["libs/web/common/guards/src/index.ts"],
