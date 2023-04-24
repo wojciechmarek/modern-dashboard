@@ -1,4 +1,4 @@
-import { EmailAvailableDto, LoginDto, RegisterDto, TokenDto } from '@md/common/models';
+import { EmailAvailableDto, LoginDto, RegisterDto, ResetPasswordDto, TokenDto } from '@md/common/models';
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
 
 export const LoginAction = createActionGroup({
@@ -28,7 +28,16 @@ export const RegisterAction = createActionGroup({
   },
 })
 
-export const EmailAvailableCheckAction = createActionGroup({
+export const ResetPasswordAction = createActionGroup({
+  source: 'Reset Password',
+  events: {
+    'Load': props<ResetPasswordDto>(),
+    'Success': emptyProps(),
+    'Failure': props<{ error: string | Error }>(),
+  }
+})
+
+export const CheckEmailAvailableAction = createActionGroup({
   source: 'Email Available Check',
   events: {
     'Load': props<EmailAvailableDto>(),

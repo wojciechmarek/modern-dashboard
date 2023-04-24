@@ -1,14 +1,16 @@
 import { Injectable, inject } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, map, concatMap } from 'rxjs/operators';
-import { Observable, EMPTY, of } from 'rxjs';
+import { of } from 'rxjs';
 import {
+  CheckEmailAvailableAction,
   LoginAction,
   LogoutAction,
   RegisterAction,
+  ResetPasswordAction,
 } from '@md/web/common/store';
 import { AuthService } from '../service/auth.service';
-import { LoginDto } from '@md/common/models';
+import { EmailAvailableDto, LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
 
 @Injectable()
 export class AuthEffects {
@@ -18,9 +20,9 @@ export class AuthEffects {
   loadLogins$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(LoginAction.load),
-      concatMap(({email, isRememberMeChecked, password}: LoginDto) =>
-        this.authService.loginSubmit({email, password, isRememberMeChecked}).pipe(
-          map((data) => LoginAction.success(data)),
+      concatMap(({ email, isRememberMeChecked, password }: LoginDto) =>
+        this.authService.login({ email, password, isRememberMeChecked }).pipe(
+          map((result) => LoginAction.success(result.data)),
           catchError((error) => of(LoginAction.failure({ error })))
         )
       )
@@ -30,10 +32,9 @@ export class AuthEffects {
   loadRegister$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(RegisterAction.load),
-      concatMap(() =>
-        /** An EMPTY observable only emits completion. Replace with your own observable API request */
-        EMPTY.pipe(
-          //map(data => RegisterActions.success({ data })),
+      concatMap(({ email, password }: RegisterDto) =>
+        this.authService.register({ email, password }).pipe(
+          map(() => RegisterAction.success()),
           catchError((error) => of(RegisterAction.failure({ error })))
         )
       )
@@ -44,10 +45,33 @@ export class AuthEffects {
     return this.actions$.pipe(
       ofType(LogoutAction.load),
       concatMap(() =>
-        /** An EMPTY observable only emits completion. Replace with your own observable API request */
-        EMPTY.pipe(
+        this.authService.logout().pipe(
           map(() => LogoutAction.success()),
           catchError((error) => of(LogoutAction.failure({ error })))
+        )
+      )
+    );
+  });
+
+  loadResetPassword$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(ResetPasswordAction.load),
+      concatMap(({ email }: ResetPasswordDto) =>
+        this.authService.resetPassword({ email }).pipe(
+          map(() => ResetPasswordAction.success()),
+          catchError((error) => of(ResetPasswordAction.failure({ error })))
+        )
+      )
+    );
+  });
+
+  loadCheckEmailAvailable$ = createEffect(() => {
+    return this.actions$.pipe(
+      ofType(CheckEmailAvailableAction.load),
+      concatMap(({ email }: EmailAvailableDto) =>
+        this.authService.checkEmailAvailable({ email }).pipe(
+          map((result) => CheckEmailAvailableAction.success({ isAvailable: result.data })),
+          catchError((error) => of(CheckEmailAvailableAction.failure({ error })))
         )
       )
     );
