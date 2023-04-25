@@ -37,7 +37,7 @@
         "configDir": "libs/web/components/storybook/.storybook",
         "browserTarget": "web-components-storybook:build-storybook",
         "compodoc": false,
-        "styles": ["libs/web/assets/src/styles/global.scss"]
+        "styles": ["libs/web/common/assets/src/styles/global.scss"]
       },
       "configurations": {
         "ci": {
@@ -53,7 +53,7 @@
         "configDir": "libs/web/components/storybook/.storybook",
         "browserTarget": "web-components-storybook:build-storybook",
         "compodoc": false,
-        "styles": ["libs/web/assets/src/styles/global.scss"]
+        "styles": ["libs/web/common/assets/src/styles/global.scss"]
       },
       "configurations": {
         "ci": {
