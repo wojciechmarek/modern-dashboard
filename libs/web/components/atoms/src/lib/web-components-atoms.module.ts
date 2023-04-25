@@ -11,6 +11,7 @@ import { TextInputComponent } from './text-input/text-input.component'
 import { CheckboxComponent } from './checkbox/checkbox.component'
 import { LinkComponent } from './link/link.component'
 import { HorizontalLineComponent } from './horizontal-line/horizontal-line.component'
+import { HorizontalSelectorComponent } from './horizontal-selector/horizontal-selector.component'
 
 const Components = [
   ButtonComponent,
@@ -21,7 +22,8 @@ const Components = [
   TextComponent,
   CheckboxComponent,
   LinkComponent,
-  HorizontalLineComponent
+  HorizontalLineComponent,
+  HorizontalSelectorComponent
 ];
 
 @NgModule({
