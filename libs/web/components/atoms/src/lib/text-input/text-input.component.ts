@@ -78,5 +78,4 @@ export class TextInputComponent implements ControlValueAccessor, OnInit, OnChang
     }
     return null;
   }
-
 }

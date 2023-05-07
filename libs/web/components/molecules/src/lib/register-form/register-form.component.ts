@@ -13,10 +13,10 @@ export class RegisterFormComponent {
   fb = inject(FormBuilder);
 
   form = this.fb.group({
-    email: this.fb.control(null, { validators: [Validators.required], updateOn: 'blur'}),
-    password: this.fb.control(null, { validators: [Validators.required] }),
-    confirmPassword: this.fb.control(null, { validators: [Validators.required] }),
-    isTermsChecked: this.fb.control(false, { validators: [Validators.requiredTrue] }),
+    email: this.fb.control(null),
+    password: this.fb.control(null),
+    confirmPassword: this.fb.control(null),
+    isTermsChecked: this.fb.control(false),
   }, { validators: [this.checkIfPasswordsAreTheSame] })
 
   onSubmit() {
