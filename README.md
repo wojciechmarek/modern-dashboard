@@ -1,18 +1,18 @@
 # Modern Dashboard
 
-It is a demo application that shows how to build a modern web application with Angular 15 and NestJS.
+It is a demo application that shows how to build a modern web application with Angular 15 and NestJS. This project is not an actual application doing some particular business problem. Instead, it is a blueprint that can be used to build a real application. For now, it shows how to style the application using the atomic design methodology and how to secure it using the JWT tokens.
 
 ## Purpose
 
 To learn the Angular 15 and NestJS frameworks and build a modern application with cutting-edge technologies and techniques:
 
-- using the latest Angular 15 features (standalone components, Signal, etc.),
-- using the latest NestJS features (GraphQL, etc.),
-- using the docker containers to develop and run the application,
-- using the MongoDB database with Change Streams,
-- using the atomic design methodology to build the UI,
-- using real-time communication with GraphQL subscriptions,
-- using Nx to manage the mono repo (to share code between the front end and the backend).
+- ✅ using the latest Angular 15 features (standalone components, Signal, etc.),
+- ✅ using the latest NestJS features (GraphQL, etc.),
+- ✅ using the docker containers to develop and run the application,
+- ❌ using the MongoDB database with Change Streams,
+- ✅ using the atomic design methodology to build the UI,
+- ❌ using real-time communication with GraphQL subscriptions,
+- ✅ using Nx to manage the mono repo (to share code between the front end and the backend).
 
 ## Demo
 
