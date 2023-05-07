@@ -3,6 +3,9 @@
   <md-desktop-menu-links class="navbar__desktop-menu-links" />
   <md-desktop-menu-buttons
     class="navbar__desktop-menu-buttons"
-    (handleThemeToggle)="handleThemeToggle()"
+    (handleThemeButtonClick)="handleThemeButtonClick()"
+    (handleAuthButtonClick)="handleAuthButtonClick()"
+    authButtonLabel="Login"
+    [themeButtonLabel]="isDark() ? 'Toggle to ☀️ Light' : 'Toggle to 🌑 Dark'"
   />
 </div>

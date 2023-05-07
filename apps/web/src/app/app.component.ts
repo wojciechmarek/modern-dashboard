@@ -13,16 +13,18 @@ export class AppComponent implements OnInit, OnDestroy {
   store = inject(Store<RootState>);
   document = inject(DOCUMENT);
 
-  title = 'web';
+  title = 'Modern Dashboard';
   
   theme$: Observable<string> = new Observable();
   subscription: Subscription = new Subscription();
 
   ngOnInit() {
-    this.theme$ = this.store.select((store) => store.theme.value);
+    this.theme$ = this.store.select((store) => store.profile.theme);
 
     this.subscription.add(
       this.theme$.subscribe((theme) => {
+        console.log(theme);
+        
         if (theme === 'light') {
           this.document.body.setAttribute('data-theme', 'dark');
         } else {

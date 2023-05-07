@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component({
   selector: 'md-desktop-menu-buttons',
@@ -6,9 +6,17 @@ import { Component, EventEmitter, Output } from '@angular/core'
   styleUrls: ['./desktop-menu-buttons.component.scss'],
 })
 export class DesktopMenuButtonsComponent {
-  @Output() handleThemeToggle = new EventEmitter();
+  @Input() themeButtonLabel = "";
+  @Input() authButtonLabel = "";
 
-  themeToggle() {
-    this.handleThemeToggle.emit();
+  @Output() handleThemeButtonClick = new EventEmitter();
+  @Output() handleAuthButtonClick = new EventEmitter();
+
+  themeButtonClick() {
+    this.handleThemeButtonClick.emit();
+  }
+
+  authButtonClick() {
+    this.handleAuthButtonClick.emit();
   }
 }

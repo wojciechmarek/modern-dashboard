@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core'
+import { Component, inject, signal } from '@angular/core';
 import { RootState, ThemeActions } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 
@@ -9,17 +9,20 @@ import { Store } from '@ngrx/store';
 })
 export class NavbarComponent {
   store = inject(Store<RootState>);
-  isDark = false;
 
-  handleThemeToggle() {
-    if (this.isDark) {
+  isDark = signal(true);
+
+  handleThemeButtonClick() {    
+    if (this.isDark()) {
       this.store.dispatch(ThemeActions.changeToDark());
-    }
-    else {
+    } else {
       this.store.dispatch(ThemeActions.changeToLight());
     }
 
-    this.isDark = !this.isDark
+    this.isDark.set(!this.isDark());
   }
 
+  handleAuthButtonClick() {
+    console.log('Sign In');
+  }
 }
