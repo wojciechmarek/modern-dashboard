@@ -10,16 +10,16 @@ export const LOGIN = gql`
 `;
 
 export const REGISTER = gql`
-mutate Register($data: RegisterInput!) {
-  register(data: $data)
-}
+  mutation Register($data: RegisterInput!) {
+    register(data: $data)
+  }
 `;
 
-export const LOGOUT = gql`
-query Logout() {
-  logout()
-}
-`;
+// export const LOGOUT = gql`
+//   query Logout() {
+//     logout()
+//   }
+// `;
 
 export const RESET_PASSWORD = gql`
   query ResetPassword($data: ResetPasswordInput!) {

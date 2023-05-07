@@ -5,7 +5,7 @@ import { of } from 'rxjs';
 import {
   CheckEmailAvailableAction,
   LoginAction,
-  LogoutAction,
+  // LogoutAction,
   RegisterAction,
   ResetPasswordAction,
 } from '@md/web/common/store';
@@ -17,7 +17,7 @@ export class AuthEffects {
   actions$ = inject(Actions);
   authService = inject(AuthService);
 
-  loadLogins$ = createEffect(() => {
+  login$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(LoginAction.load),
       concatMap(({ email, isRememberMeChecked, password }: LoginDto) =>
@@ -29,7 +29,7 @@ export class AuthEffects {
     );
   });
 
-  loadRegister$ = createEffect(() => {
+  register$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(RegisterAction.load),
       concatMap(({ email, password }: RegisterDto) =>
@@ -41,19 +41,19 @@ export class AuthEffects {
     );
   });
 
-  loadLogout$ = createEffect(() => {
-    return this.actions$.pipe(
-      ofType(LogoutAction.load),
-      concatMap(() =>
-        this.authService.logout().pipe(
-          map(() => LogoutAction.success()),
-          catchError((error) => of(LogoutAction.failure({ error })))
-        )
-      )
-    );
-  });
+  // logout$ = createEffect(() => {
+  //   return this.actions$.pipe(
+  //     ofType(LogoutAction.load),
+  //     concatMap(() =>
+  //       this.authService.logout().pipe(
+  //         map(() => LogoutAction.success()),
+  //         catchError((error) => of(LogoutAction.failure({ error })))
+  //       )
+  //     )
+  //   );
+  // });
 
-  loadResetPassword$ = createEffect(() => {
+  resetPassword$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(ResetPasswordAction.load),
       concatMap(({ email }: ResetPasswordDto) =>
@@ -65,7 +65,7 @@ export class AuthEffects {
     );
   });
 
-  loadCheckEmailAvailable$ = createEffect(() => {
+  checkEmailAvailable$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(CheckEmailAvailableAction.load),
       concatMap(({ email }: EmailAvailableDto) =>

@@ -11,7 +11,7 @@ import {
 import {
   CHECK_EMAIL_AVAILABLE,
   LOGIN,
-  LOGOUT,
+  // LOGOUT,
   REGISTER,
   RESET_PASSWORD,
 } from './graphql.objects';
@@ -38,11 +38,11 @@ export class AuthService {
     });
   }
 
-  logout() {
-    return this.apollo.query({
-      query: LOGOUT,
-    });
-  }
+  // logout() {
+  //   return this.apollo.query({
+  //     query: LOGOUT,
+  //   });
+  // }
 
   resetPassword(data: ResetPasswordDto) {
     return this.apollo.query({
