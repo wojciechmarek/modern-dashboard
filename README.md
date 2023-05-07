@@ -1,10 +1,10 @@
 # Modern Dashboard
 
-It is a demo application that shows how to build a modern web application with Angular 15 and NestJS. This project is not an actual application solving some particular business problem. Instead, it is a blueprint that can be used to build a real application. For now, it shows how to style the application using the atomic design methodology and how to secure it using the JWT tokens.
+It is a demo application that shows how to build a modern web application with Angular 16 and NestJS. This project is not an actual application solving some particular business problem. Instead, it is a blueprint that can be used to build a real application. For now, it shows how to style the application using the atomic design methodology and how to secure it using the JWT tokens.
 
 ## Purpose
 
-To learn the Angular 15 and NestJS frameworks and build a modern application with cutting-edge technologies and techniques:
+To learn the Angular 16 and NestJS frameworks and build a modern application with cutting-edge technologies and techniques:
 
 - ✅ using the latest Angular 15 features (standalone components, Signal, etc.),
 - ✅ using the latest NestJS features (GraphQL, etc.),
