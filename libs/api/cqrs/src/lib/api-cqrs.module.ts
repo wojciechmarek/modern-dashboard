@@ -1,15 +1,22 @@
 import { Module } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
-import { LoginUserQueryHandler } from './queries/login-user.handler';
 import { ApiPersistenceModule } from '@md/api/persistence';
+import { LoginCommandHandler, RegisterCommandHandler } from './auth';
+import { ResetPasswordCommandHandler } from './auth/commands/reset-password';
 
 export const QueryHandlers = [
-  LoginUserQueryHandler
+  LoginCommandHandler,
+];
+
+export const CommandHandlers = [
+  LoginCommandHandler,
+  RegisterCommandHandler,
+  ResetPasswordCommandHandler,
 ];
 
 @Module({
   controllers: [],
-  providers: [...QueryHandlers],
+  providers: [...QueryHandlers, ...CommandHandlers],
   exports: [],
   imports: [CqrsModule, ApiPersistenceModule],
 })

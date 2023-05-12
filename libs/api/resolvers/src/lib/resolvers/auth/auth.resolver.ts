@@ -1,17 +1,19 @@
-import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
+import { Args, Mutation, Resolver } from '@nestjs/graphql';
+import { CommandBus, QueryBus } from '@nestjs/cqrs';
+import { LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
 import {
   LoginInput,
   LoginOutput,
-  RefreshSessionInput,
-  RefreshSessionOutput,
   RegisterInput,
-  RegisterOutput,
   ResetPasswordInput,
-  ResetPasswordOutput,
-} from '../../models';
-import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import { LoginUserQuery } from '@md/api/cqrs';
-import { LoginDto } from '@md/common/models';
+} from './models';
+import {
+  LoginCommand,
+  LogoutCommand,
+  RegisterCommand,
+  ResetPasswordCommand,
+} from '@md/api/cqrs';
+import { SuccessOutput } from '../../common-models';
 
 @Resolver()
 export class AuthResolver {
@@ -20,55 +22,37 @@ export class AuthResolver {
     private readonly commandBus: CommandBus
   ) {}
 
-  @Mutation(() => RegisterOutput)
-  async register(@Args('data') data: RegisterInput): Promise<RegisterOutput> {
-    const result = await this.queryBus.execute(
-      new LoginUserQuery(data as LoginDto)
-    );
-
-    console.log('result:', result);
-
-    const returnData = new LoginOutput();
-    returnData.accessToken = result;
-    returnData.refreshToken = result;
-
-    return returnData;
-  }
-
-  @Query(() => LoginOutput)
+  @Mutation(() => LoginOutput)
   async login(@Args('data') data: LoginInput): Promise<LoginOutput> {
-    const result = await this.queryBus.execute(
-      new LoginUserQuery(data as LoginDto)
-    );
-
-    //console.log('result:', result);
-
-    const returnData = new LoginOutput();
-    returnData.accessToken = result;
-    returnData.refreshToken = result;
-
-    return returnData;
+    return this.commandBus.execute(new LoginCommand(data as LoginDto));
   }
 
-  @Mutation(() => Boolean)
-  async logout(): Promise<boolean> {
-    console.log('logout');
-    return true;
+  @Mutation(() => SuccessOutput)
+  async register(@Args('data') data: RegisterInput) {
+    this.commandBus.execute(new RegisterCommand(data as RegisterDto));
+
+    return new SuccessOutput(true);
   }
 
-  @Query(() => RefreshSessionOutput)
-  async refreshSession(
-    @Args('data') data: RefreshSessionInput
-  ): Promise<RefreshSessionOutput> {
-    console.log('refreshSession');
-    return new RefreshSessionOutput();
+  @Mutation(() => SuccessOutput)
+  async resetPassword(@Args('data') data: ResetPasswordInput) {
+    this.commandBus.execute(new ResetPasswordCommand(data as ResetPasswordDto));
+
+    return new SuccessOutput(true);
   }
 
-  @Mutation(() => ResetPasswordOutput)
-  async resetPassword(
-    @Args('data') data: ResetPasswordInput
-  ): Promise<ResetPasswordOutput> {
-    console.log('resetPassword');
-    return new RefreshSessionOutput();
+  @Mutation(() => SuccessOutput)
+  async logout() {
+    this.commandBus.execute(new LogoutCommand());
+
+    return new SuccessOutput(true);
   }
+
+  // @Query(() => )
+  // async refreshSession(
+  //   @Args('data') data: RefreshSessionInput
+  // ): Promise<RefreshSessionOutput> {
+  //   console.log('refreshSession');
+  //   return new RefreshSessionOutput();
+  // }
 }
