@@ -6,7 +6,7 @@ It is a demo application that shows how to build a modern web application with A
 
 To learn the Angular 16 and NestJS frameworks and build a modern application with cutting-edge technologies and techniques:
 
-- ✅ using the latest Angular 15 features (standalone components, Signal, etc.),
+- ✅ using the latest Angular 16 features (standalone components, Signal, etc.),
 - ✅ using the latest NestJS features (GraphQL, etc.),
 - ✅ using the docker containers to develop and run the application,
 - ❌ using the MongoDB database with Change Streams,
@@ -21,7 +21,7 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 ## Used technologies
 
 - 🎁 **Repository:** Monorepo with NX
-- 🧰 **Frameworks:** Angular 15, NestJS
+- 🧰 **Frameworks:** Angular 16, NestJS
 - 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, mongodb, graphql, apollo
 - 🎨 **Styling:** scss, css variables, BEM notation
 - 🧪 **Testing:** cypress, jest
