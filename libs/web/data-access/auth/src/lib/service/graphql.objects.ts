@@ -1,7 +1,7 @@
 import { gql } from 'apollo-angular';
 
 export const LOGIN = gql`
-  query Login($data: LoginInput!) {
+  mutation Login($data: LoginInput!) {
     login(data: $data) {
       accessToken
       refreshToken
@@ -11,19 +11,23 @@ export const LOGIN = gql`
 
 export const REGISTER = gql`
   mutation Register($data: RegisterInput!) {
-    register(data: $data)
+    register(data: $data) {
+      isSuccess
+    }
   }
 `;
 
 // export const LOGOUT = gql`
-//   query Logout() {
+//   mutation Logout() {
 //     logout()
 //   }
 // `;
 
 export const RESET_PASSWORD = gql`
-  query ResetPassword($data: ResetPasswordInput!) {
-    resetPassword(data: $data)
+  mutation ResetPassword($data: ResetPasswordInput!) {
+    resetPassword(data: $data) {
+      isSuccess
+    }
   }
 `;
 

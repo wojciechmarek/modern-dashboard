@@ -21,12 +21,12 @@ export class AuthService {
   apollo = inject(Apollo);
 
   login(data: LoginDto) {
-    return this.apollo.query<TokenDto>({
-      query: LOGIN,
+    return this.apollo.mutate<TokenDto>({
+      mutation: LOGIN,
       variables: {
         data,
       },
-    });
+    })
   }
 
   register(data: RegisterDto) {
@@ -38,19 +38,19 @@ export class AuthService {
     });
   }
 
-  // logout() {
-  //   return this.apollo.query({
-  //     query: LOGOUT,
-  //   });
-  // }
-
   resetPassword(data: ResetPasswordDto) {
-    return this.apollo.query({
-      query: RESET_PASSWORD,
+    return this.apollo.mutate({
+      mutation: RESET_PASSWORD,
       variables: {
         data,
       },
     });
+  }
+
+  logout() {
+    // return this.apollo.mutate({
+    //   mutation: LOGOUT,
+    // });
   }
 
   checkEmailAvailable(data: EmailAvailableDto) {

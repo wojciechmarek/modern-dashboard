@@ -5,12 +5,17 @@ import { of } from 'rxjs';
 import {
   CheckEmailAvailableAction,
   LoginAction,
-  // LogoutAction,
+  LogoutAction,
   RegisterAction,
   ResetPasswordAction,
 } from '@md/web/common/store';
 import { AuthService } from '../service/auth.service';
-import { EmailAvailableDto, LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
+import {
+  EmailAvailableDto,
+  LoginDto,
+  RegisterDto,
+  ResetPasswordDto,
+} from '@md/common/models';
 
 @Injectable()
 export class AuthEffects {
@@ -20,9 +25,13 @@ export class AuthEffects {
   login$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(LoginAction.load),
-      concatMap(({ email, isRememberMeChecked, password }: LoginDto) =>
+      concatMap(({ email, password, isRememberMeChecked }: LoginDto) =>
         this.authService.login({ email, password, isRememberMeChecked }).pipe(
-          map((result) => LoginAction.success(result.data)),
+          map((result) =>
+            LoginAction.success(
+              result.data ? result.data : { accessToken: '', refreshToken: '' }
+            )
+          ),
           catchError((error) => of(LoginAction.failure({ error })))
         )
       )
@@ -70,8 +79,12 @@ export class AuthEffects {
       ofType(CheckEmailAvailableAction.load),
       concatMap(({ email }: EmailAvailableDto) =>
         this.authService.checkEmailAvailable({ email }).pipe(
-          map((result) => CheckEmailAvailableAction.success({ isAvailable: result.data })),
-          catchError((error) => of(CheckEmailAvailableAction.failure({ error })))
+          map((result) =>
+            CheckEmailAvailableAction.success({ isAvailable: result.data })
+          ),
+          catchError((error) =>
+            of(CheckEmailAvailableAction.failure({ error }))
+          )
         )
       )
     );

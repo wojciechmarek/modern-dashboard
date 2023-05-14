@@ -1,13 +1,21 @@
-import { Args, Mutation, Resolver } from '@nestjs/graphql';
+import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import { LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
 import {
+  EmailAvailableDto,
+  LoginDto,
+  RegisterDto,
+  ResetPasswordDto,
+} from '@md/common/models';
+import {
+  EmailAvailableInput,
+  EmailAvailableOutput,
   LoginInput,
   LoginOutput,
   RegisterInput,
   ResetPasswordInput,
 } from './models';
 import {
+  CheckEmailAvailableQuery,
   LoginCommand,
   LogoutCommand,
   RegisterCommand,
@@ -46,6 +54,20 @@ export class AuthResolver {
     this.commandBus.execute(new LogoutCommand());
 
     return new SuccessOutput(true);
+  }
+
+  @Query(() => EmailAvailableOutput)
+  async checkEmailAvailable(
+    @Args('data') data: EmailAvailableInput
+  ): Promise<EmailAvailableOutput> {
+    const result = await this.queryBus.execute(
+      new CheckEmailAvailableQuery(data as EmailAvailableDto)
+    );
+
+    const output = new EmailAvailableOutput();
+    output.isEmailAvailable = result;
+
+    return output;
   }
 
   // @Query(() => )

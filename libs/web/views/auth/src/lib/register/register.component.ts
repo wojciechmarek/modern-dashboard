@@ -1,5 +1,7 @@
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { RegisterDto } from '@md/common/models'
+import { RegisterAction, RootState } from '@md/web/common/store';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'md-register-view',
@@ -7,7 +9,9 @@ import { RegisterDto } from '@md/common/models'
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent {
+  store = inject(Store<RootState>);
+
   handleRegisterSubmit(data: RegisterDto) {
-    console.log('handleRegisterSubmit')
+    this.store.dispatch(RegisterAction.load(data));
   }
 }

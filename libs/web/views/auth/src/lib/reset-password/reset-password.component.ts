@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ResetPasswordDto } from '@md/common/models';
+import { ResetPasswordAction, RootState } from '@md/web/common/store';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'md-reset-password-view',
@@ -6,7 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./reset-password.component.scss'],
 })
 export class ResetPasswordComponent {
-  handleRegisterSubmit() {
-    console.log('handleRegisterSubmit');
+  store = inject(Store<RootState>);
+
+  handleResetPasswordSubmit(data: ResetPasswordDto) {
+    this.store.dispatch(ResetPasswordAction.load(data));
   }
 }
