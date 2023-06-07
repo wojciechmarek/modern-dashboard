@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { DesktopMenuLinksComponent } from './desktop-menu-links.component'
+import { NavbarMenuLinksComponent } from './navbar-menu-links.component'
 
 describe('DesktopMenuLinksComponent', () => {
-  let component: DesktopMenuLinksComponent
-  let fixture: ComponentFixture<DesktopMenuLinksComponent>
+  let component: NavbarMenuLinksComponent
+  let fixture: ComponentFixture<NavbarMenuLinksComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DesktopMenuLinksComponent],
+      declarations: [NavbarMenuLinksComponent],
     }).compileComponents()
 
-    fixture = TestBed.createComponent(DesktopMenuLinksComponent)
+    fixture = TestBed.createComponent(NavbarMenuLinksComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

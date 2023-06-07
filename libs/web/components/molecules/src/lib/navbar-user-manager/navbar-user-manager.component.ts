@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
 
 @Component({
-  selector: 'md-desktop-menu-buttons',
-  templateUrl: './desktop-menu-buttons.component.html',
-  styleUrls: ['./desktop-menu-buttons.component.scss'],
+  selector: 'md-navbar-user-manager',
+  templateUrl: './navbar-user-manager.component.html',
+  styleUrls: ['./navbar-user-manager.component.scss'],
 })
-export class DesktopMenuButtonsComponent {
+export class NavbarUserManagerComponent {
   @Input() themeButtonLabel = "";
   @Input() authButtonLabel = "";
 

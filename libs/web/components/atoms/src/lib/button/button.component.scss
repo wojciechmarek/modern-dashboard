@@ -34,6 +34,18 @@
     background-color: var(--info-color);
   }
 
+  &.transparent-color {
+    background-color: transparent;
+
+    &:hover {
+      background-color: #ffffff10;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
   &.flat-color {
     background-color: var(--flat-color);
 

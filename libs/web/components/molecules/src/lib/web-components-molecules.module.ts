@@ -1,34 +1,40 @@
-import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
-import { BrandLogoComponent } from './brand-logo/brand-logo.component'
-import { WebComponentsAtomsModule } from '@md/web/components/atoms'
-import { DesktopMenuLinksComponent } from './desktop-menu-links/desktop-menu-links.component'
-import { DesktopMenuButtonsComponent } from './desktop-menu-buttons/desktop-menu-buttons.component'
-import { HeaderTextComponent } from './header-text/header-text.component'
-import { LoginFormComponent } from './login-form/login-form.component'
-import { RegisterFormComponent } from './register-form/register-form.component'
-import { ReactiveFormsModule } from '@angular/forms'
-import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component'
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BrandLogoComponent } from './brand-logo/brand-logo.component';
+import { WebComponentsAtomsModule } from '@md/web/components/atoms';
+import { NavbarMenuLinksComponent } from './navbar-menu-links/navbar-menu-links.component';
+import { NavbarUserManagerComponent } from './navbar-user-manager/navbar-user-manager.component';
+import { HeaderTextComponent } from './header-text/header-text.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
+import { LucideAngularModule, Search, Bell, User } from 'lucide-angular';
 
 @NgModule({
-  imports: [CommonModule, WebComponentsAtomsModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    WebComponentsAtomsModule,
+    ReactiveFormsModule,
+    LucideAngularModule.pick({ Search, Bell, User }),
+  ],
   declarations: [
     BrandLogoComponent,
-    DesktopMenuLinksComponent,
-    DesktopMenuButtonsComponent,
+    NavbarMenuLinksComponent,
+    NavbarUserManagerComponent,
     HeaderTextComponent,
     LoginFormComponent,
     RegisterFormComponent,
-    ResetPasswordFormComponent
+    ResetPasswordFormComponent,
   ],
   exports: [
     BrandLogoComponent,
-    DesktopMenuLinksComponent,
-    DesktopMenuButtonsComponent,
+    NavbarMenuLinksComponent,
+    NavbarUserManagerComponent,
     HeaderTextComponent,
     LoginFormComponent,
     RegisterFormComponent,
-    ResetPasswordFormComponent
+    ResetPasswordFormComponent,
   ],
 })
 export class WebComponentsMoleculesModule {}

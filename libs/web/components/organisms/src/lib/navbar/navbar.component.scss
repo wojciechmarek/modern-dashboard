@@ -1,29 +1,28 @@
 .navbar__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: 5em;
+  width: 100%;
+  background-color: var(--bg-color-alternative);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar__content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1em;
+  align-items: center;
+  justify-content: space-between;
   height: 100%;
-  width: 15em;
-  background-color: var(--bg-color);
-  border-right: 1px solid var(--separator-color);
-  transition: background-color 0.2s ease-in-out, border-right 0.2s ease-in-out;
-
-  @media screen and (max-width: 768px) {
-    width: 8.5em;
-  }
-
-  @media screen and (max-width: 425px) {
-    display: none;
-  }
 }
 
 .navbar__brand-logo {
-  margin: 0 auto;
+  margin-right: 3em;
 }
 
-.navbar__desktop-menu-links {
+.navbar__navbar-menu-links {
   flex: 1;
-}
-
-.navbar__desktop-menu-buttons {
-  margin-bottom: 1em;
 }

@@ -1,0 +1,10 @@
+.manager__container {
+  margin: 0 1em;
+  display: flex;
+}
+
+.manager__content {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25em;
+}

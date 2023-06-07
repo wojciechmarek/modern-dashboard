@@ -10,7 +10,7 @@ export class ButtonComponent {
 
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
 
-  @Input() color: 'success' | 'info' | 'danger' | 'warning' | 'flat' = 'flat';
+  @Input() color: 'success' | 'info' | 'danger' | 'warning' | 'flat' | 'transparent' = 'flat';
 
   @Input() isDisabled = false;
 

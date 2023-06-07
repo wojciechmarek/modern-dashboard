@@ -7,9 +7,10 @@
     'info-color': color === 'info',
     'danger-color': color === 'danger',
     'warning-color': color === 'warning',
-    'flat-color': color === 'flat'
+    'flat-color': color === 'flat',
+    'transparent-color': color === 'transparent'
   }"
   (click)="onClick()"
 >
-  {{ label }}
+  <ng-content></ng-content>
 </button>

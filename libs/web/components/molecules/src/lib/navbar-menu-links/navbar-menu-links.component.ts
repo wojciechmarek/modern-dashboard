@@ -1,11 +1,11 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'md-desktop-menu-links',
-  templateUrl: './desktop-menu-links.component.html',
-  styleUrls: ['./desktop-menu-links.component.scss'],
+  selector: 'md-navbar-menu-links',
+  templateUrl: './navbar-menu-links.component.html',
+  styleUrls: ['./navbar-menu-links.component.scss'],
 })
-export class DesktopMenuLinksComponent {
+export class NavbarMenuLinksComponent {
   links = [
     { path: '/', icon: 'home', title: 'Home' },
     { path: '/drive', icon: 'drive', title: 'Drive' },

@@ -1,11 +1,7 @@
 <div class="navbar__container">
-  <md-brand-logo class="navbar__brand-logo" />
-  <md-desktop-menu-links class="navbar__desktop-menu-links" />
-  <md-desktop-menu-buttons
-    class="navbar__desktop-menu-buttons"
-    (handleThemeButtonClick)="handleThemeButtonClick()"
-    (handleAuthButtonClick)="handleAuthButtonClick()"
-    authButtonLabel="Login"
-    [themeButtonLabel]="isDark() ? 'Toggle to Light ☀️' : 'Toggle to Dark 🌑'"
-  />
+  <div class="navbar__content">
+    <md-brand-logo class="navbar__brand-logo" />
+    <md-navbar-menu-links class="navbar__navbar-menu-links" />
+    <md-navbar-user-manager class="navbar__navbar-user-manager" />
+  </div>
 </div>

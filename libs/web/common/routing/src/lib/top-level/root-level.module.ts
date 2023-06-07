@@ -26,7 +26,7 @@ export const rootLevelRoutes: Route[] = [
   },
   {
     path: RootLevelPath.Dashboard,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     loadChildren: () =>
       import('@md/web/views/dashboard').then((m) => m.WebViewsDashboardModule),
   },

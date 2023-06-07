@@ -1,8 +1,5 @@
 .navbar__container {
   margin: 0 1em;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 
   @media screen and (max-width: 768px) {
     margin: 0 0.5em;
@@ -11,7 +8,7 @@
 
 .navbar__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style: none;
   flex: 1;
 }
