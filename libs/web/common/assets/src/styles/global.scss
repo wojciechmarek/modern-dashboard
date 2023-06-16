@@ -1,5 +1,9 @@
 @import './themes/dark.scss';
 @import './themes/light.scss';
+@import './themes/red.scss';
+@import './themes/green.scss';
+@import './themes/blue.scss';
+
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -13,6 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 
 *,
 *::before,

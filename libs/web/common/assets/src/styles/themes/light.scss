@@ -1,9 +1,13 @@
 [data-theme='light'] {
   --bg-color: #ffffff;
-  --bg-color-alternative: #f0f0f0;
+  --bg-color-alternative: #e7e7e7;
+  --bg-gradient: linear-gradient(315deg, #ffffff 0%, #ececec 100%);
 
   --text-color: #22242b;
+  --text-color-link: #22242b5a;
   --text-color-contrast: #fcfaf1;
+
+  --hover-accent-color: #00000025;
   
   --separator-color: #e8e7e0;
   --separator-color-alternative: #b4b4b4;

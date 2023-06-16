@@ -1,4 +1,5 @@
-import { createActionGroup, emptyProps } from '@ngrx/store';
+import { Theme } from '@md/common/enums';
+import { createAction, createActionGroup, emptyProps, props } from '@ngrx/store';
 
 export const LanguageActions = createActionGroup({
   source: 'Language',
@@ -8,12 +9,9 @@ export const LanguageActions = createActionGroup({
   },
 })
 
-export const ThemeActions = createActionGroup({
-  source: 'Theme',
-  events: {
-    'Change To Light': emptyProps(),
-    'Change To Dark': emptyProps(),
-  },
-})
+export const ThemeAction = createAction(
+  '[Theme] Change',
+  props<{ theme: Theme }>()
+)
 
 

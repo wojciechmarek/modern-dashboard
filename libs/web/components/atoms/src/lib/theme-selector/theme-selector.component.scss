@@ -1,0 +1,13 @@
+.theme-selector__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.theme-selector__item {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}

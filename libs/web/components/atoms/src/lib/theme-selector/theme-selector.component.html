@@ -1,0 +1,9 @@
+<div class="theme-selector__container">
+  <div
+    *ngFor="let theme of themes"
+    [title]="theme.name"
+    class="theme-selector__item"
+    [ngStyle]="{'background': theme.style}"
+    (click)="onThemeClick(theme.id)"
+    ></div>
+</div>

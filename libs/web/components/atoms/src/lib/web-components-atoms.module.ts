@@ -11,6 +11,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component'
 import { LinkComponent } from './link/link.component'
 import { HorizontalLineComponent } from './horizontal-line/horizontal-line.component'
 import { HorizontalSelectorComponent } from './horizontal-selector/horizontal-selector.component'
+import { TitleComponent } from './title/title.component'
+import { ThemeSelectorComponent } from './theme-selector/theme-selector.component'
 
 const Components = [
   ButtonComponent,
@@ -21,7 +23,9 @@ const Components = [
   CheckboxComponent,
   LinkComponent,
   HorizontalLineComponent,
-  HorizontalSelectorComponent
+  HorizontalSelectorComponent,
+  TitleComponent,
+  ThemeSelectorComponent
 ];
 
 @NgModule({

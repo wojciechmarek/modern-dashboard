@@ -20,21 +20,22 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.theme$ = this.store.select((store) => store.profile.theme);
-
+    
     this.subscription.add(
       this.theme$.subscribe((theme) => {
-        console.log(theme);
-        
-        if (theme === 'light') {
-          this.document.body.setAttribute('data-theme', 'dark');
-        } else {
-          this.document.body.setAttribute('data-theme', 'light');
-        }
+        this.document.body.setAttribute('data-theme', theme);
       })
     );
+
+    const isDark = isDarkMode();
+    const theme = isDark ? 'dark' : 'light';
+    this.document.body.setAttribute('data-theme', theme);
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 }
+
+const isDarkMode = () =>
+  globalThis.matchMedia?.('(prefers-color-scheme:dark)').matches ?? false;

@@ -8,3 +8,20 @@
 .layout__content {
   flex: 1
 }
+
+.main__container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.main__content {
+  margin: 1em auto 0;
+  padding: 0 1em;
+  width: calc(100% - 2em);
+  max-width: 1440px;
+}
+

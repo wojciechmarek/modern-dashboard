@@ -1,0 +1,11 @@
+<md-title title="Settings:"></md-title>
+<div class="content">
+  <div class="settings-row">
+    <md-text class="settings-row__title" text="Color theme:"></md-text>
+    <md-theme-selector
+      [themes]="themes"
+      [selectedTheme]="theme()"
+      (themeChange)="onThemeChange($event)"
+    ></md-theme-selector>
+  </div>
+</div>

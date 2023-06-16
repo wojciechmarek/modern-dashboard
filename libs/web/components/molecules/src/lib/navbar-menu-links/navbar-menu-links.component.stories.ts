@@ -1,13 +1,13 @@
 import { Meta } from '@storybook/angular';
-import { DesktopMenuLinksComponent } from './desktop-menu-links.component';
+import { NavbarMenuLinksComponent } from './navbar-menu-links.component';
 
 export default {
-  title: 'Desktop Menu Links',
-  component: DesktopMenuLinksComponent,
-} as Meta<DesktopMenuLinksComponent>;
+  title: 'NavbarMenuLinksComponent',
+  component: NavbarMenuLinksComponent,
+} as Meta<NavbarMenuLinksComponent>;
 
 export const Primary = {
-  render: (args: DesktopMenuLinksComponent) => ({
+  render: (args: NavbarMenuLinksComponent) => ({
     props: args,
   }),
   args: {},

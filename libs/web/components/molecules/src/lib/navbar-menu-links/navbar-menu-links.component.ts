@@ -8,7 +8,10 @@ import { Component } from '@angular/core'
 export class NavbarMenuLinksComponent {
   links = [
     { path: '/', icon: 'home', title: 'Home' },
-    { path: '/drive', icon: 'drive', title: 'Drive' },
-    { path: '/profile', icon: 'profile', title: 'Profile' },
+    { path: '/projects', icon: 'drive', title: 'Projects' },
+    { path: '/People', icon: 'drive', title: 'People' },
+    { path: '/Clients', icon: 'drive', title: 'Clients' },
+    { path: '/cloud', icon: 'drive', title: 'Cloud' },
+    { path: '/settings', icon: 'drive', title: 'Settings' },
   ]
 }

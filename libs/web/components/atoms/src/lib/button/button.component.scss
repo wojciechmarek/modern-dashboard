@@ -38,7 +38,7 @@
     background-color: transparent;
 
     &:hover {
-      background-color: #ffffff20;
+      background-color: var(--hover-accent-color);
     }
 
     &:disabled {

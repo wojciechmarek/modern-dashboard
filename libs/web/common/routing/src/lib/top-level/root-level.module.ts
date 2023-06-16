@@ -14,7 +14,25 @@ export const rootLevelRoutes: Route[] = [
       ),
   },
   {
-    path: RootLevelPath.Drive,
+    path: RootLevelPath.Cloud,
+    canActivate: [AuthGuard],
+    loadChildren: () =>
+      import('@md/web/views/drive').then((m) => m.WebViewsDriveModule),
+  },
+  {
+    path: RootLevelPath.People,
+    canActivate: [AuthGuard],
+    loadChildren: () =>
+      import('@md/web/views/drive').then((m) => m.WebViewsDriveModule),
+  },
+  {
+    path: RootLevelPath.Projects,
+    canActivate: [AuthGuard],
+    loadChildren: () =>
+      import('@md/web/views/drive').then((m) => m.WebViewsDriveModule),
+  },
+  {
+    path: RootLevelPath.Clients,
     canActivate: [AuthGuard],
     loadChildren: () =>
       import('@md/web/views/drive').then((m) => m.WebViewsDriveModule),
@@ -23,6 +41,11 @@ export const rootLevelRoutes: Route[] = [
     path: RootLevelPath.Auth,
     loadChildren: () =>
       import('@md/web/views/auth').then((m) => m.WebViewsAuthModule),
+  },
+  {
+    path: RootLevelPath.Settings,
+    loadChildren: () =>
+      import('@md/web/views/settings').then((m) => m.WebViewsSettingsModule),
   },
   {
     path: RootLevelPath.Dashboard,

@@ -1,5 +1,7 @@
 .navbar__container {
-  margin: 0 1em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 
   @media screen and (max-width: 768px) {
     margin: 0 0.5em;
@@ -23,13 +25,13 @@
   height: 3em;
   text-decoration: none;
   padding: 0 1em;
-  color: #ffffff50;
+  color: var(--text-color-link);
   font-weight: 800;
   font-size: 1.25rem;
-  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: #ffffffb0;
+    color: var(--text-color);
   }
 
   @media screen and (max-width: 768px) {
@@ -39,10 +41,10 @@
 }
 
 .item__link-active {
-  color: white;
+  color: var(--text-color);
 
   &:hover {
-    color: white;
+    color: var(--text-color);
   }
 
 }
