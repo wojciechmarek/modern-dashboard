@@ -1,9 +1,12 @@
 <div class="navbar__container">
   <ul class="navbar__list">
-    <md-desktop-menu-item
-      *ngFor="let link of links"
-      [path]="link.path"
-      [title]="link.title"
-    />
+    <li *ngFor="let link of links" class="navbar__list-item" [routerLink]="link.path">
+      <a
+        class="item__link"
+        routerLinkActive="item__link-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >{{ link.title }}</a
+      >
+    </li>
   </ul>
 </div>

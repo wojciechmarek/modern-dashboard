@@ -8,3 +8,21 @@
   flex-direction: row;
   gap: 0.25em;
 }
+
+.notification-icon__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-icon__counter-badge {
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 0.75rem;
+  right: -6px;
+  top: -6px;
+}

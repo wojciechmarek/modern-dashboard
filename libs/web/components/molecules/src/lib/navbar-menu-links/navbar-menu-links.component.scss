@@ -12,3 +12,37 @@
   list-style: none;
   flex: 1;
 }
+
+.navbar__list-item {
+  cursor: pointer;
+}
+
+.item__link {
+  display: flex;
+  align-items: center;
+  height: 3em;
+  text-decoration: none;
+  padding: 0 1em;
+  color: #ffffff50;
+  font-weight: 800;
+  font-size: 1.25rem;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    color: #ffffffb0;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 2.5em;
+    padding-left: 0.5em;
+  }
+}
+
+.item__link-active {
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+
+}

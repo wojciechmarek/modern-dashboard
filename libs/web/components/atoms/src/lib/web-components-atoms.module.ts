@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router'
 import { ButtonComponent } from './button/button.component'
 import { TextComponent } from './text/text.component'
 import { IconComponent } from './icon/icon.component'
-import { DesktopMenuItemComponent } from './desktop-menu-item/desktop-menu-item.component'
 import { HeaderComponent } from './header/header.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { TextInputComponent } from './text-input/text-input.component'
@@ -16,7 +15,6 @@ import { HorizontalSelectorComponent } from './horizontal-selector/horizontal-se
 const Components = [
   ButtonComponent,
   IconComponent,
-  DesktopMenuItemComponent,
   HeaderComponent,
   TextInputComponent,
   TextComponent,

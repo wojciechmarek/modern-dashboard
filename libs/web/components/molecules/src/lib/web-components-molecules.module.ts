@@ -10,12 +10,14 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
 import { LucideAngularModule, Search, Bell, User } from 'lucide-angular';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     WebComponentsAtomsModule,
     ReactiveFormsModule,
+    RouterModule,
     LucideAngularModule.pick({ Search, Bell, User }),
   ],
   declarations: [
