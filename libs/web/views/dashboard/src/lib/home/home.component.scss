@@ -1,0 +1,47 @@
+.dashboard__container {
+  margin-top: 2em;
+  display: grid;
+  gap: 2em;
+  height: 100%;
+  grid-template-columns: repeat(9, 1fr);
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dashboard__tile {
+  &:nth-child(1) {
+    grid-column: 1 / span 6;
+  }
+  
+  &:nth-child(2) {
+    grid-column: 7 / span 3;
+  }
+
+  &:nth-child(3) {
+    grid-column: 1 / span 3;
+  }
+
+  &:nth-child(4) {
+    grid-column: 4 / span 6;
+  }
+
+  &:nth-child(5) {
+    grid-column: 1 / span 3;
+  }
+
+  &:nth-child(6) {
+    grid-column: 4 / span 2;
+  }
+
+  &:nth-child(7) {
+    grid-column: 7 / span 3;
+  }
+}
+
+

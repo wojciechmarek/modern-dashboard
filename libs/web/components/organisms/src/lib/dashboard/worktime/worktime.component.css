@@ -1,0 +1,65 @@
+.worktime__container {
+  border-radius: 2em;
+  background-color: #202229;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.worktime__header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  margin: 0 1.5em;
+}
+
+.header-bar__text {
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.worktime__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 1.5em 1.5em 1.5em;
+  height: 10em;
+}
+
+.content__graph {
+  height: 10em;
+  width: 10em;
+  background-color: gray;
+  border-radius: 0.25em;
+}
+
+.content__details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  background-color: #ffffff30;
+  padding: 1em;
+  border-radius: 0.5em;
+  height: 100%;
+}
+
+.detail-item__value {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.detail-item__description {
+  font-size: 0.75em;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.detail-item__trend {
+  margin-top: 0.25em;
+  background-color: #00ff3c30;
+  padding: 0.25em 0.5em;
+  border-radius: 0.5em;
+}

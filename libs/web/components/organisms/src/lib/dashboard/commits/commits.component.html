@@ -1,0 +1,18 @@
+<md-dashboard-tile>
+  <div class="commits__container">
+    <div class="commits__header">
+      <p class="header-paragraph">YOUR COMMITS</p>
+    </div>
+    <div class="commits__content">
+      <div class="content__calendar">
+        <div
+          *ngFor="let commit of commits"
+          class="calendar__item"
+          [ngStyle]="{ 'background-color': commit.style }"
+        >
+      
+      </div>
+      </div>
+    </div>
+  </div>
+</md-dashboard-tile>

@@ -1,0 +1,145 @@
+.calendar__container {
+  border-radius: 2em;
+  background-color: #202229;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.calendar__header-bar {
+  background-color: #455EC0;
+  height: 5em;
+  border-radius: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  z-index: 1;
+  
+}
+
+.header-bar__text {
+  font-weight: 900;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.header-bar__select {
+  background-color: #ffffff40;
+  border-radius: 0.75em;
+  color: #ffffff;
+  font-weight: 700;
+  height: 2.5em;
+  padding: 0 0.75em;
+  border: 0;
+}
+
+.calendar__week-days {
+  position: relative;
+  margin: 0 em;
+  background-color: #252b43;
+  height: 6em;
+  display: flex;
+  align-items: end;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.week-days__list {
+  display: flex;
+  list-style: none;
+  gap: 0.5em;
+  margin: 1em 1em;
+}
+
+.week-days__item {
+  background-color: #455EC0;
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em 0;
+  width: 3em;
+}
+
+.week-days__item-day {
+  color: #ffffff;
+  font-size: 0.75rem;
+
+}
+
+.week-days__item-number {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.calendar__events {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.events__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75em 1em;
+}
+
+.events__header-date {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.events__header-button {
+  color: #ffffff;
+}
+
+.events__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 1em;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.events__list-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+  gap: 0.25em;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5em;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ffffff20;
+  }
+}
+
+.item-time {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 1em;
+}
+
+.item-dot {
+  height: 0.75em;
+  width: 0.75em;
+  border-radius: 50%;
+  background-color: #00d03e;
+  margin-right: 1em;
+}
+
+.item-description {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+}

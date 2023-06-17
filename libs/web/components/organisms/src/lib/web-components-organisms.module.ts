@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
-import { NavbarComponent } from './navbar/navbar.component'
-import { WebComponentsAtomsModule } from '@md/web/components/atoms'
-import { WebComponentsMoleculesModule } from '@md/web/components/molecules'
-import { RouterModule } from '@angular/router'
-import { LoginComponent } from './login/login.component'
-import { ReactiveFormsModule } from '@angular/forms'
-import { RegisterComponent } from './register/register.component'
-import { ResetPasswordComponent } from './reset-password/reset-password.component'
-import { LucideAngularModule, Menu } from 'lucide-angular'
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NavbarComponent } from './navbar/navbar.component';
+import { WebComponentsAtomsModule } from '@md/web/components/atoms';
+import { WebComponentsMoleculesModule } from '@md/web/components/molecules';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LucideAngularModule, Menu, GripHorizontal } from 'lucide-angular';
+import { AuthOrganisms } from './auth';
+import { DashboardOrganisms } from './dashboard';
 
 @NgModule({
   imports: [
@@ -17,9 +16,13 @@ import { LucideAngularModule, Menu } from 'lucide-angular'
     WebComponentsMoleculesModule,
     RouterModule,
     ReactiveFormsModule,
-    LucideAngularModule.pick({ Menu }),
+    LucideAngularModule.pick({ Menu, GripHorizontal }),
   ],
-  declarations: [NavbarComponent, LoginComponent, RegisterComponent, ResetPasswordComponent],
-  exports: [NavbarComponent, LoginComponent, RegisterComponent, ResetPasswordComponent],
+  declarations: [NavbarComponent, ...AuthOrganisms, ...DashboardOrganisms],
+  exports: [
+    NavbarComponent,
+    ...AuthOrganisms,
+    ...DashboardOrganisms
+  ],
 })
 export class WebComponentsOrganismsModule {}
