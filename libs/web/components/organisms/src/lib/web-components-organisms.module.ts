@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { RegisterComponent } from './register/register.component'
 import { ResetPasswordComponent } from './reset-password/reset-password.component'
+import { LucideAngularModule, Menu } from 'lucide-angular'
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     WebComponentsAtomsModule,
     WebComponentsMoleculesModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LucideAngularModule.pick({ Menu }),
   ],
   declarations: [NavbarComponent, LoginComponent, RegisterComponent, ResetPasswordComponent],
   exports: [NavbarComponent, LoginComponent, RegisterComponent, ResetPasswordComponent],

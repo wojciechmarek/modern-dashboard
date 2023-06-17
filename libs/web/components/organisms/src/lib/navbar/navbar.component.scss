@@ -20,9 +20,29 @@
 }
 
 .navbar__brand-logo {
-  margin-right: 3em;
+  margin: 0 2em 0 0.5em;
 }
 
 .navbar__navbar-menu-links {
   flex: 1;
+  margin-right: 0.75em;
+
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 786px) {
+    display: none;
+  }
+}
+
+.navbar__mobile-hamburger {
+  display: none;
+
+  @media (max-width: 786px) {
+    display: flex;
+  }
 }

@@ -1,5 +1,4 @@
 .manager__container {
-  margin: 0 1em;
   display: flex;
 }
 
@@ -18,11 +17,23 @@
 
 .notification-icon__counter-badge {
   position: absolute;
-  background-color: red;
+  background-color: var(--danger-color);
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   font-size: 0.75rem;
   right: -6px;
   top: -6px;
+}
+
+.manager__notification_icon-button {
+  @media screen and (max-width: 786px) {
+    display: none;
+  }
+}
+
+.manager__search_icon-button {
+  @media screen and (max-width: 786px) {
+    display: none;
+  }
 }
