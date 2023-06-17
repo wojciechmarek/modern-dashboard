@@ -1,13 +1,11 @@
-<md-dashboard-tile>
   <div class="calendar__container">
-    <div class="calendar__header-bar">
-      <p class="header-bar__text">MY CALENDAR</p>
+    <md-dashboard-tile-header title="My calendar" [isHeaderHighlighted]="true">
       <select class="header-bar__select">
         <option value="1">January</option>
         <option value="2">February</option>
         <option value="3">March</option>
       </select>
-    </div>
+    </md-dashboard-tile-header>
     <div class="calendar__week-days">
       <ul class="week-days__list">
         <li class="week-days__item">
@@ -96,4 +94,3 @@
       </ul>
     </div>
   </div>
-</md-dashboard-tile>

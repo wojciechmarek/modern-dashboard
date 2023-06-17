@@ -1,13 +1,12 @@
-.chart__container {
+.settings__container {
   border-radius: 2em;
   background-color: #202229;
   display: flex;
   flex-direction: column;
   height: 12.5em;
-
 }
 
-.chart__header-bar {
+.settings__header-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,11 +19,11 @@
   color: #ffffff;
 }
 
-.chart__content {
+.settings__content {
   flex: 1;
   display: flex;
-  align-items: center;
-  margin: 0 1.5em 1em;
+  justify-content: center;
+  margin: 0 1.5em 1.5em 1.5em;
 }
 
 .content__graph {

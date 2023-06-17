@@ -3,26 +3,7 @@
   background-color: #202229;
   display: flex;
   flex-direction: column;
-  height: fit-content;
-}
-
-.calendar__header-bar {
-  background-color: #455EC0;
-  height: 5em;
-  border-radius: 2em;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2em;
-  z-index: 1;
-  
-}
-
-.header-bar__text {
-  font-weight: 900;
-  font-size: 1rem;
-  color: #ffffff;
+  height: 26em;
 }
 
 .header-bar__select {
@@ -36,12 +17,10 @@
 }
 
 .calendar__week-days {
-  position: relative;
-  margin: 0 em;
   background-color: #252b43;
-  height: 6em;
   display: flex;
   align-items: end;
+  height: fit-content;
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -79,15 +58,17 @@
 }
 
 .calendar__events {
+  flex: 1;
+  height: 1em;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin: 0 1.5em 1em;
 }
 
 .events__header {
   display: flex;
   justify-content: space-between;
-  margin: 0.75em 1em;
+  margin: 0.75em 0;
 }
 
 .events__header-date {
@@ -104,7 +85,6 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 0 1em;
   overflow-y: scroll;
   height: 100%;
 }

@@ -1,9 +1,10 @@
 .dashboard__container {
-  margin-top: 2em;
+  margin: 2em 0;
   display: grid;
-  gap: 2em;
-  height: 100%;
+  gap: 1em;
+  height: 100vh;
   grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 12.5em);
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(6, 1fr);
@@ -14,34 +15,54 @@
   }
 }
 
-.dashboard__tile {
-  &:nth-child(1) {
-    grid-column: 1 / span 6;
-  }
-  
-  &:nth-child(2) {
-    grid-column: 7 / span 3;
-  }
+.greetings {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+}
 
-  &:nth-child(3) {
-    grid-column: 1 / span 3;
-  }
+.calendar {
+  grid-column: 7 / span 3;
+  grid-row: 1 / span 2;
+}
 
-  &:nth-child(4) {
-    grid-column: 4 / span 6;
-  }
+.settings {
+  grid-column: 4 / span 2;
+  grid-row: 4 / span 1;
+}
 
-  &:nth-child(5) {
-    grid-column: 1 / span 3;
-  }
+.chart1 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
 
-  &:nth-child(6) {
-    grid-column: 4 / span 2;
-  }
+.chart2 {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+}
 
-  &:nth-child(7) {
-    grid-column: 7 / span 3;
-  }
+.chart3 {
+  grid-column: 5 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.commits {
+  grid-column: 4 / span 3;
+  grid-row: 3 / span 1;
+}
+
+.profile {
+  grid-column: 7 / span 3;
+  grid-row: 3 / span 2;
+}
+
+.jira {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 2;
+}
+
+.worktime {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 1;
 }
 
 

@@ -1,11 +1,7 @@
-<md-dashboard-tile>
   <div class="chart__container">
-    <div class="chart__header-bar">
-      <p class="header-bar__text">ONLINE WORK</p>
-      <span class="header-bar__button">
-        <lucide-icon name="grip-horizontal"></lucide-icon>
-      </span>
-    </div>
+    <md-dashboard-tile-header [title]="'Online work'">
+      <lucide-icon name="grip-horizontal"></lucide-icon>
+    </md-dashboard-tile-header>
     <div class="chart__content">
       <div class="content__graph"></div>
       <div class="content__details">
@@ -17,4 +13,3 @@
       </div>
     </div>
   </div>
-</md-dashboard-tile>

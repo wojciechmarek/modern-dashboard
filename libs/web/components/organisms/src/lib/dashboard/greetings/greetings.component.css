@@ -3,14 +3,13 @@
   background-color: #455EC0;
   display: flex;
   padding: 1.5em;
-  height: 15em;
+  height: 12.5em;
 }
 
 .gettings__text-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 .gettings__calendar {

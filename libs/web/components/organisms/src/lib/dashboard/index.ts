@@ -5,6 +5,7 @@ import { JiraTicketsComponent } from "./jira-tickets/jira-tickets.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { ChartComponent } from "./chart/chart.component";
 import { WorktimeComponent } from "./worktime/worktime.component";
+import { SettingsComponent } from "./setting/settings.component";
 
 
 export const DashboardOrganisms = [
@@ -15,4 +16,5 @@ export const DashboardOrganisms = [
   ChartComponent,
   JiraTicketsComponent,
   ProfileComponent,
+  SettingsComponent
 ];

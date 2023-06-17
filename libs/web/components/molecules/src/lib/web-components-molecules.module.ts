@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ResetPasswordFormComponent } from './reset-password-form/reset-password-form.component';
 import { LucideAngularModule, Search, Bell, User } from 'lucide-angular';
 import { RouterModule } from '@angular/router';
-import { DashboardTileComponent } from './dashboard-tile/dashboard-tile.component';
+import { DashboardTileHeaderComponent } from './dashboard-tile-header/dashboard-tile-header.component';
 
 @NgModule({
   imports: [
@@ -29,7 +29,7 @@ import { DashboardTileComponent } from './dashboard-tile/dashboard-tile.componen
     LoginFormComponent,
     RegisterFormComponent,
     ResetPasswordFormComponent,
-    DashboardTileComponent,
+    DashboardTileHeaderComponent,
   ],
   exports: [
     BrandLogoComponent,
@@ -39,7 +39,7 @@ import { DashboardTileComponent } from './dashboard-tile/dashboard-tile.componen
     LoginFormComponent,
     RegisterFormComponent,
     ResetPasswordFormComponent,
-    DashboardTileComponent,
+    DashboardTileHeaderComponent,
   ],
 })
 export class WebComponentsMoleculesModule {}

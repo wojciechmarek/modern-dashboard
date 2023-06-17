@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  padding: 1.5em 1.5em 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.is-highlighted {
+  background-color: #4A5DBA;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+.text {
+  font-weight: 900;
+  color: #fff;
+}

@@ -1,17 +1,15 @@
-<md-dashboard-tile>
   <div class="jira__container">
-    <div class="jira__header-bar">
-      <p class="header-bar__text">YOUR TICKETS</p>
+    <md-dashboard-tile-header title="Your tickets">
       <select class="header-bar__select">
         <option value="1">Project #1</option>
         <option value="2">Project #2</option>
         <option value="3">Project #3</option>
       </select>
-    </div>
+    </md-dashboard-tile-header>
     <div class="jira__my-tasks">
       <div class="my-task__container">
         <div class="my-task__details">
-          <p class="my-task__title">Ready:</p>
+          <p class="my-task__title">Accepted:</p>
           <p class="my-task__amount">13</p>
         </div>
         <div class="my-task__progress">
@@ -22,8 +20,19 @@
     <div class="jira__my-tasks">
       <div class="my-task__container">
         <div class="my-task__details">
-          <p class="my-task__title">In progress:</p>
+          <p class="my-task__title">Ready for development:</p>
           <p class="my-task__amount">3</p>
+        </div>
+        <div class="my-task__progress">
+          <div class="my-task__bar"></div>
+        </div>
+      </div>
+    </div>
+    <div class="jira__my-tasks">
+      <div class="my-task__container">
+        <div class="my-task__details">
+          <p class="my-task__title">In progress:</p>
+          <p class="my-task__amount">13</p>
         </div>
         <div class="my-task__progress">
           <div class="my-task__bar"></div>
@@ -41,9 +50,20 @@
         </div>
       </div>
     </div>
+
+    <div class="jira__my-tasks">
+      <div class="my-task__container">
+        <div class="my-task__details">
+          <p class="my-task__title">Reopened:</p>
+          <p class="my-task__amount">13</p>
+        </div>
+        <div class="my-task__progress">
+          <div class="my-task__bar"></div>
+        </div>
+      </div>
+    </div>
     <div class="jira__total">
       <p class="total__title">Total:</p>
       <p class="total__amount">19</p>
     </div>
   </div>
-</md-dashboard-tile>

@@ -1,17 +1,16 @@
 .layout__container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
 }
 
 .layout__content {
-  flex: 1
+  flex-grow: 1;
 }
 
 .main__container {
   display: flex;
-  height: 100vh;
+  height: fit-content;
   flex-direction: column;
   background: var(--bg-gradient);
   color: var(--text-color);
@@ -24,4 +23,3 @@
   width: 100%;
   max-width: 1440px;
 }
-

@@ -1,0 +1,16 @@
+  <div class="settings__container">
+    <md-dashboard-tile-header [title]="'QUICK SETTINGS'">
+      <lucide-icon name="grip-horizontal"></lucide-icon>
+    </md-dashboard-tile-header>
+    <div class="settings__content">
+      <div class="content__colors-selector">
+        <md-theme-selector
+        [themes]="themes"
+        [selectedTheme]="theme()"
+        (themeChange)="onThemeChange($event)"
+      ></md-theme-selector>
+      </div>
+      <div class="content__colors-selector">
+      </div>
+    </div>
+  </div>

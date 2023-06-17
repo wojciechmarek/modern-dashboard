@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { DashboardTileComponent } from './dashboard-tile.component';
+import { SettingsComponent } from './settings.component';
 
-describe('DashboardTileComponent', () => {
-  let component: DashboardTileComponent;
-  let fixture: ComponentFixture<DashboardTileComponent>;
+describe('SettingsComponent', () => {
+  let component: SettingsComponent;
+  let fixture: ComponentFixture<SettingsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DashboardTileComponent],
+      declarations: [SettingsComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(DashboardTileComponent);
+    fixture = TestBed.createComponent(SettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

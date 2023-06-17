@@ -3,23 +3,11 @@
   background-color: #202229;
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  height: 26em;
 }
 
-.profile__header-bar {
-  background-color: #455EC0;
-  height: 5em;
-  border-radius: 2em;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.header-bar__text {
-  margin-left: 2em;
-  font-weight: 900;
-  font-size: 1rem;
-  color: #ffffff;
+.fake-height {
+  height: 2em;
 }
 
 .profile__content {
@@ -48,7 +36,7 @@
 
 .content__user-details__fullname {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffffff;
 }
 
