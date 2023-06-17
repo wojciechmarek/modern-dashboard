@@ -18,33 +18,3 @@
 .navbar__list-item {
   cursor: pointer;
 }
-
-.item__link {
-  display: flex;
-  align-items: center;
-  height: 3em;
-  text-decoration: none;
-  padding: 0 1em;
-  color: var(--text-color-link);
-  font-weight: 800;
-  font-size: 1.25rem;
-  transition: color 0.2s ease-in-out;
-
-  &:hover {
-    color: var(--text-color);
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 2.5em;
-    padding-left: 0.5em;
-  }
-}
-
-.item__link-active {
-  color: var(--text-color);
-
-  &:hover {
-    color: var(--text-color);
-  }
-
-}

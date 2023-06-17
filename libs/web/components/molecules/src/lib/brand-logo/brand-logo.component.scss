@@ -1,18 +1,14 @@
 .navbar__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 3em;
+  width: 10em;
   color: var(--text-color);
   transition: background-color 0.2s ease-in-out;
 }
 
 .navbar__icon {
-  height: 2.5em;
-  width: 2.5em;
-
-  @media screen and (max-width: 768px) {
-    height: 2em;
-    width: 2em;
-  }
 }
 
 .navbar__text {

@@ -13,6 +13,7 @@ import { HorizontalLineComponent } from './horizontal-line/horizontal-line.compo
 import { HorizontalSelectorComponent } from './horizontal-selector/horizontal-selector.component'
 import { TitleComponent } from './title/title.component'
 import { ThemeSelectorComponent } from './theme-selector/theme-selector.component'
+import { FlatLinkComponent } from './flat-link/flat-link.component'
 
 const Components = [
   ButtonComponent,
@@ -25,7 +26,8 @@ const Components = [
   HorizontalLineComponent,
   HorizontalSelectorComponent,
   TitleComponent,
-  ThemeSelectorComponent
+  ThemeSelectorComponent,
+  FlatLinkComponent
 ];
 
 @NgModule({
