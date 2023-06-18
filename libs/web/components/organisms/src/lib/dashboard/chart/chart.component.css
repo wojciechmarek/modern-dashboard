@@ -31,7 +31,6 @@
 .content__graph {
   height: 6em;
   width: 6em;
-  background-color: gray;
   border-radius: 0.25em;
 }
 
@@ -56,7 +55,6 @@
 
 .detail-item__trend {
   margin-top: 0.25em;
-  background-color: #00ff3c30;
   padding: 0.25em 0.5em;
   border-radius: 0.5em;
 }
