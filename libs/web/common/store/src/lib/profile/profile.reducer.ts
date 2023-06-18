@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { LanguageActions, ThemeAction } from './profile.actions';
+import {  LanguageAction, ThemeAction } from './profile.actions';
 import { Language, Theme } from '@md/common/enums';
 
 export interface ProfileState {
@@ -19,13 +19,9 @@ export const initialProfileState: ProfileState = {
 export const profileReducer = createReducer(
   initialProfileState,
 
-  on(LanguageActions.changeToEnglish, (state) => ({
+  on(LanguageAction, (state, { language }) => ({
     ...state,
-    language: Language.English,
-  })),
-  on(LanguageActions.changeToPolish, (state) => ({
-    ...state,
-    language: Language.Polish,
+    language,
   })),
 
   on(ThemeAction, (state, { theme }) => {

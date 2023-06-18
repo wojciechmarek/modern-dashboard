@@ -1,8 +1,22 @@
-.content {
+.settings-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.settings-content {
   display: flex;
   flex-direction: column;
   margin-top: 1.5em;
   gap: 1em;
+
+  margin: 1em auto 0;
+  padding: 0 1em;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .settings-row {

@@ -1,9 +1,11 @@
 .calendar__container {
   border-radius: 2em;
-  background-color: #202229;
+  background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
   height: 26em;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .header-bar__select {
@@ -17,7 +19,7 @@
 }
 
 .calendar__week-days {
-  background-color: #252b43;
+  background-color: var(--bg-color-dashboard-accent-opacity);
   display: flex;
   align-items: end;
   height: fit-content;
@@ -35,7 +37,7 @@
 }
 
 .week-days__item {
-  background-color: #455EC0;
+  background-color: var(--bg-color-dashboard-accent);
   border-radius: 0.75em;
   display: flex;
   flex-direction: column;

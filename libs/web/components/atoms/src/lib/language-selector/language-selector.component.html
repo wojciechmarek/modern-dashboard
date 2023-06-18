@@ -1,0 +1,10 @@
+<div class="language-selector__container">
+  <div
+    *ngFor="let language of languages"
+    [title]="language.name"
+    class="language-selector__item"
+    (click)="onLanguageClick(language.id)"
+    >
+      <img class="language-selector__image" [src]="language.flag" alt="language icon" />
+  </div>
+</div>

@@ -1,6 +1,8 @@
 [data-theme='light'] {
   --bg-color: #ffffff;
-  --bg-color-alternative: #e7e7e7;
+  --bg-color-alternative: #bebebe;
+  --bg-color-dashboard-accent: #8c8c8c;
+  --bg-color-dashboard-accent-opacity: #8c8c8c40;
   --bg-gradient: linear-gradient(315deg, #ffffff 0%, #ececec 100%);
 
   --text-color: #22242b;
@@ -12,7 +14,7 @@
   --separator-color: #e8e7e0;
   --separator-color-alternative: #b4b4b4;
 
-  --header-gradient: -webkit-linear-gradient(20deg, #d31c6e, #cf4419);
+  --header-gradient: linear-gradient(170deg, rgba(192,105,159,1) 28%, rgba(135,25,203,1) 69%);
   --success-color: #3ba03e;
   --danger-color: #e6372b;
   --wrong-input-color: #f6cece;

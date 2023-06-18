@@ -1,6 +1,6 @@
 .gettings__content {
   border-radius: 2em;
-  background-color: #455EC0;
+  background-color: var(--bg-color-dashboard-accent);
   display: flex;
   padding: 1.5em;
   height: 12.5em;
@@ -29,8 +29,13 @@
   
 }
 
-.gettings__hello-header {
+.gettings__hello-header1 {
   font-size: 1.75rem;
+}
+
+.gettings__hello-header2 {
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .gettings__hello-paragraph {

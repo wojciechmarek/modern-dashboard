@@ -1,0 +1,20 @@
+.language-selector__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.language-selector__item {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}
+
+.language-selector__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -1,11 +1,21 @@
-<md-title title="Settings:"></md-title>
-<div class="content">
-  <div class="settings-row">
-    <md-text class="settings-row__title" text="Color theme:"></md-text>
-    <md-theme-selector
-      [themes]="themes"
-      [selectedTheme]="theme()"
-      (themeChange)="onThemeChange($event)"
-    ></md-theme-selector>
+<div class="settings-container">
+  <div class="settings-content">
+    <md-title title="Settings:"></md-title>
+    <div class="settings-row">
+      <md-text class="settings-row__title" text="Color theme:"></md-text>
+      <md-theme-selector
+        [themes]="themes"
+        [selectedTheme]="themes[1]"
+        (themeChange)="onThemeChange($event)"
+      ></md-theme-selector>
+    </div>
+    <div class="settings-row">
+      <md-text class="settings-row__title" text="Language:"></md-text>
+      <md-language-selector
+        [languages]="languages"
+        [selectedLanguage]="languages[1]"
+        (languageChange)="onLanguageChange($event)"
+      ></md-language-selector>
+    </div>
   </div>
 </div>

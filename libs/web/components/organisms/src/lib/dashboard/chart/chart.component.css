@@ -1,10 +1,11 @@
 .chart__container {
   border-radius: 2em;
-  background-color: #202229;
+  background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
   height: 12.5em;
 
+  transition: background-color 0.2s ease-in-out;
 }
 
 .chart__header-bar {

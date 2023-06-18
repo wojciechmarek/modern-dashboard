@@ -1,9 +1,11 @@
 .profile__container {
   border-radius: 2em;
-  background-color: #202229;
+  background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
   height: 26em;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .fake-height {
@@ -23,6 +25,7 @@
 
 .content__user-details__image img{
   height: 8em;
+  width: 8em;
   object-fit: cover;
   border-radius: 50%;
 }

@@ -1,9 +1,11 @@
 .settings__container {
   border-radius: 2em;
-  background-color: #202229;
+  background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
   height: 12.5em;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .settings__header-bar {
@@ -22,8 +24,10 @@
 .settings__content {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0 1.5em 1.5em 1.5em;
+  gap: 1em;
 }
 
 .content__graph {

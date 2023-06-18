@@ -1,6 +1,8 @@
 [data-theme='red'] {
   --bg-color: #6e0000;
-  --bg-color-alternative: #840606;
+  --bg-color-alternative: #2a0404;
+  --bg-color-dashboard-accent: #a82323;
+  --bg-color-dashboard-accent-opacity: #a8232340;
   --bg-gradient: linear-gradient(315deg, #811c1c 0%, #4e0000 100%);
 
   --text-color: #fcfaf1;
@@ -12,7 +14,7 @@
   --separator-color: #393a3d;
   --separator-color-alternative: #434347;
 
-  --header-gradient: -webkit-linear-gradient(20deg, #d3387e, #d65d39);
+  --header-gradient: linear-gradient(170deg, rgba(192,105,159,1) 28%, rgba(135,25,203,1) 69%);
   --success-color: #4caf50;
   --danger-color: #f44336;
   --wrong-input-color: #312222;

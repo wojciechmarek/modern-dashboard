@@ -67,6 +67,8 @@
     "@nrwl/web": "16.1.1",
     "@nrwl/webpack": "16.1.1",
     "@nrwl/workspace": "16.1.1",
+    "@nx/jest": "16.1.1",
+    "@nx/js": "16.1.1",
     "@schematics/angular": "16.0.0",
     "@storybook/addon-a11y": "^7.0.2",
     "@storybook/addon-essentials": "7.0.9",
