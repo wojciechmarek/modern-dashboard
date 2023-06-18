@@ -1,6 +1,6 @@
 # Modern Dashboard
 
-It is a demo application that shows how to build a modern web application with Angular 16 and NestJS. This project is not an actual application solving any particular business problem. Instead, it is a blueprint that can be used to build a real application. For now, it shows how to style the application using the atomic design methodology and how to configure the NX monorepo.
+It is a demo application that shows how to build a modern web application with Angular 16 and NestJS. This project is not an actual application solving any particular business problem. Instead, it is a blueprint that can be used to build an application. For now, it shows how to style the application using the atomic design methodology and how to configure the NX monorepo.
 
 ## Purpose
 
@@ -11,6 +11,7 @@ To learn the Angular 16 and NestJS frameworks and build a modern application wit
 - ✅ using the docker containers to develop and run the application,
 - ❌ using the MongoDB database with Change Streams,
 - ❌ using the .env files to store the secrets,
+- ❌ using the CQRS to process the data in the spirit of DDD,
 - ✅ using the atomic design methodology to build the UI,
 - ❌ using the Storybook to present and test the UI components,
 - ❌ using real-time communication with GraphQL subscriptions,
@@ -26,13 +27,14 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 
 The **Modern Dashboard** from the title looks like this:
 
-![modern-dashboard](https://github.com/wojciechmarek/modern-dashboard/assets/27026036/7aa4c3ae-11b8-4db9-b394-4bfd266667a9)
+![dash](https://github.com/wojciechmarek/modern-dashboard/assets/27026036/48accec4-bbc9-4faf-a025-ab8f111f5836)
+
 
 Current dashboard:
 
 - does not use real data,
 - does not allow to change the language,
-- does not support mobile views (due to `desktop first approach`),
+- does not support mobile views (due to the `desktop first approach),
 - allows to change the color theme.
 
 ## Used technologies
@@ -78,7 +80,7 @@ The development container way:
 3. Install a VS Code [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 4. Clone the repository.
 5. Open the repository in VS Code.
-6. Click on the `><` (Open a Remove Window) button in the bottom left corner of the VS Code window.
+6. Click the `><` (Open a Remove Window) button in the bottom left corner of the VS Code window.
 7. Select `Reopen in Container`.
 8. Wait for the container to start.
 9. Open a terminal in VS Code (it will be automatically connected to the container's shell).
