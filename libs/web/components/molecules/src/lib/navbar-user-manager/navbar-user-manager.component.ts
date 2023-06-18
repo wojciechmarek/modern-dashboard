@@ -11,6 +11,7 @@ export class NavbarUserManagerComponent {
 
   @Output() handleThemeButtonClick = new EventEmitter();
   @Output() handleAuthButtonClick = new EventEmitter();
+  @Output() handleSearchOpenClick = new EventEmitter();
 
   themeButtonClick() {
     this.handleThemeButtonClick.emit();
@@ -19,4 +20,9 @@ export class NavbarUserManagerComponent {
   authButtonClick() {
     this.handleAuthButtonClick.emit();
   }
+
+  searchOpenClick() {
+    this.handleSearchOpenClick.emit();
+  }
+
 }

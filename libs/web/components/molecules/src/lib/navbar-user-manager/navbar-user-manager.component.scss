@@ -5,6 +5,7 @@
 .manager__content {
   display: flex;
   flex-direction: row;
+  height: 3.25em;
   gap: 0.25em;
 }
 
@@ -36,4 +37,9 @@
   @media screen and (max-width: 786px) {
     display: none;
   }
+}
+
+.search-button__content {
+  display: flex;
+  gap: 0.5em;
 }

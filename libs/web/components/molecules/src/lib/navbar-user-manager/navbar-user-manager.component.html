@@ -1,8 +1,11 @@
 <div class="manager__container">
   <div class="manager__content">
     <div class="manager__search_icon-button">
-      <md-button color="transparent">
-        <lucide-icon name="search"></lucide-icon>
+      <md-button color="transparent" (handleClick)="searchOpenClick()">
+        <div class="search-button__content">
+          <lucide-icon name="search"></lucide-icon>
+          <span>Click or ⌘K</span>
+        </div>
       </md-button>
     </div>
     <div class="manager__notification_icon-button">

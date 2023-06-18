@@ -45,8 +45,6 @@
 .content__graph-image {
   height: 100%;
   width: 100%;
-  position: relative;
-  top: -0.5em;
 }
 
 .content__details {
@@ -54,11 +52,10 @@
   display: flex;
   flex-direction: column;
   margin-left: 1em;
-  background-color: #ffffff30;
+  background-color: var(--bg-color-opacity);
   padding: 0.5em 1em;
   border-radius: 0.5em;
   height: 100%;
-
   overflow-y: scroll;
 }
 
@@ -70,7 +67,7 @@
 .detail-item__value {
   font-size: 1.5em;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .detail-item__description {
@@ -78,7 +75,7 @@
   font-weight: 900;
   margin-left: 0.5em;
   margin-top: 0.6em;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .detail-item__trend {

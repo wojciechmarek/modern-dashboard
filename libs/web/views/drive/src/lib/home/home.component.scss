@@ -2,7 +2,6 @@ main {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.2s ease-in-out;
 }

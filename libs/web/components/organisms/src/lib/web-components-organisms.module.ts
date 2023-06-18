@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LucideAngularModule, Menu, GripHorizontal } from 'lucide-angular';
 import { AuthOrganisms } from './auth';
 import { DashboardOrganisms } from './dashboard';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   imports: [
@@ -18,9 +19,10 @@ import { DashboardOrganisms } from './dashboard';
     ReactiveFormsModule,
     LucideAngularModule.pick({ Menu, GripHorizontal }),
   ],
-  declarations: [NavbarComponent, ...AuthOrganisms, ...DashboardOrganisms],
+  declarations: [NavbarComponent, SearchComponent, ...AuthOrganisms, ...DashboardOrganisms],
   exports: [
     NavbarComponent,
+    SearchComponent,
     ...AuthOrganisms,
     ...DashboardOrganisms
   ],

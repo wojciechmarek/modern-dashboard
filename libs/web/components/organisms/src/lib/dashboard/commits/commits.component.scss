@@ -19,6 +19,7 @@
 .content__calendar {
   display: grid;
   gap: 0.25em;
+  grid-auto-flow: column;
   grid-template-columns: repeat(50, 1fr);
   grid-template-rows: repeat(7, 1fr);
   overflow-x: scroll;

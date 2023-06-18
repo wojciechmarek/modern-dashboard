@@ -9,7 +9,7 @@
 }
 
 .header-bar__select {
-  background-color: #ffffff40;
+  background-color: var(--bg-color-opacity);
   border-radius: 0.75em;
   color: #ffffff;
   font-weight: 700;
@@ -19,7 +19,7 @@
 }
 
 .calendar__week-days {
-  background-color: var(--bg-color-dashboard-accent-opacity);
+  background-color: var(--bg-color-alternative-light);
   display: flex;
   align-items: end;
   height: fit-content;
@@ -37,7 +37,7 @@
 }
 
 .week-days__item {
-  background-color: var(--bg-color-dashboard-accent);
+  background-color: var(--bg-color);
   border-radius: 0.75em;
   display: flex;
   flex-direction: column;
@@ -45,6 +45,12 @@
   align-items: center;
   padding: 0.75em 0;
   width: 3em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--bg-color-opacity-hover);
+  }
 }
 
 .week-days__item-day {
@@ -94,20 +100,20 @@
 .events__list-item {
   display: flex;
   align-items: center;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
   gap: 0.25em;
   transition: background-color 0.2s ease-in-out;
   border-radius: 0.5em;
+  cursor: pointer;
 
   &:hover {
-    cursor: pointer;
-    background-color: #ffffff20;
+    background-color: var(--bg-color-opacity-hover);
   }
 }
 
 .item-time {
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 1rem;
   margin-right: 1em;
 }
@@ -116,12 +122,12 @@
   height: 0.75em;
   width: 0.75em;
   border-radius: 50%;
-  background-color: #00d03e;
+  background-color: var(--success-color);
   margin-right: 1em;
 }
 
 .item-description {
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 1rem;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Component({
   selector: 'md-navbar',
@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  @Output() handleOpenSearch = new EventEmitter();
 
+  onSearchOpenClick() {
+    this.handleOpenSearch.emit();
+  }
 
-  handleAuthButtonClick() {
-    console.log('Sign In');
+  @HostListener('document:keydown.meta.k')
+  handleKeyboardEvent() { 
+    this.handleOpenSearch.emit();
   }
 }
