@@ -1,6 +1,6 @@
 # Modern Dashboard
 
-It is a demo application that shows how to build a modern web application with Angular 16 and NestJS. This project is not an actual application solving some particular business problem. Instead, it is a blueprint that can be used to build a real application. For now, it shows how to style the application using the atomic design methodology and how to secure it using the JWT tokens.
+It is a demo application that shows how to build a modern web application with Angular 16 and NestJS. This project is not an actual application solving any particular business problem. Instead, it is a blueprint that can be used to build a real application. For now, it shows how to style the application using the atomic design methodology and how to configure the NX monorepo.
 
 ## Purpose
 
@@ -10,8 +10,12 @@ To learn the Angular 16 and NestJS frameworks and build a modern application wit
 - ✅ using the latest NestJS features (GraphQL, etc.),
 - ✅ using the docker containers to develop and run the application,
 - ❌ using the MongoDB database with Change Streams,
+- ❌ using the .env files to store the secrets,
 - ✅ using the atomic design methodology to build the UI,
+- ❌ using the Storybook to present and test the UI components,
 - ❌ using real-time communication with GraphQL subscriptions,
+- ❌ using JWT to authenticate the user,
+- ❌ using Jest and Angular Testing Library to test the Angular components,
 - ✅ using Nx to manage the mono repo (to share code between the front- and back-end).
 
 ## Demo
@@ -20,23 +24,23 @@ Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
 
 ## What does it look like?
 
-The title dashboard looks like this:
+The **Modern Dashboard** from the title looks like this:
+
 ![modern-dashboard](https://github.com/wojciechmarek/modern-dashboard/assets/27026036/7aa4c3ae-11b8-4db9-b394-4bfd266667a9)
 
 Current dashboard:
 
 - does not use real data,
 - does not allow to change the language,
-- does not support mobile views (due to `desktop first approach),
+- does not support mobile views (due to `desktop first approach`),
 - allows to change the color theme.
-
 
 ## Used technologies
 
 - 🎁 **Repository:** Monorepo with NX
 - 🧰 **Frameworks:** Angular 16, NestJS
-- 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, mongodb, graphql, apollo
-- 🎨 **Styling:** scss, css variables, BEM notation
+- 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, mongodb, graphql, apollo, chart.js
+- 🎨 **Styling:** scss, css variables, BEM notation, lucide icons
 - 🧪 **Testing:** cypress, jest
 - ☁️ **Database:** MongoDB with Change Streams, typeORM
 - 💎 **Others:** desktop first approach, progressive web app, atomic design
