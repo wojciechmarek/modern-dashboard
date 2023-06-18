@@ -12,11 +12,24 @@ To learn the Angular 16 and NestJS frameworks and build a modern application wit
 - ❌ using the MongoDB database with Change Streams,
 - ✅ using the atomic design methodology to build the UI,
 - ❌ using real-time communication with GraphQL subscriptions,
-- ✅ using Nx to manage the mono repo (to share code between the front end and the backend).
+- ✅ using Nx to manage the mono repo (to share code between the front- and back-end).
 
 ## Demo
 
 Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
+
+## What does it look like?
+
+The title dashboard looks like this:
+![modern-dashboard](https://github.com/wojciechmarek/modern-dashboard/assets/27026036/7aa4c3ae-11b8-4db9-b394-4bfd266667a9)
+
+Current dashboard:
+
+- does not use real data,
+- does not allow to change the language,
+- does not support mobile views (due to `desktop first approach),
+- allows to change the color theme.
+
 
 ## Used technologies
 
