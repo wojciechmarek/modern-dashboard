@@ -6,7 +6,7 @@
   height: 100%;
   // background-color: #ffffff20;
   transition: all 0.5s ease-in-out;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(25px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
 .search__container {
   height: 40em;
   width: 50em;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-alternative-light);
   border-radius: 0.75em;
 }
 
@@ -42,6 +42,7 @@
 .search-bar__input {
   flex: 1;
   margin: 0 1em 0 0.5em;
+
 }
 
 .search-bar__input-field {
@@ -53,6 +54,7 @@
   background-color: var(--bg-color-alternative-light);
   color: var(--text-color);
   border: 0;
+  border-radius: 0.75em;
 }
 
 .search-bar__esc-button {

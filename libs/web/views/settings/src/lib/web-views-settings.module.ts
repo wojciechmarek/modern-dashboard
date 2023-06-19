@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { WebComponentsAtomsModule } from '@md/web/components/atoms';
+import { LucideAngularModule, Edit3 } from 'lucide-angular';
 
 const routes = [{ path: '', component: HomeComponent }];
 
@@ -11,6 +12,8 @@ const routes = [{ path: '', component: HomeComponent }];
     CommonModule,
     RouterModule.forChild(routes),
     WebComponentsAtomsModule,
+    LucideAngularModule.pick({ Edit3 }),
+
   ],
   declarations: [HomeComponent],
 })

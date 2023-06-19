@@ -25,15 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--bg-color-alternative);
+  background-color: var(--bg-color-alternative-light);
   border-radius: 0.5em;
   padding: 0 2.5em;
   transition: background-color 0.2s ease-in-out;
-
-  &:hover {
-    cursor: pointer;
-    background-color: var(--hover-accent-color);
-  }
 }
 
 .settings-row__title {
@@ -42,10 +37,29 @@
   color: var(--text-color);
 }
 
-.emojis {
+.emojis_container {
   width: 6.5em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   font-size: 2rem;
+}
+
+.emojis {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.pen {
+  color: var(--text-color);
+  transition: color 0.2s ease-in-out;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  background-color: var(--bg-color-alternative);
+
+  &:hover {
+    background-color: var(--bg-color);
+  }
 }
 
