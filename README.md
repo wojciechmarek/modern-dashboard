@@ -21,14 +21,13 @@ To learn the Angular 16 and NestJS frameworks and build a modern application wit
 
 ## Demo
 
-Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63).
+Not available [yet](https://giphy.com/gifs/pokemon-anime-7SF5scGB2AFrgsXP63)
 
 ## What does it look like?
 
 The **Modern Dashboard** from the title looks like this:
 
 ![dash](https://github.com/wojciechmarek/modern-dashboard/assets/27026036/48accec4-bbc9-4faf-a025-ab8f111f5836)
-
 
 Current dashboard:
 
