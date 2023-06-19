@@ -25,13 +25,18 @@
   flex: 1;
   display: flex;
   align-items: center;
-  margin: 0 1.5em 1em;
+  margin: 0 1.5em 1.5em;
 }
 
 .content__graph {
-  height: 6em;
-  width: 6em;
-  border-radius: 0.25em;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--bg-color-alternative-light);
+  border-radius: 0.75em;
+}
+
+.content__graph-chart {
+  border-radius: 0.75em;
 }
 
 .content__details {
@@ -44,13 +49,13 @@
 .detail-item__value {
   font-size: 1.5em;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .detail-item__description {
   font-size: 0.75em;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .detail-item__trend {

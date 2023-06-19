@@ -1,9 +1,36 @@
 <div class="search__layout">
   <div class="search__container" #searchContainer>
-    <h1>Search:</h1>
-    <md-text-input [placeholder]="'Search'"></md-text-input>
-    <div class="search__close-button">
-      <md-button (handleClick)="closeSearch()">Close or ESC</md-button>
+    <div class="search-bar__container">
+      <div class="search-bar__icon">
+        <lucide-icon name="search"></lucide-icon>
+      </div>
+      <div class="search-bar__input">
+        <input #searchInput class="search-bar__input-field" [placeholder]="'Search'" />
+      </div>
+      <div class="search-bar__esc-button">
+        <md-button color="opacity" (handleClick)="closeSearch()">ESC</md-button>
+      </div>
     </div>
+    <div class="search-results__container">
+      <div class="search-results__quick-links">
+        <p class="quick-links__header">Quick shortcuts:</p>
+        <div class="quick-links__container">
+          <md-button color="opacity">Home</md-button>
+          <md-button color="opacity">Projects</md-button>
+          <md-button color="opacity">People</md-button>
+          <md-button color="opacity">Clients</md-button>
+        </div>
+      </div>
+      <div class="search-results__found-items">
+        <p class="found-items__header">Recent:</p>
+        <div class="found-items__container">
+          <div class="found-item__container">Result no. 1</div>
+          <div class="found-item__container">Result no. 2</div>
+          <div class="found-item__container">Result no. 3</div>
+        </div>
+        
+      </div>
+    </div>
+    
   </div>
 </div>

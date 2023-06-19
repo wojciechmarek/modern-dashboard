@@ -14,7 +14,7 @@
 
 .profile__content {
   flex-grow: 1;
-  margin-top: 2em;
+  margin: 1em 1.5em 0;
 }
 
 .content__user-details {
@@ -40,20 +40,22 @@
 .content__user-details__fullname {
   font-size: 2rem;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--text-color)
 }
 
 .content__user-details__position {
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color)
 }
 
 .profile__summary {
   display: flex;
   justify-content: space-evenly;
-  margin: 0 2em;
   gap: 2em;
-  margin: 1.5em 2em;
+  padding: 1.5em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  background-color: var(--bg-color);
 }
 
 .summary__item {
@@ -70,10 +72,10 @@
 
 .summary__item__title {
   font-size: 0.75rem;
-  color: #ffffff;
+  color: var(--text-color)
 }
 
 .summary__item__value {
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color)
 }

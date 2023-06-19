@@ -25,9 +25,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 1.5em 1.5em 1.5em;
-  gap: 1em;
+  justify-content: space-evenly;
+  
+  margin: 0 1.5em 1.5em;
 }
 
 .content__graph {

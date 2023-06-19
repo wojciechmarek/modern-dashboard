@@ -26,14 +26,14 @@
   flex: 1;
   display: flex;
   align-items: center;
-  margin: 0 1.5em 1em;
-  height: 6em;
+  margin: 0 1.5em 1.5em;
 }
 
 .content__graph {
-  height: 8em;
-  width: 8em;
-  border-radius: 0.25em;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--bg-color-alternative-light);
+  border-radius: 0.75em;
 }
 
 .content__graph-canvas {
@@ -51,12 +51,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   margin-left: 1em;
   background-color: var(--bg-color-opacity);
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
+  border-radius: 0.75em;
   height: 100%;
   overflow-y: scroll;
+  padding-left: 0.5em;
 }
 
 .detail-item__item {

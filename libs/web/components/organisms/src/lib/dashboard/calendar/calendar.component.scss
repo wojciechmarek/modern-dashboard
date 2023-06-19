@@ -4,14 +4,13 @@
   display: flex;
   flex-direction: column;
   height: 26em;
-
   transition: background-color 0.2s ease-in-out;
 }
 
 .header-bar__select {
   background-color: var(--bg-color-opacity);
   border-radius: 0.75em;
-  color: #ffffff;
+  color: var(--text-color);
   font-weight: 700;
   height: 2.5em;
   padding: 0 0.75em;
@@ -54,14 +53,14 @@
 }
 
 .week-days__item-day {
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 0.75rem;
 
 }
 
 .week-days__item-number {
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 1rem;
 }
 
@@ -70,7 +69,7 @@
   height: 1em;
   display: flex;
   flex-direction: column;
-  margin: 0 1.5em 1em;
+  margin: 0 1.5em 1.5em;
 }
 
 .events__header {
@@ -81,12 +80,12 @@
 
 .events__header-date {
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
   font-size: 1rem;
 }
 
 .events__header-button {
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .events__list {
