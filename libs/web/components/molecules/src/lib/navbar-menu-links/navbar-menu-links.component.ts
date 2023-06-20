@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'md-navbar-menu-links',
@@ -8,10 +8,12 @@ import { Component } from '@angular/core'
 export class NavbarMenuLinksComponent {
   links = [
     { path: '/', icon: 'home', title: 'Home' },
+    { path: '/work-time', icon: 'drive', title: 'Work time' },
     { path: '/projects', icon: 'drive', title: 'Projects' },
     { path: '/People', icon: 'drive', title: 'People' },
     { path: '/Clients', icon: 'drive', title: 'Clients' },
     { path: '/cloud', icon: 'drive', title: 'Cloud' },
+    { path: '/Other', icon: 'drive', title: 'Other' },
     { path: '/settings', icon: 'drive', title: 'Settings' },
-  ]
+  ];
 }

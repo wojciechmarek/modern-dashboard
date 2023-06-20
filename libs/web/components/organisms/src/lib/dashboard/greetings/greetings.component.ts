@@ -14,8 +14,10 @@ export class GreetingsComponent implements OnInit {
     const monthName = date.toLocaleString('default', { month: 'short' });
     const year = date.getFullYear();
     const hour = date.getHours();
-    const minutes = date.getMinutes();
-    const time = `${dayName}, ${monthName} ${day2Digit} ${year} ${hour}:${minutes}`;
+    const minutes2Digit = date.toLocaleString('default', {
+      minute: '2-digit',
+    });
+    const time = `${dayName}, ${monthName} ${day2Digit} ${year} ${hour}:${minutes2Digit}`;
     return time;
   };
 

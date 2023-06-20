@@ -23,12 +23,18 @@
 .gettings__calendar {
   display: flex;
   align-items: center;
-  background-color: var(--bg-color-opacity);
+  background: var(--bg-color-opacity);
   border-radius: 0.75em;
+  //mask-image: paint(smooth-corners);
   width: fit-content;
   height: 2.5em;
   padding: 0 1em;
   gap: 0.75em;
+
+  // @supports (mask-image: paint(smooth-corners)) {
+  //   mask-image: paint(smooth-corners);
+  //   --smooth-corners: 4;
+  // }
 }
 
 .gettings__calendar-text {
@@ -36,7 +42,6 @@
 }
 
 .gettings__hello {
-  
 }
 
 .gettings__hello-header1 {
