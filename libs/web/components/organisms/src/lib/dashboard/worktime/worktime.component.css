@@ -53,7 +53,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 1em;
-  background-color: var(--bg-color-opacity);
+  background-color: var(--bg-color);
   border-radius: 0.75em;
   height: 100%;
   overflow-y: scroll;
