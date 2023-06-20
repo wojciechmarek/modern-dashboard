@@ -1,25 +1,25 @@
-  <div class="gettings__container">
-    <md-dashboard-tile-header title="Let's get started!" [isHeaderHighlighted]="true">
-      <div class="gettings__calendar">
-        <lucide-icon name="calendar"></lucide-icon>
-        <p class="gettings__calendar-text">Sat, Jun 17 2023 14:45</p>
+<div class="gettings__container">
+  <md-dashboard-tile-header
+    title="Let's get started!"
+    [isHeaderHighlighted]="true"
+  >
+    <div class="gettings__calendar">
+      <lucide-icon name="calendar"></lucide-icon>
+      <p class="gettings__calendar-text">{{ dateTime() }}</p>
+    </div>
+  </md-dashboard-tile-header>
+  <div class="greentins__content">
+    <div class="gettings__text-details">
+      <div class="gettings__hello">
+        <h1 class="gettings__hello-header1">{{ greetings() }},</h1>
+        <h2 class="gettings__hello-header2">Mr. Doe</h2>
       </div>
-    </md-dashboard-tile-header>
-    <div class="greentins__content">
-      <div class="gettings__text-details">
-        <div class="gettings__hello">
-          <h1 class="gettings__hello-header1">Good Afternoon,</h1>
-          <h2 class="gettings__hello-header2">Mr. Doe </h2>
-        </div>
-        <span class="gettings__image">
-          👋⛄️
-        </span>
-      </div>
-      <div class="gettings__quick-buttons">
-        <md-button color="opacity" class="quick-button">Log a time</md-button>
-        <md-button color="opacity" class="quick-button">Take a dayoff</md-button>
-        <md-button color="opacity" class="quick-button">Add an expense</md-button>
-      </div>
+      <span class="gettings__image"> 👋⛄️ </span>
+    </div>
+    <div class="gettings__quick-buttons">
+      <md-button color="opacity" class="quick-button">Log a time</md-button>
+      <md-button color="opacity" class="quick-button">Take a dayoff</md-button>
+      <md-button color="opacity" class="quick-button">Add an expense</md-button>
     </div>
   </div>
-
+</div>

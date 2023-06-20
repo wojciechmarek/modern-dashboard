@@ -57,9 +57,9 @@
   padding: 0.25em;
   border-radius: 0.25em;
   background-color: var(--bg-color-alternative);
+  cursor: pointer;
 
   &:hover {
     background-color: var(--bg-color);
   }
 }
-
