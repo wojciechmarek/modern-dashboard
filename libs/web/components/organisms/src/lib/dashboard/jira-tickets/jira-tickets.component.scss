@@ -1,11 +1,12 @@
 .jira__container {
-  border-radius: 2em;
   background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
   height: 26em;
-
   transition: background-color 0.2s ease-in-out;
+  
+  mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
 }
 
 .jira__header-bar {

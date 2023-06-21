@@ -1,9 +1,11 @@
 .gettings__container {
   display: flex;
   flex-direction: column;
-  border-radius: 2em;
   background-color: var(--bg-color);
   height: 12.5em;
+
+  mask-image: paint(smooth-corners);
+  -webkit-mask-image: paint(smooth-corners);
 }
 
 .greentins__content {
@@ -30,11 +32,6 @@
   height: 2.5em;
   padding: 0 1em;
   gap: 0.75em;
-
-  // @supports (mask-image: paint(smooth-corners)) {
-  //   mask-image: paint(smooth-corners);
-  //   --smooth-corners: 4;
-  // }
 }
 
 .gettings__calendar-text {
