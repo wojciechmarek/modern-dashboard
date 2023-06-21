@@ -41,7 +41,7 @@ Current dashboard:
 - 🎁 **Repository:** Monorepo with NX
 - 🧰 **Frameworks:** Angular 16, NestJS
 - 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, mongodb, graphql, apollo, chart.js
-- 🎨 **Styling:** scss, css variables, BEM notation, lucide icons
+- 🎨 **Styling:** scss, css variables, BEM notation, lucide icons, smooth-corners
 - 🧪 **Testing:** cypress, jest
 - ☁️ **Database:** MongoDB with Change Streams, typeORM
 - 💎 **Others:** desktop first approach, progressive web app, atomic design
