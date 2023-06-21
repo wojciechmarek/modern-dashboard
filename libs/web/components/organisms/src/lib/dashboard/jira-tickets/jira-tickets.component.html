@@ -1,10 +1,6 @@
   <div class="jira__container">
     <md-dashboard-tile-header title="Your tickets">
-      <select class="header-bar__select">
-        <option value="1">Project #1</option>
-        <option value="2">Project #2</option>
-        <option value="3">Project #3</option>
-      </select>
+      <md-select [items]="items"></md-select>
     </md-dashboard-tile-header>
     
     <div class="jira__content">

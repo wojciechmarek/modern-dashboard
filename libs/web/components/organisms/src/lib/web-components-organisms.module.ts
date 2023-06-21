@@ -5,7 +5,7 @@ import { WebComponentsAtomsModule } from '@md/web/components/atoms';
 import { WebComponentsMoleculesModule } from '@md/web/components/molecules';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LucideAngularModule, Menu, GripHorizontal, Search } from 'lucide-angular';
+import { LucideAngularModule, Menu, GripHorizontal, Search, Check } from 'lucide-angular';
 import { AuthOrganisms } from './auth';
 import { DashboardOrganisms } from './dashboard';
 import { SearchComponent } from './search/search.component';
@@ -17,7 +17,7 @@ import { SearchComponent } from './search/search.component';
     WebComponentsMoleculesModule,
     RouterModule,
     ReactiveFormsModule,
-    LucideAngularModule.pick({ Menu, GripHorizontal, Search }),
+    LucideAngularModule.pick({ Menu, GripHorizontal, Search, Check }),
   ],
   declarations: [NavbarComponent, SearchComponent, ...AuthOrganisms, ...DashboardOrganisms],
   exports: [

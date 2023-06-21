@@ -1,0 +1,11 @@
+<div class="select__container">
+  <select class="select__selector" (change)="onSelectChange($event)">
+    <option *ngFor="let item of items" [value]="item.id" class="select__option">{{ item.name }}</option>
+  </select>
+  <div class="select__text-and-arrow">
+    <div class="select__text">{{placeholder().length === 0 ? 'Select' : placeholder()}}</div>
+    <span class="select__arrow">
+      <lucide-icon name="chevron-down"></lucide-icon>
+    </span>
+  </div>
+</div>

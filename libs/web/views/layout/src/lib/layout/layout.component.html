@@ -1,5 +1,5 @@
 <div class="layout__container">
-  <md-navbar *ngIf="true" (handleOpenSearch)="onOpenSearch()"/>
+  <md-navbar class="layout__navbar" *ngIf="true" (handleOpenSearch)="onOpenSearch()"/>
   <md-search *ngIf="isSearchVisible()" (handleCloseSearch)="onCloseSearch()" />
   <div class="layout__content">
     <ng-content></ng-content>

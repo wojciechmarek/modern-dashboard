@@ -5,4 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss'],
 })
-export class CalendarComponent {}
+export class CalendarComponent {
+  items = [
+    {
+      id: '1',
+      name: 'This week',
+    },
+    {
+      id: '2',
+      name: 'This month',
+    },
+    {
+      id: '3',
+      name: 'Next month',
+    },
+  ];
+}

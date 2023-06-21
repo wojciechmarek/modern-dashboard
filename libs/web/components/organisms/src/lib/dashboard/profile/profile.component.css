@@ -1,10 +1,12 @@
 .profile__container {
+  border-radius: var(--dashboard-tile-border-radius);
   background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
   height: 26em;
   transition: background-color 0.2s ease-in-out;
 
+  --smooth-corners: var(--dashboard-tile-double-row-border-smooth-radius);
   mask-image: paint(smooth-corners);
   -webkit-mask-image: paint(smooth-corners);
 }

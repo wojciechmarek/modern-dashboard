@@ -1,11 +1,12 @@
 .calendar__container {
-  border-radius: 2em;
+  border-radius: var(--dashboard-tile-border-radius);
   background-color: var(--bg-color-alternative);
   display: flex;
   flex-direction: column;
   height: 26em;
   transition: background-color 0.2s ease-in-out;
 
+  --smooth-corners: var(--dashboard-tile-double-row-border-smooth-radius);
   mask-image: paint(smooth-corners);
   -webkit-mask-image: paint(smooth-corners);
 }
@@ -90,6 +91,12 @@
 .events__header-button {
   color: var(--text-color);
   cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .events__list {

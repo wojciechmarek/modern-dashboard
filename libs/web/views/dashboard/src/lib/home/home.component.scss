@@ -1,14 +1,11 @@
 .dashboard__container {
   display: flex;
-  height: fit-content;
   flex-direction: column;
-  background: var(--bg-gradient);
   color: var(--text-color);
   transition: background-color 0.2s ease-in-out;
 }
 
 .dashboard__content {
-  height: fit-content;
   margin: 0 auto;
   padding: 0 1em;
   width: 100%;
@@ -19,7 +16,6 @@
   margin: 3em 0 1em;
   display: grid;
   gap: 1em;
-  height: 100vh;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(4, 12.5em);
 

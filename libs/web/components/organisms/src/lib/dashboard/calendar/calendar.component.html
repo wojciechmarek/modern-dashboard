@@ -1,10 +1,6 @@
   <div class="calendar__container">
     <md-dashboard-tile-header title="My calendar" [isHeaderHighlighted]="true">
-      <select class="header-bar__select">
-        <option value="1">January</option>
-        <option value="2">February</option>
-        <option value="3">March</option>
-      </select>
+      <md-select [items]="items"></md-select>
     </md-dashboard-tile-header>
     <div class="calendar__week-days">
       <ul class="week-days__list">
@@ -64,7 +60,8 @@
       <ul class="events__list">
         <li class="events__list-item">
           <p class="item-time">9:00 a.m.</p>
-          <span class="item-dot"></span>
+          <span class="item-dot">
+          </span>
           <p class="item-description">Daily</p>
         </li>
 

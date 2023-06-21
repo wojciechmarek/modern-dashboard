@@ -1,9 +1,11 @@
 .gettings__container {
+  border-radius: var(--dashboard-tile-border-radius);
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
   height: 12.5em;
 
+  --smooth-corners: var(--dashboard-tile-single-row-border-smooth-radius);
   mask-image: paint(smooth-corners);
   -webkit-mask-image: paint(smooth-corners);
 }
