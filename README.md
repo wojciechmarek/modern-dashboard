@@ -36,11 +36,17 @@ Current dashboard:
 - does not support mobile views (due to the `desktop first approach),
 - allows to change the color theme.
 
+## Design style
+
+The application follows the **flat design** style. The main characteristics are:
+- avoiding the shadows to highlight the hierarchy, e.g., modal windows (because they introduce a 3rd dimension),
+- playing with the blurs and hues of the colors to show the hierarchy.
+
 ## Used technologies
 
 - 🎁 **Repository:** Monorepo with NX
 - 🧰 **Frameworks:** Angular 16, NestJS
-- 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, mongodb, graphql, apollo, chart.js
+- 🛠️ **Tools:** yarn, eslint, prettier, husky, conventional commits, storybook, docker, graphql, apollo, chart.js
 - 🎨 **Styling:** scss, css variables, BEM notation, lucide icons, smooth-corners
 - 🧪 **Testing:** cypress, jest
 - ☁️ **Database:** MongoDB with Change Streams, typeORM
@@ -48,7 +54,11 @@ Current dashboard:
 
 ## Storybook
 
-To see the components in action, run the Storybook.
+The Storybook is a sandbox for components used in the application. It groups the into three sections, following the **atomic design** approach:
+
+- atoms (e.g., single buttons or input fields),
+- molecules (e.g., login form consisting of input fields and a submit button),
+- organisms (e.g., most complex views, like login modal window using login form and other molecules).
 
 To start the Storybook:
 
