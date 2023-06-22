@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -13,6 +13,7 @@ import { WebCommonRoutingModule } from '@md/web/common/routing';
 import { WebCommonStoreModule } from '@md/web/common/store';
 import { AuthEffects, WebDataAccessAuthModule } from '@md/web/data-access/auth';
 import { EffectsModule } from '@ngrx/effects';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,7 +25,13 @@ import { EffectsModule } from '@ngrx/effects';
     BrowserModule,
     ApolloModule,
     HttpClientModule,
-    WebDataAccessAuthModule
+    WebDataAccessAuthModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [
     {
