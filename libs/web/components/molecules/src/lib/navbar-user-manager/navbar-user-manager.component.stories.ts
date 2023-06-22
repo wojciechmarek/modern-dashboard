@@ -1,13 +1,13 @@
 import { Meta } from '@storybook/angular';
-import { DesktopMenuButtonsComponent } from './desktop-menu-buttons.component';
+import { NavbarUserManagerComponent } from './navbar-user-manager.component';
 
 export default {
-  title: 'Desktop Menu Buttons',
-  component: DesktopMenuButtonsComponent,
-} as Meta<DesktopMenuButtonsComponent>;
+  title: 'Navbar User Manager',
+  component: NavbarUserManagerComponent,
+} as Meta<NavbarUserManagerComponent>;
 
 export const Primary = {
-  render: (args: DesktopMenuButtonsComponent) => ({
+  render: (args: NavbarUserManagerComponent) => ({
     props: args,
   }),
   args: {},

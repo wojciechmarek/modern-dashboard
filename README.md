@@ -39,6 +39,7 @@ Current dashboard:
 ## Design style
 
 The application follows the **flat design** style. The main characteristics are:
+
 - avoiding the shadows to highlight the hierarchy, e.g., modal windows (because they introduce a 3rd dimension),
 - playing with the blurs and hues of the colors to show the hierarchy.
 

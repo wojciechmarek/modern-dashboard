@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { ResetPasswordComponent } from './reset-password.component';
 
 export default {
-  title: 'ResetPasswordComponent',
+  title: 'Reset Password',
   component: ResetPasswordComponent,
 } as Meta<ResetPasswordComponent>;
 

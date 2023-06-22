@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { NavbarMenuLinksComponent } from './navbar-menu-links.component';
 
 export default {
-  title: 'NavbarMenuLinksComponent',
+  title: 'Navbar Menu Links',
   component: NavbarMenuLinksComponent,
 } as Meta<NavbarMenuLinksComponent>;
 

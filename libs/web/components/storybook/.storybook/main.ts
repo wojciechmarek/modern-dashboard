@@ -1,7 +1,8 @@
-import type { StorybookConfig } from '@storybook/core-common';
+import type { StorybookConfig } from '@storybook/angular';
 
 const config: StorybookConfig = {
-  core: { builder: 'webpack5' },
+  core: { builder: '@storybook/builder-webpack5' },
+  framework: '@storybook/angular',
   stories: [
     {
       titlePrefix: 'Atoms',
@@ -24,6 +25,7 @@ const config: StorybookConfig = {
     'storybook-addon-dark-mode-toggle',
     'storybook-dark-mode',
     '@storybook/addon-a11y',
+    '@etchteam/storybook-addon-css-variables-theme'
   ],
 };
 

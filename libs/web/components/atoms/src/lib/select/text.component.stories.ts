@@ -1,13 +1,13 @@
 import { Meta } from '@storybook/angular';
-import { TextComponent } from './text.component';
+import { SelectComponent } from './select.component';
 
 export default {
-  title: 'Text',
-  component: TextComponent,
-} as Meta<TextComponent>;
+  title: 'Select',
+  component: SelectComponent,
+} as Meta<SelectComponent>;
 
 export const Primary = {
-  render: (args: TextComponent) => ({
+  render: (args: SelectComponent) => ({
     props: args,
   }),
   args: {

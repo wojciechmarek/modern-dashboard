@@ -1,9 +1,9 @@
 import { Meta } from '@storybook/angular';
-import { LinkComponent } from './link.component';
+import { SwitchComponent } from './switch.component';
 
 export default {
-  title: 'Link',
-  component: LinkComponent,
+  title: 'Switch',
+  component: SwitchComponent,
   argTypes: {
     color: {
       control: 'select',
@@ -11,10 +11,10 @@ export default {
     },
     handleClick: { action: 'handleClick',  },
   },
-} as Meta<LinkComponent>;
+} as Meta<SwitchComponent>;
 
 export const Primary = {
-  render: (args: LinkComponent) => ({
+  render: (args: SwitchComponent) => ({
     props: args,
   }),
   args: {

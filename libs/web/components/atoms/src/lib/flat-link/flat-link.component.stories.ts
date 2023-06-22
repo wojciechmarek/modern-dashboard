@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { FlatLinkComponent } from './flat-link.component';
 
 export default {
-  title: 'FlatLinkComponent',
+  title: 'Flat Link',
   component: FlatLinkComponent,
   argTypes: {
     color: {

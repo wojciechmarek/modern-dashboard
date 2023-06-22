@@ -2,7 +2,7 @@ import { Meta } from '@storybook/angular';
 import { RegisterFormComponent } from './register-form.component';
 
 export default {
-  title: 'Login Form',
+  title: 'Register Form',
   component: RegisterFormComponent,
 } as Meta<RegisterFormComponent>;
 

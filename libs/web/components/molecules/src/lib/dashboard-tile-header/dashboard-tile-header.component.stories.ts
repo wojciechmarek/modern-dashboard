@@ -3,7 +3,7 @@ import { DashboardTileHeaderComponent } from './dashboard-tile-header.component'
 import { WebComponentsAtomsModule } from '@md/web/components/atoms';
 
 export default {
-  title: 'DashboardTileHeaderComponent',
+  title: 'Dashboard Tile Header',
   component: DashboardTileHeaderComponent,
   decorators: [
     moduleMetadata({
