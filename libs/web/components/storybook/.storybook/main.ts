@@ -22,8 +22,8 @@ const config: StorybookConfig = {
   ],
   addons: [
     '@storybook/addon-essentials',
-    'storybook-addon-dark-mode-toggle',
     'storybook-dark-mode',
+    'storybook-addon-themes',
     '@storybook/addon-a11y',
   ],
 };
