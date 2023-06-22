@@ -5,7 +5,11 @@
         <lucide-icon name="search"></lucide-icon>
       </div>
       <div class="search-bar__input">
-        <input #searchInput class="search-bar__input-field" [placeholder]="'Search'" />
+        <input
+          #searchInput
+          class="search-bar__input-field"
+          [placeholder]="'Search'"
+        />
       </div>
       <div class="search-bar__esc-button">
         <md-button color="opacity" (handleClick)="closeSearch()">ESC</md-button>
@@ -22,15 +26,46 @@
         </div>
       </div>
       <div class="search-results__found-items">
-        <p class="found-items__header">Recent:</p>
+        <p class="found-items__header">Recent searches:</p>
         <div class="found-items__container">
-          <div class="found-item__container">Result no. 1</div>
-          <div class="found-item__container">Result no. 2</div>
-          <div class="found-item__container">Result no. 3</div>
+          <div class="found-item__container">
+            <div class="found-item__result">
+              <p class="result__header">SpaceX - flight guidance system</p>
+              <p class="result__description">Support project</p>
+            </div>
+            <div class="result__quick-button">
+              <span>⌃⇧1</span>
+            </div>
+          </div>
+          <div class="found-item__container">
+            <div class="found-item__result">
+              <p class="result__header">Michael Scott</p>
+              <p class="result__description">Junior QA Specialist</p>
+            </div>
+            <div class="result__quick-button">
+              <span>⌃⇧2</span>
+            </div>
+          </div>
+          <div class="found-item__container">
+            <div class="found-item__result">
+              <p class="result__header">Settings</p>
+              <p class="result__description">Manage the settings</p>
+            </div>
+            <div class="result__quick-button">
+              <span>Ctrl + Shift + 3</span>
+            </div>
+          </div>
+          <div class="found-item__container">
+            <div class="found-item__result">
+              <p class="result__header">Blue theme</p>
+              <p class="result__description">UI theme</p>
+            </div>
+            <div class="result__quick-button">
+              <span>Ctrl + Shift + 4</span>
+            </div>
+          </div>
         </div>
-        
       </div>
     </div>
-    
   </div>
 </div>

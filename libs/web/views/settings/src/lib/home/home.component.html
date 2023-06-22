@@ -34,10 +34,27 @@
       ></md-text>
       <div class="switch__container">
         <md-switch
-          [isOn]="true"
+          [isOn]="isAutoRefreshActive()"
           (isOnChanged)="onSwitchChange($event)"
         ></md-switch>
-        <p class="switch__container-paragraph">{{ isAutoRefreshActive() ? 'Active' : 'Disabled' }}</p>
+        <p class="switch__container-paragraph">
+          {{ isAutoRefreshActive() ? 'Active' : 'Disabled' }}
+        </p>
+      </div>
+    </div>
+    <div class="settings-row">
+      <md-text
+        class="settings-row__title"
+        text="Show recent searches:"
+      ></md-text>
+      <div class="switch__container">
+        <md-switch
+          [isOn]="isAutoRefreshActive()"
+          (isOnChanged)="onSwitchChange($event)"
+        ></md-switch>
+        <p class="switch__container-paragraph">
+          {{ isAutoRefreshActive() ? 'Active' : 'Disabled' }}
+        </p>
       </div>
     </div>
   </div>
