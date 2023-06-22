@@ -1,9 +1,10 @@
-import { Meta } from '@storybook/angular';
+import { Meta, componentWrapperDecorator } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
 
 export default {
   title: 'Button',
   component: ButtonComponent,
+  decorators: [componentWrapperDecorator((story) => `<div style="height: 3em">${story}</div>`)],
   argTypes: {
     color: {
       control: 'select',

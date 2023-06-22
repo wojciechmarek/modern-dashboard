@@ -25,7 +25,6 @@ const config: StorybookConfig = {
     'storybook-addon-dark-mode-toggle',
     'storybook-dark-mode',
     '@storybook/addon-a11y',
-    '@etchteam/storybook-addon-css-variables-theme'
   ],
 };
 

@@ -1,25 +1,15 @@
-import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme';
-
-import light from '!!style-loader?injectType=lazyStyleTag!css-loader!../src/styles/light.css'
-import dark from '!!style-loader?injectType=lazyStyleTag!css-loader!../src/styles/dark.css'
-
-
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
+  'data-theme-toggle': {
+  querySelector: "html",
+  "data-target": "theme",
+  default: "light",
+  values: {
+    dark: "dark",
+    light: "light",
+    blue: "blue",
   },
-  cssVariables: {
-    files: {
-      'Light Theme': light,
-      'Dark Theme': dark,
-    },
-  }
+  lightFill: "#a05b00",
+  darkFill: "#0926b5",
+  blueFill: "#0926b5",
+}  
 };
-
-export const decorators = [
-  cssVariablesTheme,
-];
