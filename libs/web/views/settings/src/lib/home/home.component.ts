@@ -22,4 +22,10 @@ export class HomeComponent {
   onLanguageChange(language: Language) {
     this.store.dispatch(LanguageAction({ language }));
   }
+
+  onSwitchChange(isOn: boolean) {
+    this.isAutoRefreshActive.set(isOn);
+  }
+
+  isAutoRefreshActive = signal<boolean>(true);
 }

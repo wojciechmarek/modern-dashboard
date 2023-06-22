@@ -24,7 +24,20 @@
       ></md-text>
       <div class="emojis_container">
         <div class="emojis">👋⛄️</div>
-          <lucide-icon class="pen" name="edit-3"></lucide-icon>
+        <lucide-icon class="pen" name="edit-3"></lucide-icon>
+      </div>
+    </div>
+    <div class="settings-row">
+      <md-text
+        class="settings-row__title"
+        text="Autorefresh the dashboard:"
+      ></md-text>
+      <div class="switch__container">
+        <md-switch
+          [isOn]="true"
+          (isOnChanged)="onSwitchChange($event)"
+        ></md-switch>
+        <p class="switch__container-paragraph">{{ isAutoRefreshActive() ? 'Active' : 'Disabled' }}</p>
       </div>
     </div>
   </div>

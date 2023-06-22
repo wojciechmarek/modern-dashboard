@@ -63,3 +63,17 @@
     background-color: var(--bg-color);
   }
 }
+
+.switch__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  width: 7.5em;
+}
+
+.switch__container-paragraph {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}

@@ -17,6 +17,7 @@ import { FlatLinkComponent } from './flat-link/flat-link.component'
 import { LanguageSelectorComponent } from './language-selector/language-selector.component'
 import { LucideAngularModule, ChevronDown } from 'lucide-angular'
 import { SelectComponent } from './select/select.component'
+import { SwitchComponent } from './switch/switch.component'
 
 const Components = [
   ButtonComponent,
@@ -32,7 +33,8 @@ const Components = [
   ThemeSelectorComponent,
   FlatLinkComponent,
   LanguageSelectorComponent,
-  SelectComponent
+  SelectComponent,
+  SwitchComponent
 ];
 
 @NgModule({
