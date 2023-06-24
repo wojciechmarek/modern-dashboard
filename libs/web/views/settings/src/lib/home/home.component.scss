@@ -10,13 +10,26 @@
 .settings-content {
   display: flex;
   flex-direction: column;
-  margin-top: 1.5em;
   gap: 1em;
 
   margin: 1em auto 0;
   padding: 0 1em;
   width: 100%;
   max-width: 1440px;
+}
+
+.settings-breadcrumb {
+}
+
+.settings-title {
+  margin-left: 0.5em;
+}
+
+
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .settings-row {

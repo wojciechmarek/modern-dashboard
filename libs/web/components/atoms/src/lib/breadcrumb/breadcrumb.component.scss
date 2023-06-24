@@ -1,0 +1,31 @@
+.breadcrumb__cointainer {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item__link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  padding: 0.5em 0.75em;
+  border-radius: 0.5em;
+ 
+  &:hover {
+    color: var(--text-color-alternative);
+    background-color: var(--bg-color);
+  }
+}
+
+.item__slash {
+  margin: 0 0.5em;
+  color: var(--text-color);
+}
+
+.item__last-item {
+  color: var(--text-color);
+  padding: 0.5em 0.75em;
+  border-radius: 0.5em;
+}

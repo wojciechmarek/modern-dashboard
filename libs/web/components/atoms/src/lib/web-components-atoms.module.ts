@@ -18,6 +18,7 @@ import { LanguageSelectorComponent } from './language-selector/language-selector
 import { LucideAngularModule, ChevronDown } from 'lucide-angular'
 import { SelectComponent } from './select/select.component'
 import { SwitchComponent } from './switch/switch.component'
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component'
 
 const Components = [
   ButtonComponent,
@@ -34,7 +35,8 @@ const Components = [
   FlatLinkComponent,
   LanguageSelectorComponent,
   SelectComponent,
-  SwitchComponent
+  SwitchComponent,
+  BreadcrumbComponent
 ];
 
 @NgModule({

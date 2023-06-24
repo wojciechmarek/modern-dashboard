@@ -28,4 +28,10 @@ export class HomeComponent {
   }
 
   isAutoRefreshActive = signal<boolean>(true);
+
+  breadcrumbItems = [
+    { label: 'Home', url: '/' },
+    { label: 'Settings', url: '/settings' },
+    { label: 'Details', url: '/settings/details'}
+  ];
 }

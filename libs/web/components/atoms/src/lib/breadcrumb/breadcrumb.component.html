@@ -1,0 +1,7 @@
+<div class="breadcrumb__cointainer">
+  <span class="breadcrumb__item" *ngFor="let item of items; let last = last">
+    <a class="item__link" *ngIf="!last" [routerLink]="item.url">{{ item.label }}</a>
+    <span class="item__slash" *ngIf="!last">/</span>
+    <span class="item__last-item" *ngIf="last">{{ item.label }}</span>
+  </span>
+</div>

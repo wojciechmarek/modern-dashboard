@@ -1,44 +1,52 @@
 <div class="settings-container">
   <div class="settings-content">
-    <md-title title="Settings:"></md-title>
-    <div class="settings-row">
-      <md-text class="settings-row__title" text="Color theme:"></md-text>
-      <md-theme-selector
-        [themes]="themes"
-        [selectedTheme]="themes[1]"
-        (themeChange)="onThemeChange($event)"
-      ></md-theme-selector>
-    </div>
-    <div class="settings-row">
-      <md-text class="settings-row__title" text="Language:"></md-text>
-      <md-language-selector
-        [languages]="languages"
-        [selectedLanguage]="languages[1]"
-        (languageChange)="onLanguageChange($event)"
-      ></md-language-selector>
-    </div>
-    <div class="settings-row">
-      <md-text
-        class="settings-row__title"
-        text="Greetings tile's emojis:"
-      ></md-text>
-      <div class="emojis_container">
-        <div class="emojis">👋⛄️</div>
-        <lucide-icon class="pen" name="edit-3"></lucide-icon>
-      </div>
-    </div>
-    <div class="settings-row">
-      <md-text
-        class="settings-row__title"
-        text="Autorefresh the dashboard:"
-      ></md-text>
-      <div class="switch__container">
-        <md-switch
-          [isOn]="true"
-          (isOnChanged)="onSwitchChange($event)"
-        ></md-switch>
-        <p class="switch__container-paragraph">{{ isAutoRefreshActive() ? 'Active' : 'Disabled' }}</p>
-      </div>
-    </div>
+    <md-breadbrumb
+      class="settings-breadcrumb"
+      [items]="breadcrumbItems"
+    ></md-breadbrumb>
+    <md-title class="settings-title" title="Settings"></md-title>
+    <ul class="settings-list">
+      <li class="settings-row">
+        <md-text class="settings-row__title" text="Color theme:"></md-text>
+        <md-theme-selector
+          [themes]="themes"
+          [selectedTheme]="themes[1]"
+          (themeChange)="onThemeChange($event)"
+        ></md-theme-selector>
+      </li>
+      <li class="settings-row">
+        <md-text class="settings-row__title" text="Language:"></md-text>
+        <md-language-selector
+          [languages]="languages"
+          [selectedLanguage]="languages[1]"
+          (languageChange)="onLanguageChange($event)"
+        ></md-language-selector>
+      </li>
+      <li class="settings-row">
+        <md-text
+          class="settings-row__title"
+          text="Greetings tile's emojis:"
+        ></md-text>
+        <div class="emojis_container">
+          <div class="emojis">👋⛄️</div>
+          <lucide-icon class="pen" name="edit-3"></lucide-icon>
+        </div>
+      </li>
+      <li class="settings-row">
+        <md-text
+          class="settings-row__title"
+          text="Autorefresh the dashboard:"
+        ></md-text>
+        <div class="switch__container">
+          <md-switch
+            [isOn]="true"
+            (isOnChanged)="onSwitchChange($event)"
+          ></md-switch>
+          <p class="switch__container-paragraph">
+            {{ isAutoRefreshActive() ? 'Active' : 'Disabled' }}
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
