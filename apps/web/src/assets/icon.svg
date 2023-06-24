@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 389.726 57.882" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, -317.143036, -355.068939)">
+    <g id="title" style="font-style:normal;font-weight:normal;font-size:72px;line-height:1;font-family:'Brandmark Sans 24 Spectrum';font-variant-ligatures:normal;text-align:center;text-anchor:middle">
+      <g id="path380517" aria-label="T" transform="translate(0 310.71592) translate(317.1430409 46.35103999999999) scale(1.11) translate(-344.10388 49.536)">
+        <rect x="94.18177" y="75.224" class="c1" width="11.63645" height="49.55247" transform="translate(262.743361 -124.759999)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#9400d3" stroke="#9400d3"/>
+        <rect x="81.36052" y="75.22401" class="c3" width="37.27896" height="10.66673" transform="translate(262.743361 -124.759999)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#cd63a2" stroke="#cd63a2"/>
+        <rect x="94.18172" y="75.224" class="c2" width="11.63645" height="10.66672" transform="translate(262.743361 -124.759999)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#b031ba" stroke="#b031ba"/>
+      </g>
+      <g id="path380523" aria-label="R" transform="translate(0 310.71592) translate(458.9939590999999 46.35103999999999) scale(1.11) translate(-465.8975 49.536)">
+        <rect x="81.55034" y="75.224" class="c3" width="11.63645" height="49.55247" transform="translate(384.347161 -124.75764)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#cd63a2" stroke="#cd63a2"/>
+        <path class="c1" d="M118.44966,92.01864c0-9.26191-7.5351-16.797-16.79748-16.797H81.55034v10.66675h20.10184 c3.38071,0,6.13073,2.75002,6.13073,6.13026c0,3.38071-2.75002,6.13073-6.13073,6.13073H81.55034v10.66675h20.10125 c3.38071,0,6.13073,2.75002,6.13073,6.13074v9.82962h10.66675v-9.82962c0-4.43316-1.73877-8.45876-4.55413-11.46381 C116.71066,100.47799,118.44966,96.45203,118.44966,92.01864z" transform="translate(384.347161 -124.75764)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#9400d3" stroke="#9400d3"/>
+        <rect x="81.55034" y="75.224" class="c2" width="11.63645" height="10.66438" transform="translate(384.347161 -124.75764)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#b031ba" stroke="#b031ba"/>
+        <rect x="81.55034" y="98.14937" class="c2" width="11.63645" height="10.66675" transform="translate(384.347161 -124.75764)" stroke-width="0" stroke-linejoin="miter" stroke-miterlimit="2" fill="#b031ba" stroke="#b031ba"/>
+      </g>
+    </g>
+  </g>
+</svg>
