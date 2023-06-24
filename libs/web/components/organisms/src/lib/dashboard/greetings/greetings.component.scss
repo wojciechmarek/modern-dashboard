@@ -65,5 +65,8 @@
 
 .gettings__quick-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
 }

@@ -1,11 +1,6 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
 	"name": "Modern Dashboard",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
-
-	// "build": { "dockerfile": "Dockerfile" },
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
@@ -17,21 +12,4 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [4200, 3333]
 
-	// Configure tool-specific properties.
-	// "customizations": {
-	// 	"vscode": {
-	// 		// Add the IDs of extensions you want installed when the container is created.
-	// 		"extensions": [
-	// 			"dbaeumer.vscode-eslint",
-	// 			"esbenp.prettier-vscode",
-	// 			"ms-vscode.vscode-typescript-tslint-plugin",
-	// 			"msjsdiag.debugger-for-chrome",
-	// 			"nrwl.angular-console",
-	// 			"mhutchie.git-graph"
-	// 		]
-	// 	}
-	// }
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }
