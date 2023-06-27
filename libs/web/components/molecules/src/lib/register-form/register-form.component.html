@@ -41,10 +41,14 @@
     formControlName="isTermsChecked"
   />
   <md-button
+    class="form__button"
     type="submit"
     color="success"
-    label="REGISTER"
     [isDisabled]="!form.valid"
-  />
-  <md-button label="Have an account? Click here to login" />
+  >
+    REGISTER
+  </md-button>
+  <md-button class="form__button">
+    Have an account? Click here to login
+  </md-button>
 </form>

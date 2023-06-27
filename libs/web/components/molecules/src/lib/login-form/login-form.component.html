@@ -34,12 +34,16 @@
     label="Remember me"
     formControlName="isRememberMeChecked"
   />
-  <md-button type="submit" color="success" label="LOGIN" />
+  <md-button class="form__button" type="submit" color="success">
+    Login
+  </md-button>
   <md-link
     class="form__login-link"
     label="Don't have an account? Sign up here"
     link="/auth/register"
   />
   <md-horizontal-line text="OR" />
-  <md-button label="Click here to login as a guest" />
+  <md-button class="form__button">
+    Click here to login as a guest
+  </md-button>
 </form>
