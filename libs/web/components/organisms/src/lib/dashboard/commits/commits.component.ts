@@ -15,23 +15,29 @@ export class CommitsComponent {
 
   randomColor(i: number) {
     if (i % 4 === 0) {
-      return '#253E18';
+      return 'var(--commits-color-1)';
     }
 
     if (i % 5 === 0) {
-      return '#57BF37';
+      return 'var(--commits-color-2)';
     }
 
     if (i % 6 === 0) {
-      return '#CDE8C0';
+      return 'var(--commits-color-3)';
     }
 
     if (i < 100) {
-      return '#242424';
+      return 'var(--commits-color-0)';
     }
 
     const randNumberFrom0To4 = Math.floor(Math.random() * 5);
-    const colors = ['#253E18', '#4D7E32', '#57BF37', '#9FD282', '#CDE8C0'];
+    const colors = [
+      'var(--commits-color-0)',
+      'var(--commits-color-1)',
+      'var(--commits-color-2)',
+      'var(--commits-color-3)',
+      'var(--commits-color-4)',
+    ];
     return colors[randNumberFrom0To4];
   }
 }
