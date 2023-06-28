@@ -17,24 +17,24 @@ To learn the Angular 16 and NestJS frameworks and build a modern application wit
 - ❌ using real-time communication with GraphQL subscriptions,
 - ❌ using JWT to authenticate the user,
 - ❌ using Jest and Angular Testing Library to test the Angular components,
-- ✅ using Nx to manage the mono repo (to share code between the front- and back-end).
+- ✅ using Nx to manage the mono repo (to share code between the front- and back-end, splitting the responsibilities into apps and libs, marking them by scopes and tags).
 
 ## Demo
 
-A live demo is available at: [https://modern-dashboard-ivory.vercel.app/](https://modern-dashboard-ivory.vercel.app/).
+A live demo is available at [https://modern-dashboard-ivory.vercel.app/](https://modern-dashboard-ivory.vercel.app/).
 
 ## What does it look like?
 
-⚠️ The screenshot down below is outdated, see a live demo for the current version.
+⚠️ The screenshot below is outdated. See a live demo for the current version.
 
 ![dash](https://github.com/wojciechmarek/modern-dashboard/assets/27026036/48accec4-bbc9-4faf-a025-ab8f111f5836)
 
 Current dashboard:
 
-- does not use real data,
+- does not use actual data,
 - does not allow to change the language,
 - does not support mobile views (due to the `desktop first approach),
-- allows to change the color theme.
+- allows you to change the color theme.
 
 ## Design style
 
