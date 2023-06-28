@@ -1,0 +1,76 @@
+{
+  "name": "web-components-atoms",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/web/components/atoms/src",
+  "prefix": "md",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/web/components/atoms/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/components/atoms/**/*.ts",
+          "libs/web/components/atoms/**/*.html"
+        ]
+      }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/web/components/atoms/.storybook",
+        "browserTarget": "web-components-atoms:build-storybook",
+        "compodoc": false,
+        "styles": ["libs/web/utility/assets/src/styles/global.scss"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/web-components-atoms",
+        "configDir": "libs/web/components/atoms/.storybook",
+        "browserTarget": "web-components-atoms:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "static-storybook": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "web-components-atoms:build-storybook",
+        "staticFilePath": "dist/storybook/web-components-atoms"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "web-components-atoms:build-storybook:ci"
+        }
+      }
+    }
+  },
+  "tags": []
+}

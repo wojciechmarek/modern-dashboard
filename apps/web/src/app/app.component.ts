@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common'
 import { Component, Inject, OnDestroy, OnInit, inject } from '@angular/core'
-import { RootState } from '@md/web/common/store';
+import { RootState } from '@md/web/utility/store';
 import { Store } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
 

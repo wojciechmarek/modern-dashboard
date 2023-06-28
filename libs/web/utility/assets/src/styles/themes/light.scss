@@ -1,0 +1,37 @@
+[data-theme='light'] {
+  --bg-color: #d0d0d0;
+  --bg-color-alternative: #d0d0d0;
+  --bg-color-alternative-light: #e5e5e5;
+  --bg-color-opacity: #ffffff70;
+  --bg-color-opacity-hover: #ffffffa0;
+  --bg-gradient: linear-gradient(315deg, #ffffff 0%, #f3ecec 100%);
+
+  --text-color: #22242b;
+  --text-color-link: #22242b5a;
+  --text-color-contrast: #fcfaf1;
+
+  --hover-accent-color: #00000025;
+
+  --separator-color: #e8e7e0;
+  --separator-color-alternative: #b4b4b4;
+
+  --header-gradient: linear-gradient(
+    170deg,
+    rgba(192, 105, 159, 1) 28%,
+    rgba(135, 25, 203, 1) 69%
+  );
+  --success-color: #3ba03e;
+  --danger-color: #e6372b;
+  --wrong-input-color: #f6cece;
+  --warning-color: #ebeb2a;
+  --info-color: #1889e6;
+  --flat-color: #ffffff;
+  --flat-hover-color: #bbbbbb;
+  --flat-active-color: #e7e7e7;
+
+  --commits-color-0: #262D24;
+  --commits-color-1: #445F3E;
+  --commits-color-2: #5F8D56;
+  --commits-color-3: #79B96C;
+  --commits-color-4: #94E684;
+}

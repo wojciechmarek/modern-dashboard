@@ -24,20 +24,20 @@
       "@md/api/utilities": ["libs/api/utilities/src/index.ts"],
       "@md/common/enums": ["libs/common/enums/src/index.ts"],
       "@md/common/models": ["libs/common/models/src/index.ts"],
-      "@md/web/common/assets": ["libs/web/common/assets/src/index.ts"],
-      "@md/web/common/constants": ["libs/web/common/constants/src/index.ts"],
-      "@md/web/common/guards": ["libs/web/common/guards/src/index.ts"],
-      "@md/web/common/routing": ["libs/web/common/routing/src/index.ts"],
-      "@md/web/common/store": ["libs/web/common/store/src/index.ts"],
-      "@md/web/components/atoms": ["libs/web/components/atoms/src/index.ts"],
-      "@md/web/components/molecules": [
-        "libs/web/components/molecules/src/index.ts"
+      "@md/web/utility/assets": ["libs/web/utility/assets/src/index.ts"],
+      "@md/web/utility/constants": ["libs/web/utility/constants/src/index.ts"],
+      "@md/web/utility/guards": ["libs/web/utility/guards/src/index.ts"],
+      "@md/web/utility/routing": ["libs/web/utility/routing/src/index.ts"],
+      "@md/web/utility/store": ["libs/web/utility/store/src/index.ts"],
+      "@md/web/ui/atoms": ["libs/web/ui/atoms/src/index.ts"],
+      "@md/web/ui/molecules": [
+        "libs/web/ui/molecules/src/index.ts"
       ],
-      "@md/web/components/organisms": [
-        "libs/web/components/organisms/src/index.ts"
+      "@md/web/ui/organisms": [
+        "libs/web/ui/organisms/src/index.ts"
       ],
-      "@md/web/components/storybook": [
-        "libs/web/components/storybook/src/index.ts"
+      "@md/web/ui/storybook": [
+        "libs/web/ui/storybook/src/index.ts"
       ],
       "@md/web/data-access": ["libs/web/data-access/src/index.ts"],
       "@md/web/data-access/auth": ["libs/web/data-access/auth/src/index.ts"],
@@ -45,15 +45,15 @@
       "@md/web/data-access/profile": [
         "libs/web/data-access/profile/src/index.ts"
       ],
-      "@md/web/views/auth": ["libs/web/views/auth/src/index.ts"],
-      "@md/web/views/dashboard": ["libs/web/views/dashboard/src/index.ts"],
-      "@md/web/views/drive": ["libs/web/views/drive/src/index.ts"],
-      "@md/web/views/layout": ["libs/web/views/layout/src/index.ts"],
-      "@md/web/views/notifications": [
+      "@md/web/feature/auth": ["libs/web/feature/auth/src/index.ts"],
+      "@md/web/feature/dashboard": ["libs/web/feature/dashboard/src/index.ts"],
+      "@md/web/feature/drive": ["libs/web/feature/drive/src/index.ts"],
+      "@md/web/feature/layout": ["libs/web/feature/layout/src/index.ts"],
+      "@md/web/feature/notifications": [
         "libs/web/views/notifications/src/index.ts"
       ],
-      "@md/web/views/profile": ["libs/web/views/profile/src/index.ts"],
-      "@md/web/views/settings": ["libs/web/views/settings/src/index.ts"]
+      "@md/web/feature/profile": ["libs/web/feature/profile/src/index.ts"],
+      "@md/web/feature/settings": ["libs/web/feature/settings/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

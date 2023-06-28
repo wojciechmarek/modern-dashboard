@@ -25,7 +25,7 @@
           "apps/web/src/manifest.webmanifest"
         ],
         "styles": [
-          "libs/web/common/assets/src/styles/global.scss"
+          "libs/web/utility/assets/src/styles/global.scss"
         ],
         "scripts": [],
         "serviceWorker": true,

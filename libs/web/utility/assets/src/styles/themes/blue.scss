@@ -1,0 +1,33 @@
+[data-theme='blue'] {
+  --bg-color: #5d3ecd;
+  --bg-color-alternative: #0d0529;
+  --bg-color-alternative-light: #302169;
+  --bg-color-opacity: #ffffff40;
+  --bg-color-opacity-hover: #ffffff65;
+  --bg-gradient: linear-gradient(315deg, #1c2281 0%, #18004e 100%);
+
+  --text-color: #fcfaf1;
+  --text-color-link: #fcfaf169;
+  --text-color-contrast: #22242b;
+
+  --hover-accent-color: #ffffff35;
+
+  --separator-color: #393a3d;
+  --separator-color-alternative: #434347;
+
+  --header-gradient: linear-gradient(170deg, rgba(192,105,159,1) 28%, rgba(135,25,203,1) 69%);
+  --success-color: #4caf50;
+  --danger-color: #f44336;
+  --wrong-input-color: #312222;
+  --warning-color: #fffe3b;
+  --info-color: #2196f3;
+  --flat-color: #222431;
+  --flat-hover-color: #373b4e;
+  --flat-active-color: #2b2e3c;
+
+  --commits-color-0: rgba(128, 255, 128, 0.08);
+  --commits-color-1: rgba(128, 255, 128, 0.3);
+  --commits-color-2: rgba(128, 255, 128, 0.5);
+  --commits-color-3: rgba(128, 255, 128, 0.7);
+  --commits-color-4: rgba(128, 255, 128, 0.9);
+}

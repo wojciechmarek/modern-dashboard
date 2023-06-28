@@ -2,15 +2,15 @@ import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { WebViewsLayoutModule } from '@md/web/views/layout';
+import { WebViewsLayoutModule } from '@md/web/feature/layout';
 import { RouterModule } from '@angular/router';
 
 import { APOLLO_OPTIONS, ApolloModule } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { InMemoryCache } from '@apollo/client/core';
-import { WebCommonRoutingModule } from '@md/web/common/routing';
-import { WebCommonStoreModule } from '@md/web/common/store';
+import { WebCommonRoutingModule } from '@md/web/utility/routing';
+import { WebCommonStoreModule } from '@md/web/utility/store';
 import { AuthEffects, WebDataAccessAuthModule } from '@md/web/data-access/auth';
 import { EffectsModule } from '@ngrx/effects';
 import { ServiceWorkerModule } from '@angular/service-worker';
