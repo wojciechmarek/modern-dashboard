@@ -1,5 +1,5 @@
 {
-  "name": "web-assets",
+  "name": "web-utility-assets",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/web/assets/src",
   "projectType": "library",

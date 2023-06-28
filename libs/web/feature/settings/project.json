@@ -1,5 +1,5 @@
 {
-  "name": "web-views-settings",
+  "name": "web-feature-settings",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/web/views/settings/src",

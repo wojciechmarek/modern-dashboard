@@ -1,5 +1,5 @@
 {
-  "name": "web-common-routing",
+  "name": "web-utility-routing",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/web/common/routing/src",
   "prefix": "md",

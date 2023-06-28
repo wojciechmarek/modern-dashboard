@@ -1,5 +1,5 @@
 {
-  "name": "web-common-guards",
+  "name": "web-utility-guards",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/web/common/guards/src",
   "prefix": "md",

@@ -1,5 +1,5 @@
 {
-  "name": "web-common-constants",
+  "name": "web-utility-constants",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/web/common/constants/src",
   "prefix": "md",

@@ -1,5 +1,5 @@
 {
-  "name": "web-views-dashboard",
+  "name": "web-feature-dashboard",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/web/views/dashboard/src",

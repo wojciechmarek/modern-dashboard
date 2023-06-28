@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'web-components-atoms',
+  displayName: 'web-ui-atoms',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../../coverage/libs/web/components/atoms',

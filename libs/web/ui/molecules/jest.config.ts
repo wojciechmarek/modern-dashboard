@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'web-components-molecules',
+  displayName: 'web-ui-molecules',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../../coverage/libs/web/components/molecules',

@@ -1,5 +1,5 @@
 {
-  "name": "web-views-notifications",
+  "name": "web-feature-notifications",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/web/views/notifications/src",
   "prefix": "md",

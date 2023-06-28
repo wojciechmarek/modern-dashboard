@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'web-components-organisms',
+  displayName: 'web-ui-organisms',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../../coverage/libs/web/components/organisms',
