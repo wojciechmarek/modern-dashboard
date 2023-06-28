@@ -1,15 +1,14 @@
 {
-	"name": "Modern Dashboard",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "name": "Modern Dashboard",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "18.15.0"
-		}
-	},
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18.15.0"
+    }
+  },
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [4200, 3333]
-
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [4200, 3333]
 }

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'md-button',
@@ -10,7 +10,14 @@ export class ButtonComponent {
 
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
 
-  @Input() color: 'success' | 'info' | 'danger' | 'warning' | 'flat' | 'transparent' | "opacity" = 'flat';
+  @Input() color:
+    | 'success'
+    | 'info'
+    | 'danger'
+    | 'warning'
+    | 'flat'
+    | 'transparent'
+    | 'opacity' = 'flat';
 
   @Input() isDisabled = false;
 

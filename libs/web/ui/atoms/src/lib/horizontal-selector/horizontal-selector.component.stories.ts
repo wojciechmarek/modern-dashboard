@@ -9,7 +9,7 @@ export default {
       control: 'select',
       options: ['success', 'info', 'danger', 'warning', 'flat'],
     },
-    handleClick: { action: 'handleClick',  },
+    handleClick: { action: 'handleClick' },
   },
 } as Meta<HorizontalSelectorComponent>;
 
@@ -27,7 +27,6 @@ export const Primary = {
         iconUrl: 'https://picsum.photos/200/300',
         id: '2',
       },
-    ]
+    ],
   },
 };
-

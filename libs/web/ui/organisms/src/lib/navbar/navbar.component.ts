@@ -13,7 +13,7 @@ export class NavbarComponent {
   }
 
   @HostListener('document:keydown.meta.k')
-  handleKeyboardEvent() { 
+  handleKeyboardEvent() {
     this.handleOpenSearch.emit();
   }
 }

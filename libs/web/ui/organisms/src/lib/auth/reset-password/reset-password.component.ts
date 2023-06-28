@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core'
-import { ResetPasswordDto } from '@md/common/models'
+import { Component, EventEmitter, Output } from '@angular/core';
+import { ResetPasswordDto } from '@md/common/models';
 
 @Component({
   selector: 'md-reset-password',

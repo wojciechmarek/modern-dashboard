@@ -9,7 +9,7 @@ export class JiraTicketsComponent {
   items = [
     {
       id: '1',
-      name: "Bayer - support"
+      name: 'Bayer - support',
     },
     {
       id: '2',

@@ -1,16 +1,16 @@
-import { Field, InputType, ObjectType } from '@nestjs/graphql'
+import { Field, InputType, ObjectType } from '@nestjs/graphql';
 
 @InputType()
 export class RefreshSessionInput {
   @Field(() => String, { nullable: false })
-  public refreshToken: string
+  public refreshToken: string;
 }
 
 @ObjectType()
 export class RefreshSessionOutput {
   @Field(() => String)
-  public accessToken: string
+  public accessToken: string;
 
   @Field(() => String)
-  public refreshToken: string
+  public refreshToken: string;
 }

@@ -1,17 +1,19 @@
-  <div class="chart__container">
-    <md-dashboard-tile-header [title]="title">
-      <lucide-icon name="grip-horizontal"></lucide-icon>
-    </md-dashboard-tile-header>
-    <div class="chart__content">
-      <div class="content__graph">
-        <img class="content__graph-chart" [src]="imageSrc" alt="chart" />
-      </div>
-      <div class="content__details">
-        <p class="detail-item__value">{{value}}</p>
-        <p class="detail-item__description">{{description}}</p>
-        <div class="detail-item__trend" [ngStyle]="{ backgroundColor: trendColor }">
-          <p>{{trendText}}</p>
-        </div>
+<div class="chart__container">
+  <md-dashboard-tile-header [title]="title">
+    <lucide-icon name="grip-horizontal"></lucide-icon>
+  </md-dashboard-tile-header>
+  <div class="chart__content">
+    <div class="content__graph">
+      <img class="content__graph-chart" [src]="imageSrc" alt="chart" />
+    </div>
+    <div class="content__details">
+      <p class="detail-item__value">{{ value }}</p>
+      <p class="detail-item__description">{{ description }}</p>
+      <div
+        class="detail-item__trend"
+        [ngStyle]="{ backgroundColor: trendColor }">
+        <p>{{ trendText }}</p>
       </div>
     </div>
   </div>
+</div>

@@ -1,10 +1,9 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 export interface HorizontalSelectorItem {
   iconUrl: string;
   id: string;
 }
-
 
 @Component({
   selector: 'md-horizontal-selector',
@@ -15,7 +14,6 @@ export class HorizontalSelectorComponent {
   @Input() items: HorizontalSelectorItem[] = [];
 
   @Input() color: 'success' | 'info' | 'danger' | 'warning' | 'flat' = 'flat';
-
 
   @Output() handleClick = new EventEmitter();
 

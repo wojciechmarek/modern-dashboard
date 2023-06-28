@@ -1,29 +1,29 @@
-import { Language } from "@md/common/enums";
+import { Language } from '@md/common/enums';
 
 export const languages = [
   {
     id: Language.English,
     name: 'Toggle to english language',
-    flag: "./assets/flags/usa.svg",
+    flag: './assets/flags/usa.svg',
   },
   {
     id: Language.Polish,
     name: 'Toggle to polish language',
-    flag: "./assets/flags/poland.svg",
+    flag: './assets/flags/poland.svg',
   },
   {
     id: Language.Polish,
     name: 'Toggle to german language',
-    flag: "./assets/flags/germany.svg",
+    flag: './assets/flags/germany.svg',
   },
   {
     id: Language.Polish,
     name: 'Toggle to french franch',
-    flag: "./assets/flags/france.svg",
+    flag: './assets/flags/france.svg',
   },
   {
     id: Language.Polish,
     name: 'Toggle to spanish language',
-    flag: "./assets/flags/spain.svg",
+    flag: './assets/flags/spain.svg',
   },
 ];

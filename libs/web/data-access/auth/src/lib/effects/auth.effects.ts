@@ -27,12 +27,12 @@ export class AuthEffects {
       ofType(LoginAction.load),
       concatMap(({ email, password, isRememberMeChecked }: LoginDto) =>
         this.authService.login({ email, password, isRememberMeChecked }).pipe(
-          map((result) =>
+          map(result =>
             LoginAction.success(
               result.data ? result.data : { accessToken: '', refreshToken: '' }
             )
           ),
-          catchError((error) => of(LoginAction.failure({ error })))
+          catchError(error => of(LoginAction.failure({ error })))
         )
       )
     );
@@ -44,7 +44,7 @@ export class AuthEffects {
       concatMap(({ email, password }: RegisterDto) =>
         this.authService.register({ email, password }).pipe(
           map(() => RegisterAction.success()),
-          catchError((error) => of(RegisterAction.failure({ error })))
+          catchError(error => of(RegisterAction.failure({ error })))
         )
       )
     );
@@ -68,7 +68,7 @@ export class AuthEffects {
       concatMap(({ email }: ResetPasswordDto) =>
         this.authService.resetPassword({ email }).pipe(
           map(() => ResetPasswordAction.success()),
-          catchError((error) => of(ResetPasswordAction.failure({ error })))
+          catchError(error => of(ResetPasswordAction.failure({ error })))
         )
       )
     );
@@ -79,12 +79,10 @@ export class AuthEffects {
       ofType(CheckEmailAvailableAction.load),
       concatMap(({ email }: EmailAvailableDto) =>
         this.authService.checkEmailAvailable({ email }).pipe(
-          map((result) =>
+          map(result =>
             CheckEmailAvailableAction.success({ isAvailable: result.data })
           ),
-          catchError((error) =>
-            of(CheckEmailAvailableAction.failure({ error }))
-          )
+          catchError(error => of(CheckEmailAvailableAction.failure({ error })))
         )
       )
     );

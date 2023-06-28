@@ -1,16 +1,13 @@
-  <div class="commits__container">
-    <md-dashboard-tile-header title="Your commits">
-      <lucide-icon name="grip-horizontal"></lucide-icon>
-    </md-dashboard-tile-header>
-    <div class="commits__content">
-      <div class="content__calendar">
-        <div
-          *ngFor="let commit of commits"
-          class="calendar__item"
-          [ngStyle]="{ 'background-color': commit.style }"
-        >
-      
-      </div>
-      </div>
+<div class="commits__container">
+  <md-dashboard-tile-header title="Your commits">
+    <lucide-icon name="grip-horizontal"></lucide-icon>
+  </md-dashboard-tile-header>
+  <div class="commits__content">
+    <div class="content__calendar">
+      <div
+        *ngFor="let commit of commits"
+        class="calendar__item"
+        [ngStyle]="{ 'background-color': commit.style }"></div>
     </div>
   </div>
+</div>

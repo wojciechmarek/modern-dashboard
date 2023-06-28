@@ -1,5 +1,3 @@
-
-
 import { Meta } from '@storybook/angular';
 import { LanguageSelectorComponent } from './language-selector.component';
 

@@ -10,14 +10,14 @@ export const Primary = {
   render: (args: HorizontalLineComponent) => ({
     props: args,
   }),
-  args: { },
+  args: {},
 };
 
 export const WithText = {
   render: (args: HorizontalLineComponent) => ({
     props: args,
   }),
-  args: { 
+  args: {
     text: 'Some text',
   },
 };

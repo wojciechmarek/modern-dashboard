@@ -9,8 +9,12 @@ export default {
   component: LoginFormComponent,
   decorators: [
     moduleMetadata({
-      imports: [WebComponentsAtomsModule, ReactiveFormsModule, RouterModule.forRoot([])],
-    })
+      imports: [
+        WebComponentsAtomsModule,
+        ReactiveFormsModule,
+        RouterModule.forRoot([]),
+      ],
+    }),
   ],
   argTypes: {
     handleLoginSubmit: { action: 'handleLoginSubmit' },
@@ -21,8 +25,5 @@ export const Primary = {
   render: (args: LoginFormComponent) => ({
     props: args,
   }),
-  args: {
-
-  },
-
+  args: {},
 };

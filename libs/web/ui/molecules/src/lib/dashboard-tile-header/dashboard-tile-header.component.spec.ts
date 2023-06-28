@@ -1,22 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing'
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashboardTileHeaderComponent } from './dashboard-tile-header.component'
+import { DashboardTileHeaderComponent } from './dashboard-tile-header.component';
 
 describe('DashboardTileHeaderComponent', () => {
-  let component: DashboardTileHeaderComponent
-  let fixture: ComponentFixture<DashboardTileHeaderComponent>
+  let component: DashboardTileHeaderComponent;
+  let fixture: ComponentFixture<DashboardTileHeaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [DashboardTileHeaderComponent],
-    }).compileComponents()
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(DashboardTileHeaderComponent)
-    component = fixture.componentInstance
-    fixture.detectChanges()
-  })
+    fixture = TestBed.createComponent(DashboardTileHeaderComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
-    expect(component).toBeTruthy()
-  })
-})
+    expect(component).toBeTruthy();
+  });
+});

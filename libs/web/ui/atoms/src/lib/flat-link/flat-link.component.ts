@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'md-flat-link',
@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core'
   styleUrls: ['./flat-link.component.scss'],
 })
 export class FlatLinkComponent {
-  @Input() label = ''
+  @Input() label = '';
   @Input() link = '';
 }

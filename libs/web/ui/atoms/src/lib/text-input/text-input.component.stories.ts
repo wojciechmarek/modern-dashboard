@@ -45,7 +45,6 @@ export const WithValue = {
   },
 };
 
-
 export const WithError = {
   render: (args: TextInputComponent) => ({
     props: args,

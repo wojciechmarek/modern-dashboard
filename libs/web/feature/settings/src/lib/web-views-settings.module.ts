@@ -13,7 +13,6 @@ const routes = [{ path: '', component: HomeComponent }];
     RouterModule.forChild(routes),
     WebComponentsAtomsModule,
     LucideAngularModule.pick({ Edit3 }),
-
   ],
   declarations: [HomeComponent],
 })

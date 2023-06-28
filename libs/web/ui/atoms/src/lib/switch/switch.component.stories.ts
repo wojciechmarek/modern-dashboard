@@ -9,7 +9,7 @@ export default {
       control: 'select',
       options: ['success', 'info', 'danger', 'warning', 'flat'],
     },
-    handleClick: { action: 'handleClick',  },
+    handleClick: { action: 'handleClick' },
   },
 } as Meta<SwitchComponent>;
 

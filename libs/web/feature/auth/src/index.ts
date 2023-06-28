@@ -1,1 +1,1 @@
-export * from './lib/web-views-auth.module'
+export * from './lib/web-views-auth.module';

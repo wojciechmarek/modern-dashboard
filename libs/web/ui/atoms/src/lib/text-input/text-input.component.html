@@ -7,7 +7,6 @@
     [placeholder]="placeholder"
     aria-label="`${label}` input field"
     [value]="_value"
-    (keyup)="onKeyUp($event)"
-  />
+    (keyup)="onKeyUp($event)" />
   <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
 </div>

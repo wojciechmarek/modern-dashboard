@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "env-cmd -f ./.development.env nx run-many --target=serve --projects=api,web",
     "dev:web": "env-cmd -f ./.development.env nx run web:serve",
-    "storybook": "nx run web-components-storybook:storybook"
+    "storybook": "nx run web-components-storybook:storybook",
+    "prettier": "npx prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -52,6 +53,7 @@
     "@angular-devkit/schematics": "16.0.0",
     "@angular-eslint/eslint-plugin": "16.0.1",
     "@angular-eslint/eslint-plugin-template": "16.0.1",
+    "@angular-eslint/schematics": "^16.0.3",
     "@angular-eslint/template-parser": "16.0.1",
     "@angular/cli": "~15.2.0",
     "@angular/compiler-cli": "16.0.0",

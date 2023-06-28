@@ -3,7 +3,6 @@
     *ngFor="let theme of themes"
     [title]="theme.name"
     class="theme-selector__item"
-    [ngStyle]="{'background': theme.style}"
-    (click)="onThemeClick(theme.id)"
-    ></div>
+    [ngStyle]="{ background: theme.style }"
+    (click)="onThemeClick(theme.id)"></div>
 </div>

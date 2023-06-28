@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'md-horizontal-line',
@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core'
   styleUrls: ['./horizontal-line.component.scss'],
 })
 export class HorizontalLineComponent {
-  @Input() text = ''
+  @Input() text = '';
 }

@@ -17,7 +17,6 @@ import { UserRepository } from './repositories';
     //   entities: [],
     //   synchronize: true,
     // }),
-
   ],
   exports: [UserRepository],
 })

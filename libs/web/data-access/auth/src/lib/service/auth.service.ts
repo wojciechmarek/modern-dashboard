@@ -26,7 +26,7 @@ export class AuthService {
       variables: {
         data,
       },
-    })
+    });
   }
 
   register(data: RegisterDto) {

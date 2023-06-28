@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import {  LanguageAction, ThemeAction } from './profile.actions';
+import { LanguageAction, ThemeAction } from './profile.actions';
 import { Language, Theme } from '@md/common/enums';
 
 export interface ProfileState {

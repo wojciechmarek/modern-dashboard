@@ -8,7 +8,7 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [WebComponentsAtomsModule],
-    })
+    }),
   ],
 } as Meta<DashboardTileHeaderComponent>;
 
@@ -21,4 +21,3 @@ export const Primary = {
     subHeaderText: 'Sub Header',
   },
 };
-

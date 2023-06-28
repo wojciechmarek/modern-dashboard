@@ -1,4 +1,4 @@
-import { Language, Theme } from "@md/common/enums";
+import { Language, Theme } from '@md/common/enums';
 
 export class ProfileDto {
   constructor(

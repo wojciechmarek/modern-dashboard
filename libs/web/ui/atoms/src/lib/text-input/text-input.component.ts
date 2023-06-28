@@ -1,5 +1,18 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core'
-import { AbstractControl, ControlValueAccessor, NG_VALIDATORS, NG_VALUE_ACCESSOR, ValidationErrors, Validator } from '@angular/forms';
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
+import {
+  AbstractControl,
+  ControlValueAccessor,
+  NG_VALIDATORS,
+  NG_VALUE_ACCESSOR,
+  ValidationErrors,
+  Validator,
+} from '@angular/forms';
 
 @Component({
   selector: 'md-text-input',
@@ -9,16 +22,18 @@ import { AbstractControl, ControlValueAccessor, NG_VALIDATORS, NG_VALUE_ACCESSOR
     {
       provide: NG_VALUE_ACCESSOR,
       multi: true,
-      useExisting: TextInputComponent
+      useExisting: TextInputComponent,
     },
     {
       provide: NG_VALIDATORS,
       multi: true,
-      useExisting: TextInputComponent
-    }
-  ]
+      useExisting: TextInputComponent,
+    },
+  ],
 })
-export class TextInputComponent implements ControlValueAccessor, OnInit, OnChanges, Validator {
+export class TextInputComponent
+  implements ControlValueAccessor, OnInit, OnChanges, Validator
+{
   @Input() label = '';
   @Input() placeholder = '';
   @Input() type: 'text' | 'password' = 'text';
@@ -44,10 +59,14 @@ export class TextInputComponent implements ControlValueAccessor, OnInit, OnChang
     this._value = (value.target as HTMLInputElement).value;
     this.onChange(this._value);
     this.markAsTouched();
-  }
+  };
 
-  onChange = (value: string) => { return; }
-  onTouched = () => { return; }
+  onChange = (value: string) => {
+    return;
+  };
+  onTouched = () => {
+    return;
+  };
 
   markAsTouched() {
     if (!this._isTouched) {

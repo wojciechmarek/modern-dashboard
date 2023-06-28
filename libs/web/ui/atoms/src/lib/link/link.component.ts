@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'md-link',
@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core'
   styleUrls: ['./link.component.scss'],
 })
 export class LinkComponent {
-  @Input() label = ''
+  @Input() label = '';
 
   @Input() link = '';
 }

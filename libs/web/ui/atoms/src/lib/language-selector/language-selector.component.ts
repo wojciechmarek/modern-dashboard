@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Language } from '@md/common/enums';
 
 export interface LanguageSelector {
@@ -21,4 +21,3 @@ export class LanguageSelectorComponent {
     this.languageChange.emit(language);
   }
 }
- 

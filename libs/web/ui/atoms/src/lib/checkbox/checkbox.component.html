@@ -4,7 +4,6 @@
     type="checkbox"
     [id]="name"
     [value]="_value"
-    (change)="onCheckboxChange($event)"
-  />
+    (change)="onCheckboxChange($event)" />
   <label class="label" *ngIf="label" [for]="name">{{ label }}</label>
 </div>

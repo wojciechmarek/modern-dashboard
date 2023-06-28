@@ -30,15 +30,9 @@
       "@md/web/utility/routing": ["libs/web/utility/routing/src/index.ts"],
       "@md/web/utility/store": ["libs/web/utility/store/src/index.ts"],
       "@md/web/ui/atoms": ["libs/web/ui/atoms/src/index.ts"],
-      "@md/web/ui/molecules": [
-        "libs/web/ui/molecules/src/index.ts"
-      ],
-      "@md/web/ui/organisms": [
-        "libs/web/ui/organisms/src/index.ts"
-      ],
-      "@md/web/ui/storybook": [
-        "libs/web/ui/storybook/src/index.ts"
-      ],
+      "@md/web/ui/molecules": ["libs/web/ui/molecules/src/index.ts"],
+      "@md/web/ui/organisms": ["libs/web/ui/organisms/src/index.ts"],
+      "@md/web/ui/storybook": ["libs/web/ui/storybook/src/index.ts"],
       "@md/web/data-access": ["libs/web/data-access/src/index.ts"],
       "@md/web/data-access/auth": ["libs/web/data-access/auth/src/index.ts"],
       "@md/web/data-access/drive": ["libs/web/data-access/drive/src/index.ts"],

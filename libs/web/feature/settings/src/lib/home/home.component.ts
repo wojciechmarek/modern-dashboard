@@ -15,7 +15,7 @@ export class HomeComponent {
 
   store = inject(Store<RootState>);
 
-  onThemeChange(theme: Theme) {  
+  onThemeChange(theme: Theme) {
     this.store.dispatch(ThemeAction({ theme }));
   }
 
@@ -32,6 +32,6 @@ export class HomeComponent {
   breadcrumbItems = [
     { label: 'Home', url: '/' },
     { label: 'Settings', url: '/settings' },
-    { label: 'Details', url: '/settings/details'}
+    { label: 'Details', url: '/settings/details' },
   ];
 }

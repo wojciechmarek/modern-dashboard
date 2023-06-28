@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./commits.component.scss'],
 })
 export class CommitsComponent {
-
   commits = Array.from({ length: 150 }, (_, i) => ({
     id: i,
     message: 'feat: add new feature',

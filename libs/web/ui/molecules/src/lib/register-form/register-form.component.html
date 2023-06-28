@@ -9,8 +9,7 @@
         : form.get('email')?.hasError('email')
         ? 'Email is not valid'
         : ''
-    "
-  />
+    " />
   <md-text-input
     type="password"
     label="Password:"
@@ -22,8 +21,7 @@
         : form.get('password')?.hasError('minlength')
         ? 'Password must be at least 8 characters'
         : ''
-    "
-  />
+    " />
 
   <md-text-input
     type="password"
@@ -32,20 +30,17 @@
     formControlName="confirmPassword"
     [errorMessage]="
       form.hasError('passwordsNotTheSame') ? 'Passwords are not the same' : ''
-    "
-  />
+    " />
 
   <md-checkbox
     class="form__checkbox"
     label="I agree to the terms and conditions"
-    formControlName="isTermsChecked"
-  />
+    formControlName="isTermsChecked" />
   <md-button
     class="form__button"
     type="submit"
     color="success"
-    [isDisabled]="!form.valid"
-  >
+    [isDisabled]="!form.valid">
     REGISTER
   </md-button>
   <md-button class="form__button">

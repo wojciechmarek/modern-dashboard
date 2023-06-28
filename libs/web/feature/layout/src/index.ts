@@ -1,1 +1,1 @@
-export * from './lib/web-views-layout.module'
+export * from './lib/web-views-layout.module';

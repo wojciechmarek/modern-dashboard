@@ -15,15 +15,11 @@ export class SettingsComponent {
   themes = themes as any;
   languages = languages as any;
 
-  onThemeChange(theme: Theme) {  
+  onThemeChange(theme: Theme) {
     this.store.dispatch(ThemeAction({ theme }));
   }
 
-  onLanguageChange(language: Language) {  
+  onLanguageChange(language: Language) {
     this.store.dispatch(LanguageAction({ language }));
   }
-
-
-
 }
-

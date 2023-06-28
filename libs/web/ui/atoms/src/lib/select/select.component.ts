@@ -1,4 +1,4 @@
-import { Component, Input, signal } from '@angular/core'
+import { Component, Input, signal } from '@angular/core';
 
 export interface SelectItem {
   id: string;
@@ -13,7 +13,7 @@ export interface SelectItem {
 export class SelectComponent {
   @Input() items: SelectItem[] = [];
 
-  placeholder = signal("");
+  placeholder = signal('');
 
   onSelectChange(event: Event) {
     const target = event.target as HTMLSelectElement;

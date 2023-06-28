@@ -6,17 +6,13 @@ import { CqrsModule } from '@nestjs/cqrs';
 
 @Module({
   controllers: [],
-  providers: [
-    AuthResolver,
-    UserResolver
-  ],
+  providers: [AuthResolver, UserResolver],
   exports: [],
   imports: [
     CqrsModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
-      
     }),
   ],
 })

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core'
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'md-navbar-user-manager',
@@ -6,8 +6,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core'
   styleUrls: ['./navbar-user-manager.component.scss'],
 })
 export class NavbarUserManagerComponent {
-  @Input() themeButtonLabel = "";
-  @Input() authButtonLabel = "";
+  @Input() themeButtonLabel = '';
+  @Input() authButtonLabel = '';
 
   @Output() handleThemeButtonClick = new EventEmitter();
   @Output() handleAuthButtonClick = new EventEmitter();
@@ -24,5 +24,4 @@ export class NavbarUserManagerComponent {
   searchOpenClick() {
     this.handleSearchOpenClick.emit();
   }
-
 }

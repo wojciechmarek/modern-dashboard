@@ -4,13 +4,17 @@ import { ButtonComponent } from './button.component';
 export default {
   title: 'Button',
   component: ButtonComponent,
-  decorators: [componentWrapperDecorator((story) => `<div style="height: 3em">${story}</div>`)],
+  decorators: [
+    componentWrapperDecorator(
+      story => `<div style="height: 3em">${story}</div>`
+    ),
+  ],
   argTypes: {
     color: {
       control: 'select',
       options: ['success', 'info', 'danger', 'warning', 'flat'],
     },
-    handleClick: { action: 'handleClick',  },
+    handleClick: { action: 'handleClick' },
   },
 } as Meta<ButtonComponent>;
 

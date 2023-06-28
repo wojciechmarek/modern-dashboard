@@ -9,8 +9,7 @@
         : form.get('email')?.hasError('email')
         ? 'Email is not valid'
         : ''
-    "
-  />
+    " />
   <md-text-input
     type="password"
     label="Password:"
@@ -22,28 +21,22 @@
         : form.get('password')?.hasError('minlength')
         ? 'Password must be at least 8 characters'
         : ''
-    "
-  />
+    " />
   <md-link
     class="form__forgot-password-link"
     label="Forgot password?"
-    link="/auth/reset-password"
-  />
+    link="/auth/reset-password" />
   <md-checkbox
     class="form__checkbox"
     label="Remember me"
-    formControlName="isRememberMeChecked"
-  />
+    formControlName="isRememberMeChecked" />
   <md-button class="form__button" type="submit" color="success">
     Login
   </md-button>
   <md-link
     class="form__login-link"
     label="Don't have an account? Sign up here"
-    link="/auth/register"
-  />
+    link="/auth/register" />
   <md-horizontal-line text="OR" />
-  <md-button class="form__button">
-    Click here to login as a guest
-  </md-button>
+  <md-button class="form__button"> Click here to login as a guest </md-button>
 </form>

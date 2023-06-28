@@ -1,4 +1,10 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core'
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
@@ -9,11 +15,13 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
     {
       provide: NG_VALUE_ACCESSOR,
       multi: true,
-      useExisting: CheckboxComponent
-    }
-  ]
+      useExisting: CheckboxComponent,
+    },
+  ],
 })
-export class CheckboxComponent implements ControlValueAccessor, OnInit, OnChanges {
+export class CheckboxComponent
+  implements ControlValueAccessor, OnInit, OnChanges
+{
   @Input() label = '';
   @Input() value = false;
   @Input() name = '';
@@ -36,10 +44,14 @@ export class CheckboxComponent implements ControlValueAccessor, OnInit, OnChange
     const checked = (event.target as HTMLInputElement).checked;
     this._value = checked;
     this.onChange(this._value);
-  }
+  };
 
-  onChange = (value: boolean) => { return; }
-  onTouched = () => { return; }
+  onChange = (value: boolean) => {
+    return;
+  };
+  onTouched = () => {
+    return;
+  };
 
   writeValue(value: boolean): void {
     this._value = value;

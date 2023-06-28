@@ -2,8 +2,7 @@
   <div class="settings-content">
     <md-breadbrumb
       class="settings-breadcrumb"
-      [items]="breadcrumbItems"
-    ></md-breadbrumb>
+      [items]="breadcrumbItems"></md-breadbrumb>
     <md-title class="settings-title" title="Settings"></md-title>
     <ul class="settings-list">
       <li class="settings-row">
@@ -11,22 +10,19 @@
         <md-theme-selector
           [themes]="themes"
           [selectedTheme]="themes[1]"
-          (themeChange)="onThemeChange($event)"
-        ></md-theme-selector>
+          (themeChange)="onThemeChange($event)"></md-theme-selector>
       </li>
       <li class="settings-row">
         <md-text class="settings-row__title" text="Language:"></md-text>
         <md-language-selector
           [languages]="languages"
           [selectedLanguage]="languages[1]"
-          (languageChange)="onLanguageChange($event)"
-        ></md-language-selector>
+          (languageChange)="onLanguageChange($event)"></md-language-selector>
       </li>
       <li class="settings-row">
         <md-text
           class="settings-row__title"
-          text="Greetings tile's emojis:"
-        ></md-text>
+          text="Greetings tile's emojis:"></md-text>
         <div class="emojis_container">
           <div class="emojis">👋⛄️</div>
           <lucide-icon class="pen" name="edit-3"></lucide-icon>
@@ -35,13 +31,11 @@
       <li class="settings-row">
         <md-text
           class="settings-row__title"
-          text="Autorefresh the dashboard:"
-        ></md-text>
+          text="Autorefresh the dashboard:"></md-text>
         <div class="switch__container">
           <md-switch
             [isOn]="true"
-            (isOnChanged)="onSwitchChange($event)"
-          ></md-switch>
+            (isOnChanged)="onSwitchChange($event)"></md-switch>
           <p class="switch__container-paragraph">
             {{ isAutoRefreshActive() ? 'Active' : 'Disabled' }}
           </p>

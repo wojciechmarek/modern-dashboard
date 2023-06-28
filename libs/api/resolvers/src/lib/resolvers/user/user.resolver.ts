@@ -1,5 +1,5 @@
-import { Query, Resolver } from '@nestjs/graphql'
-import { UserInfoOutput } from './models'
+import { Query, Resolver } from '@nestjs/graphql';
+import { UserInfoOutput } from './models';
 
 @Resolver()
 export class UserResolver {
@@ -8,6 +8,6 @@ export class UserResolver {
     return Promise.resolve({
       id: '123',
       email: 'asdasd',
-    })
+    });
   }
 }

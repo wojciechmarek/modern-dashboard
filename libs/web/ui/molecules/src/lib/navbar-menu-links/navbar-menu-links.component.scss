@@ -1,7 +1,4 @@
 .navbar__container {
-
-
-
   @media screen and (max-width: 768px) {
     margin: 0 0.5em;
   }
@@ -14,7 +11,7 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  
+
   width: fit-content;
 }
 
