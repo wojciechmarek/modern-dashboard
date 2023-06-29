@@ -1,11 +1,6 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import {
-  EmailAvailableDto,
-  LoginDto,
-  RegisterDto,
-  ResetPasswordDto,
-} from '@md/common/models';
+
 import {
   EmailAvailableInput,
   EmailAvailableOutput,
@@ -14,14 +9,9 @@ import {
   RegisterInput,
   ResetPasswordInput,
 } from './models';
-import {
-  CheckEmailAvailableQuery,
-  LoginCommand,
-  LogoutCommand,
-  RegisterCommand,
-  ResetPasswordCommand,
-} from '@md/api/cqrs';
 import { SuccessOutput } from '../../common-models';
+import { LoginCommand, RegisterCommand } from '../../../../../../feature/auth/src/lib/auth';
+import { LoginDto, RegisterDto } from '../../../../../../../common/models/src';
 
 @Resolver()
 export class AuthResolver {
