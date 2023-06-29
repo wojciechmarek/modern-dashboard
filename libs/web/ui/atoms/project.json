@@ -36,7 +36,7 @@
         "configDir": "libs/web/components/atoms/.storybook",
         "browserTarget": "web-components-atoms:build-storybook",
         "compodoc": false,
-        "styles": ["libs/web/utility/assets/src/styles/global.scss"]
+        "styles": ["libs/web/common/assets/src/styles/global.scss"]
       },
       "configurations": {
         "ci": {

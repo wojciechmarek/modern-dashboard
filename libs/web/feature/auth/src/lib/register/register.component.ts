@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RegisterDto } from '@md/common/models';
-import { RegisterAction, RootState } from '@md/web/utility/store';
+import { RegisterAction, RootState } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 
 @Component({

@@ -8,7 +8,7 @@ import {
   LogoutAction,
   RegisterAction,
   ResetPasswordAction,
-} from '@md/web/utility/store';
+} from '@md/web/common/store';
 import { AuthService } from '../service/auth.service';
 import {
   EmailAvailableDto,

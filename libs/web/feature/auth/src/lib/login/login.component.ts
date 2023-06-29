@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { LoginDto } from '@md/common/models';
-import { LoginAction, RootState } from '@md/web/utility/store';
+import { LoginAction, RootState } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 
 @Component({

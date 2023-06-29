@@ -20,7 +20,7 @@
           "apps/web/src/assets",
           "apps/web/src/manifest.webmanifest"
         ],
-        "styles": ["libs/web/utility/assets/src/styles/global.scss"],
+        "styles": ["libs/web/common/assets/src/styles/global.scss"],
         "scripts": [],
         "serviceWorker": true,
         "ngswConfigPath": "apps/web/ngsw-config.json"

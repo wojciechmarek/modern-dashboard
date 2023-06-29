@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ResetPasswordDto } from '@md/common/models';
-import { ResetPasswordAction, RootState } from '@md/web/utility/store';
+import { ResetPasswordAction, RootState } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
 
 @Component({

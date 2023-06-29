@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
 import { RootLevelPath } from './root-level.enum';
-import { AuthGuard } from '@md/web/utility/guards';
+import { AuthGuard } from '@md/web/common/guards';
 
 export const rootLevelRoutes: Route[] = [
   {
