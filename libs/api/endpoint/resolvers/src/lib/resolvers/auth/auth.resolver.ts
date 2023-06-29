@@ -10,8 +10,8 @@ import {
   ResetPasswordInput,
 } from './models';
 import { SuccessOutput } from '../../common-models';
-import { LoginCommand, RegisterCommand } from '../../../../../../feature/auth/src/lib/auth';
-import { LoginDto, RegisterDto } from '../../../../../../../common/models/src';
+import { CheckEmailAvailableQuery, LoginCommand, LogoutCommand, RegisterCommand, ResetPasswordCommand } from '@md/api/feature/auth';
+import { EmailAvailableDto, LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
 
 @Resolver()
 export class AuthResolver {

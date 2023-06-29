@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@md/api/feature/auth": ["libs/api/feature/auth/src/index.ts"],
+      "@md/api/feature/dashboard": ["libs/api/feature/dashboard/src/index.ts"],
       "@md/api/persistence": ["libs/api/persistence/src/index.ts"],
       "@md/api/endpoint/controllers": ["libs/api/endpoint/controllers/src/index.ts"],
       "@md/api/endpoint/resolvers": ["libs/api/endpoint/resolvers/src/index.ts"],
