@@ -7,8 +7,8 @@ import { Inject } from '@nestjs/common';
 export class CheckEmailAvailableQueryHandler
   implements IQueryHandler<CheckEmailAvailableQuery>
 {
-  @Inject(UserRepository)
-  private readonly userRepository: UserRepository;
+  // @Inject(UserRepository)
+  // private readonly userRepository: UserRepository;
 
   execute(payload: CheckEmailAvailableQuery): Promise<boolean> {
     const { data } = payload;

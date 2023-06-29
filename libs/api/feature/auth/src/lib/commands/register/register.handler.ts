@@ -7,8 +7,8 @@ import { Inject } from '@nestjs/common';
 export class RegisterCommandHandler
   implements ICommandHandler<RegisterCommand>
 {
-  @Inject(UserRepository)
-  private readonly userRepository: UserRepository;
+  // @Inject(UserRepository)
+  // private readonly userRepository: UserRepository;
 
   execute(payload: RegisterCommand): Promise<void> {
     const { data } = payload;

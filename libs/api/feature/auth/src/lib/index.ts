@@ -1,2 +1,3 @@
 export * from './api-auth.module';
-export * from './auth';
+export * from './commands';
+export * from './queries';

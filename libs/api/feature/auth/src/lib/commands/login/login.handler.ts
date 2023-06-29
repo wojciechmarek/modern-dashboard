@@ -6,8 +6,8 @@ import { TokenDto } from '@md/common/models';
 
 @CommandHandler(LoginCommand)
 export class LoginCommandHandler implements ICommandHandler<LoginCommand> {
-  @Inject(UserRepository)
-  private readonly userRepository: UserRepository;
+  // @Inject(UserRepository)
+  // private readonly userRepository: UserRepository;
 
   execute(payload: LoginCommand): Promise<TokenDto> {
     const { data } = payload;

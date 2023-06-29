@@ -5,8 +5,8 @@ import { Inject } from '@nestjs/common';
 
 @CommandHandler(LogoutCommand)
 export class LogoutCommandHandler implements ICommandHandler<LogoutCommand> {
-  @Inject(UserRepository)
-  private readonly userRepository: UserRepository;
+  // @Inject(UserRepository)
+  // private readonly userRepository: UserRepository;
 
   execute(): Promise<void> {
     console.log('LogoutCommandHandler...:');

@@ -7,8 +7,8 @@ import { Inject } from '@nestjs/common';
 export class ResetPasswordCommandHandler
   implements ICommandHandler<ResetPasswordCommand>
 {
-  @Inject(UserRepository)
-  private readonly userRepository: UserRepository;
+  // @Inject(UserRepository)
+  // private readonly userRepository: UserRepository;
 
   execute(payload: ResetPasswordCommand): Promise<void> {
     const { data } = payload;

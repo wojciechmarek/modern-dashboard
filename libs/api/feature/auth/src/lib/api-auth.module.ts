@@ -1,12 +1,13 @@
 import { Module } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
+
+import { CheckEmailAvailableQueryHandler } from './queries';
 import {
-  CheckEmailAvailableQueryHandler,
   LoginCommandHandler,
   LogoutCommandHandler,
   RegisterCommandHandler,
-} from './auth';
-import { ResetPasswordCommandHandler } from './auth/commands/reset-password';
+  ResetPasswordCommandHandler,
+} from './commands';
 
 export const QueryHandlers = [CheckEmailAvailableQueryHandler];
 

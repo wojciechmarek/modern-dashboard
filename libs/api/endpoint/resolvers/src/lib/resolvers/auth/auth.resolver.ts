@@ -10,8 +10,10 @@ import {
   ResetPasswordInput,
 } from './models';
 import { SuccessOutput } from '../../common-models';
-import { CheckEmailAvailableQuery, LoginCommand, LogoutCommand, RegisterCommand, ResetPasswordCommand } from '@md/api/feature/auth';
 import { EmailAvailableDto, LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
+import { CheckEmailAvailableQuery, LoginCommand, LogoutCommand, RegisterCommand, ResetPasswordCommand } from '@md/api/feature/auth';
+
+
 
 @Resolver()
 export class AuthResolver {
@@ -22,6 +24,8 @@ export class AuthResolver {
 
   @Mutation(() => LoginOutput)
   async login(@Args('data') data: LoginInput): Promise<LoginOutput> {
+    console.log('login', data);
+    
     return this.commandBus.execute(new LoginCommand(data as LoginDto));
   }
 
