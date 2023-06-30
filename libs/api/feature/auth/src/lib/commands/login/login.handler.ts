@@ -1,6 +1,6 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { LoginCommand } from './login.command';
-import { UserRepository } from '@md/api/persistence';
+import { UsersRepository } from '@md/api/persistence';
 import { Inject } from '@nestjs/common';
 import { TokenDto } from '@md/common/models';
 

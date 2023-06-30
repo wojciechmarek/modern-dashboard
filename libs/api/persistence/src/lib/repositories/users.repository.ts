@@ -4,9 +4,9 @@ import { Repository } from 'typeorm';
 import { UserEntity } from '../entities';
 
 @Injectable()
-export class UserRepository {
+export class UsersRepository {
   // constructor(
-  //   @InjectRepository(UserEntity) private readonly userRepository: Repository<UserEntity>
+  // @InjectRepository(UserEntity) private readonly userRepository: Repository<UserEntity>
   // ) {}
 
   public async create(newUser: string): Promise<string> {
