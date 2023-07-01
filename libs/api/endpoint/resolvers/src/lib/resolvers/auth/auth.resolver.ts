@@ -13,8 +13,6 @@ import { SuccessOutput } from '../../common-models';
 import { EmailAvailableDto, LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
 import { CheckEmailAvailableQuery, LoginCommand, LogoutCommand, RegisterCommand, ResetPasswordCommand } from '@md/api/feature/auth';
 
-
-
 @Resolver()
 export class AuthResolver {
   constructor(

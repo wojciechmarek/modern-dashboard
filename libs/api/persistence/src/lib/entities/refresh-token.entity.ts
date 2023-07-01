@@ -1,13 +1,13 @@
 import { Column, Entity, ObjectId, ObjectIdColumn } from 'typeorm';
 
-@Entity('users')
-export class UserEntity {
+@Entity('refresh-tokens')
+export class RefreshTokenEntity {
   @ObjectIdColumn()
   id: ObjectId;
 
   @Column()
-  employeeId: string;
+  userId: string;
 
   @Column()
-  configurationId: string;
+  token: string;
 }

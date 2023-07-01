@@ -1,14 +1,17 @@
 import { Controller, Get } from '@nestjs/common';
+import { HealthCheckService, TypeOrmHealthIndicator, HealthCheck } from '@nestjs/terminus';
+
 
 @Controller('health')
 export class HealthController {
-  response = {
-    status: 'ok',
-    message: 'It is fine',
-  };
+  constructor(
+    private health: HealthCheckService,
+    private db: TypeOrmHealthIndicator
+  ) {}
 
   @Get()
-  getHealth() {
-    return this.response;
+  @HealthCheck()
+  check() {
+    return this.health.check([async () => this.db.pingCheck('typeorm-to-database-connection')]);
   }
 }

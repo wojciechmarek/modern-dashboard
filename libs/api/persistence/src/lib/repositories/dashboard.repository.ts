@@ -4,10 +4,10 @@ import { Repository } from 'typeorm';
 import { UserEntity } from '../entities';
 
 @Injectable()
-export class UsersRepository {
-  // constructor(
-  // @InjectRepository(UserEntity) private readonly userRepository: Repository<UserEntity>
-  // ) {}
+export class DashboardRepository {
+  constructor(
+  @InjectRepository(UserEntity) private readonly userRepository: Repository<UserEntity>
+  ) {}
 
   public async create(newUser: string): Promise<string> {
     const newUserEntity = new UserEntity();
@@ -17,8 +17,7 @@ export class UsersRepository {
     newUserEntity.email = 'form.name;';
     newUserEntity.password = 'password ' + newUser;
 
-    // const insertedUser = await this.userRepository.insert(newUserEntity);
-    // return insertedUser.raw.insertedId.toString();
-    return 'newUserEntity';
+    const insertedUser = await this.userRepository.insert(newUserEntity);
+    return insertedUser.raw.insertedId.toString();
   }
 }

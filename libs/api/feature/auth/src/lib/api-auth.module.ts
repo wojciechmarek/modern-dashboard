@@ -8,6 +8,7 @@ import {
   RegisterCommandHandler,
   ResetPasswordCommandHandler,
 } from './commands';
+import { ApiPersistenceModule } from '@md/api/persistence';
 
 export const QueryHandlers = [CheckEmailAvailableQueryHandler];
 
@@ -22,6 +23,6 @@ export const CommandHandlers = [
   controllers: [],
   providers: [...QueryHandlers, ...CommandHandlers],
   exports: [],
-  imports: [CqrsModule],
+  imports: [ApiPersistenceModule],
 })
 export class ApiAuthModule {}

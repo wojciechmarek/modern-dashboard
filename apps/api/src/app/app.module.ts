@@ -3,6 +3,7 @@ import { ApiPersistenceModule } from '@md/api/persistence';
 import { ApiResolversModule } from '@md/api/endpoint/resolvers';
 import { Module } from '@nestjs/common';
 import { ApiAuthModule } from '@md/api/feature/auth';
+import { DatabaseConfigurationModule } from './database-configuration.module';
 
 const FeatureModules = [ApiAuthModule];
 
@@ -11,6 +12,7 @@ const FeatureModules = [ApiAuthModule];
     ApiControllersModule,
     ApiResolversModule,
     ApiPersistenceModule,
+    DatabaseConfigurationModule,
     ...FeatureModules,
   ],
   controllers: [],

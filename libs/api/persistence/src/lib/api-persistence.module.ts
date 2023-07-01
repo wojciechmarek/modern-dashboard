@@ -1,26 +1,13 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UsersRepository } from './repositories';
-import { UserEntity } from './entities';
+import { UserRepository } from './repositories';
+import { ClientEntity, ProjectEntity, UserEntity } from './entities';
+
+export const DatabaseEntities = [UserEntity, ProjectEntity, ClientEntity];
 
 @Module({
-  controllers: [],
-  providers: [UsersRepository],
-  imports: [
-    TypeOrmModule.forRoot({
-      type: 'mongodb',
-      url: process.env.DATABASE_CONNECTION_STRING,
-      ssl: process.env.DATABASE_CONNECTION_SSL === 'true',
-      authSource: 'admin',
-      username: process.env.DATABASE_USERNAME,
-      password: process.env.DATABASE_PASSWORD,
-      replicaSet: process.env.DATABASE_REPLICA_SET,
-      useUnifiedTopology: true,
-      database: process.env.DATABASE_NAME,
-      entities: [UserEntity],
-      synchronize: true,
-    }),
-  ],
-  exports: [],
+  providers: [UserRepository],
+  imports: [TypeOrmModule.forFeature([...DatabaseEntities])],
+  exports: [UserRepository],
 })
 export class ApiPersistenceModule {}

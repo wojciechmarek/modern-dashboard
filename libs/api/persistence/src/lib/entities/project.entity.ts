@@ -1,13 +1,13 @@
 import { Column, Entity, ObjectId, ObjectIdColumn } from 'typeorm';
 
-@Entity('users')
-export class UserEntity {
+@Entity('projects')
+export class ProjectEntity {
   @ObjectIdColumn()
   id: ObjectId;
 
   @Column()
-  employeeId: string;
+  clientId: string;
 
   @Column()
-  configurationId: string;
+  name: string;
 }

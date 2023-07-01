@@ -6,8 +6,8 @@ import { TokenDto } from '@md/common/models';
 
 @CommandHandler(LoginCommand)
 export class LoginCommandHandler implements ICommandHandler<LoginCommand> {
-  // @Inject(UserRepository)
-  // private readonly userRepository: UserRepository;
+  @Inject(UsersRepository)
+  private readonly userRepository: UsersRepository;
 
   execute(payload: LoginCommand): Promise<TokenDto> {
     const { data } = payload;
@@ -15,6 +15,8 @@ export class LoginCommandHandler implements ICommandHandler<LoginCommand> {
     console.log('LoginCommandHandler...:', data);
 
     const response = new TokenDto('accessToken', 'refreshToken');
+
+    this.userRepository.create(data.email);
 
     return Promise.resolve(response);
   }
