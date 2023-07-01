@@ -19,5 +19,6 @@ export class EmployeeRepository {
 
     // const insertedUser = await this.userRepository.insert(newUserEntity);
     // return insertedUser.raw.insertedId.toString();
+    return 'employeeRepository';
   }
 }

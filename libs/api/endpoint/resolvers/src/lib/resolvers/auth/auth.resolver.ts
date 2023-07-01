@@ -9,9 +9,10 @@ import {
   RegisterInput,
   ResetPasswordInput,
 } from './models';
-import { SuccessOutput } from '../../common-models';
+import { SuccessOutput } from '../../models';
 import { EmailAvailableDto, LoginDto, RegisterDto, ResetPasswordDto } from '@md/common/models';
 import { CheckEmailAvailableQuery, LoginCommand, LogoutCommand, RegisterCommand, ResetPasswordCommand } from '@md/api/feature/auth';
+import { GraphQLError } from 'graphql';
 
 @Resolver()
 export class AuthResolver {
@@ -20,18 +21,25 @@ export class AuthResolver {
     private readonly commandBus: CommandBus
   ) {}
 
-  @Mutation(() => LoginOutput)
-  async login(@Args('data') data: LoginInput): Promise<LoginOutput> {
-    console.log('login', data);
-    
-    return this.commandBus.execute(new LoginCommand(data as LoginDto));
-  }
-
   @Mutation(() => SuccessOutput)
   async register(@Args('data') data: RegisterInput) {
     this.commandBus.execute(new RegisterCommand(data as RegisterDto));
 
     return new SuccessOutput(true);
+  }
+
+  @Mutation(() => LoginOutput)
+  async login(@Args('data') data: LoginInput): Promise<LoginOutput | GraphQLError> {
+    console.log('login', data);
+    
+    //return this.commandBus.execute(new LoginCommand(data as LoginDto));
+
+    return new GraphQLError('login error', {
+      extensions: {
+        code: 'LOGIN_ERROR......',
+        message: 'login error',
+      },
+    });
   }
 
   @Mutation(() => SuccessOutput)

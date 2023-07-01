@@ -1,6 +1,6 @@
 import { IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { CheckEmailAvailableQuery } from './check-email-available.query';
-import { UsersRepository } from '@md/api/persistence';
+import { UserRepository } from '@md/api/persistence';
 import { Inject } from '@nestjs/common';
 
 @QueryHandler(CheckEmailAvailableQuery)

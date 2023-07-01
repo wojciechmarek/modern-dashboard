@@ -1,6 +1,6 @@
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { RegisterCommand } from './register.command';
-import { UsersRepository } from '@md/api/persistence';
+import { UserRepository } from '@md/api/persistence';
 import { Inject } from '@nestjs/common';
 
 @CommandHandler(RegisterCommand)

@@ -14,8 +14,8 @@ export class DashboardRepository {
 
     console.log('newUserEntity: ', newUser);
 
-    newUserEntity.email = 'form.name;';
-    newUserEntity.password = 'password ' + newUser;
+    // newUserEntity.email = 'form.name;';
+    // newUserEntity.password = 'password ' + newUser;
 
     const insertedUser = await this.userRepository.insert(newUserEntity);
     return insertedUser.raw.insertedId.toString();
