@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
+
+export interface GripMenuLinkItem {
+  label: string;
+  icon: string;
+  link: string;
+}
 
 @Component({
   selector: 'md-navbar-user-manager',
@@ -6,12 +12,13 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./navbar-user-manager.component.scss'],
 })
 export class NavbarUserManagerComponent {
-  @Input() themeButtonLabel = '';
-  @Input() authButtonLabel = '';
+  @Input() gripMenuItems: GripMenuLinkItem[] = [];
 
   @Output() handleThemeButtonClick = new EventEmitter();
   @Output() handleAuthButtonClick = new EventEmitter();
   @Output() handleSearchOpenClick = new EventEmitter();
+
+  isGripMenuVisible = signal(false);
 
   themeButtonClick() {
     this.handleThemeButtonClick.emit();
@@ -23,5 +30,13 @@ export class NavbarUserManagerComponent {
 
   searchOpenClick() {
     this.handleSearchOpenClick.emit();
+  }
+
+  gripOpenClick() {
+    if (this.isGripMenuVisible()) {
+      this.isGripMenuVisible.set(false);
+    } else {
+      this.isGripMenuVisible.set(true);
+    }
   }
 }

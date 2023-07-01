@@ -43,3 +43,53 @@
   display: flex;
   gap: 0.5em;
 }
+
+.manager__grip_icon-button {
+  position: relative;
+}
+
+
+.manager__grip-menu {
+  z-index: 2;
+  position: absolute;
+  left: -140px;
+  top: calc(100% + 0.5em);
+  border-radius: 0.5em;
+
+  height: 320px;
+  width: 320px;
+  padding: 0.75em;
+  background-color: var(--bg-color-grip-menu);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.75em;
+}
+
+.grip-menu__link {
+  text-decoration: none;
+}
+
+.grip-menu__item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+  gap: 0.5em;
+  background-color: var(--bg-color-opacity);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  color: var(--text-color);
+
+  &:hover {
+    background-color: var(--bg-color-opacity-hover);
+  }
+}
+
+.grip-item__text {
+  font-size: 0.75rem;
+  font-weight: 800;
+}

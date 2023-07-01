@@ -2,6 +2,7 @@
   <md-navbar
     class="layout__navbar"
     *ngIf="true"
+    [gripMenuItems]="gripMenuItems"
     (handleOpenSearch)="onOpenSearch()" />
   <md-search *ngIf="isSearchVisible()" (handleCloseSearch)="onCloseSearch()" />
   <div class="layout__content">

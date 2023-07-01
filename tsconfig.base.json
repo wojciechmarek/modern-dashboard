@@ -15,11 +15,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@md/api/endpoint/controllers": [
+        "libs/api/endpoint/controllers/src/index.ts"
+      ],
+      "@md/api/endpoint/resolvers": [
+        "libs/api/endpoint/resolvers/src/index.ts"
+      ],
       "@md/api/feature/auth": ["libs/api/feature/auth/src/index.ts"],
       "@md/api/feature/dashboard": ["libs/api/feature/dashboard/src/index.ts"],
       "@md/api/persistence": ["libs/api/persistence/src/index.ts"],
-      "@md/api/endpoint/controllers": ["libs/api/endpoint/controllers/src/index.ts"],
-      "@md/api/endpoint/resolvers": ["libs/api/endpoint/resolvers/src/index.ts"],
       "@md/common/enums": ["libs/common/enums/src/index.ts"],
       "@md/common/models": ["libs/common/models/src/index.ts"],
       "@md/web/common/assets": ["libs/web/common/assets/src/index.ts"],
@@ -27,10 +31,6 @@
       "@md/web/common/guards": ["libs/web/common/guards/src/index.ts"],
       "@md/web/common/routing": ["libs/web/common/routing/src/index.ts"],
       "@md/web/common/store": ["libs/web/common/store/src/index.ts"],
-      "@md/web/ui/atoms": ["libs/web/ui/atoms/src/index.ts"],
-      "@md/web/ui/molecules": ["libs/web/ui/molecules/src/index.ts"],
-      "@md/web/ui/organisms": ["libs/web/ui/organisms/src/index.ts"],
-      "@md/web/ui/storybook": ["libs/web/ui/storybook/src/index.ts"],
       "@md/web/data-access": ["libs/web/data-access/src/index.ts"],
       "@md/web/data-access/auth": ["libs/web/data-access/auth/src/index.ts"],
       "@md/web/data-access/drive": ["libs/web/data-access/drive/src/index.ts"],
@@ -41,11 +41,16 @@
       "@md/web/feature/dashboard": ["libs/web/feature/dashboard/src/index.ts"],
       "@md/web/feature/drive": ["libs/web/feature/drive/src/index.ts"],
       "@md/web/feature/layout": ["libs/web/feature/layout/src/index.ts"],
+      "@md/web/feature/not-found": ["libs/web/feature/not-found/src/index.ts"],
       "@md/web/feature/notifications": [
         "libs/web/views/notifications/src/index.ts"
       ],
       "@md/web/feature/profile": ["libs/web/feature/profile/src/index.ts"],
-      "@md/web/feature/settings": ["libs/web/feature/settings/src/index.ts"]
+      "@md/web/feature/settings": ["libs/web/feature/settings/src/index.ts"],
+      "@md/web/ui/atoms": ["libs/web/ui/atoms/src/index.ts"],
+      "@md/web/ui/molecules": ["libs/web/ui/molecules/src/index.ts"],
+      "@md/web/ui/organisms": ["libs/web/ui/organisms/src/index.ts"],
+      "@md/web/ui/storybook": ["libs/web/ui/storybook/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

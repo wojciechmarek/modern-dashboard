@@ -6,9 +6,10 @@
       </md-button>
     </div>
     <md-brand-logo class="navbar__brand-logo" />
-    <md-navbar-menu-links class="navbar__navbar-menu-links" />
     <md-navbar-user-manager
       class="navbar__navbar-user-manager"
-      (handleSearchOpenClick)="onSearchOpenClick()" />
+      [gripMenuItems]="gripMenuItems"
+      (handleSearchOpenClick)="onSearchOpenClick()"
+      />
   </div>
 </div>

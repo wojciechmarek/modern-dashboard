@@ -1,10 +1,10 @@
 export const enum RootLevelPath {
   Dashboard = '',
-  UserProfile = 'profile',
+  WorkTime = 'work-time',
+  Cloud = 'cloud',
   Projects = 'projects',
-  People = 'people',
   Clients = 'clients',
-  Cloud = 'drive',
+  Employees = 'employees',
   Auth = 'auth',
   Settings = 'settings',
   NotFound = '**',

@@ -1,4 +1,5 @@
-import { Component, EventEmitter, HostListener, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import { GripMenuLinkItem } from '@md/web/ui/molecules';
 
 @Component({
   selector: 'md-navbar',
@@ -6,6 +7,7 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  @Input() gripMenuItems: GripMenuLinkItem[] = [];
   @Output() handleOpenSearch = new EventEmitter();
 
   onSearchOpenClick() {

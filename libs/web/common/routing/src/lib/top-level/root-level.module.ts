@@ -5,22 +5,10 @@ import { AuthGuard } from '@md/web/common/guards';
 
 export const rootLevelRoutes: Route[] = [
   {
-    path: RootLevelPath.UserProfile,
-    canActivate: [AuthGuard],
+    path: RootLevelPath.Dashboard,
+    // canActivate: [AuthGuard],
     loadChildren: () =>
-      import('@md/web/feature/profile').then(m => m.WebViewsProfileModule),
-  },
-  {
-    path: RootLevelPath.Cloud,
-    canActivate: [AuthGuard],
-    loadChildren: () =>
-      import('@md/web/feature/drive').then(m => m.WebViewsDriveModule),
-  },
-  {
-    path: RootLevelPath.People,
-    canActivate: [AuthGuard],
-    loadChildren: () =>
-      import('@md/web/feature/drive').then(m => m.WebViewsDriveModule),
+      import('@md/web/feature/dashboard').then(m => m.WebViewsDashboardModule),
   },
   {
     path: RootLevelPath.Projects,
@@ -29,7 +17,19 @@ export const rootLevelRoutes: Route[] = [
       import('@md/web/feature/drive').then(m => m.WebViewsDriveModule),
   },
   {
+    path: RootLevelPath.Cloud,
+    canActivate: [AuthGuard],
+    loadChildren: () =>
+      import('@md/web/feature/drive').then(m => m.WebViewsDriveModule),
+  },
+  {
     path: RootLevelPath.Clients,
+    canActivate: [AuthGuard],
+    loadChildren: () =>
+      import('@md/web/feature/drive').then(m => m.WebViewsDriveModule),
+  },
+  {
+    path: RootLevelPath.Employees,
     canActivate: [AuthGuard],
     loadChildren: () =>
       import('@md/web/feature/drive').then(m => m.WebViewsDriveModule),
@@ -45,10 +45,10 @@ export const rootLevelRoutes: Route[] = [
       import('@md/web/feature/settings').then(m => m.WebViewsSettingsModule),
   },
   {
-    path: RootLevelPath.Dashboard,
+    path: RootLevelPath.NotFound,
     // canActivate: [AuthGuard],
     loadChildren: () =>
-      import('@md/web/feature/dashboard').then(m => m.WebViewsDashboardModule),
+      import('@md/web/feature/not-found').then(m => m.WebFeatureNotFoundModule),
   },
 ];
 

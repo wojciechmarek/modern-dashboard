@@ -15,6 +15,7 @@ import {
 import { AuthOrganisms } from './auth';
 import { DashboardOrganisms } from './dashboard';
 import { SearchComponent } from './search/search.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   imports: [
@@ -28,12 +29,14 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     NavbarComponent,
     SearchComponent,
+    NotFoundComponent,
     ...AuthOrganisms,
     ...DashboardOrganisms,
   ],
   exports: [
     NavbarComponent,
     SearchComponent,
+    NotFoundComponent,
     ...AuthOrganisms,
     ...DashboardOrganisms,
   ],
