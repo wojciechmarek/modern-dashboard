@@ -31,6 +31,9 @@
       "@md/web/common/guards": ["libs/web/common/guards/src/index.ts"],
       "@md/web/common/routing": ["libs/web/common/routing/src/index.ts"],
       "@md/web/common/store": ["libs/web/common/store/src/index.ts"],
+      "@md/web/common/translations": [
+        "libs/web/common/translations/src/index.ts"
+      ],
       "@md/web/data-access": ["libs/web/data-access/src/index.ts"],
       "@md/web/data-access/auth": ["libs/web/data-access/auth/src/index.ts"],
       "@md/web/data-access/drive": ["libs/web/data-access/drive/src/index.ts"],

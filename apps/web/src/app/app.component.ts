@@ -1,8 +1,10 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnDestroy, OnInit, inject } from '@angular/core';
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { Language } from '@md/common/enums';
 import { RootState } from '@md/web/common/store';
 import { Store } from '@ngrx/store';
-import { Observable, Subscription } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'md-root',
@@ -12,17 +14,22 @@ import { Observable, Subscription } from 'rxjs';
 export class AppComponent implements OnInit, OnDestroy {
   store = inject(Store<RootState>);
   document = inject(DOCUMENT);
+  translate = inject(TranslateService);
 
   title = 'Modern Dashboard';
 
-  theme$: Observable<string> = new Observable();
   subscription: Subscription = new Subscription();
 
   ngOnInit() {
-    this.theme$ = this.store.select(store => store.profile.theme);
+    this.initTheme();
+    this.initTranslate();
+  }
+
+  initTheme() {
+    const theme$ = this.store.select(store => store.profile.theme);
 
     this.subscription.add(
-      this.theme$.subscribe(theme => {
+      theme$.subscribe(theme => {
         this.document.body.setAttribute('data-theme', theme);
       })
     );
@@ -30,6 +37,37 @@ export class AppComponent implements OnInit, OnDestroy {
     const isDark = isDarkMode();
     const theme = isDark ? 'dark' : 'light';
     this.document.body.setAttribute('data-theme', theme);
+  }
+
+  initTranslate() {
+    this.translate.addLangs(['en', 'nl']);
+    this.translate.setDefaultLang('en');
+
+    const language$ = this.store.select<Language>(
+      store => store.profile.language
+    );
+
+    this.subscription.add(
+      language$.subscribe(language => {
+        switch (language) {
+          case Language.English:
+            this.translate.use('en');
+            break;
+          case Language.Polish:
+            this.translate.use('pl');
+            break;
+          case Language.French:
+            this.translate.use('fr');
+            break;
+          case Language.German:
+            this.translate.use('de');
+            break;
+          case Language.Spanish:
+            this.translate.use('es');
+            break;
+        }
+      })
+    );
   }
 
   ngOnDestroy() {

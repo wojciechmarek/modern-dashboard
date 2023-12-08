@@ -1,12 +1,14 @@
 <div class="jira__container">
-  <md-dashboard-tile-header title="Your tickets">
+  <md-dashboard-tile-header [title]="'Dashboard.JiraTickets.Title' | translate">
     <md-select [items]="items"></md-select>
   </md-dashboard-tile-header>
 
   <div class="jira__content">
     <div class="my-task__container">
       <div class="my-task__details">
-        <p class="my-task__title">Accepted:</p>
+        <p class="my-task__title">
+          {{ 'Dashboard.JiraTickets.Accepted' | translate }}:
+        </p>
         <p class="my-task__amount">13</p>
       </div>
       <div class="my-task__progress">
@@ -15,7 +17,9 @@
     </div>
     <div class="my-task__container">
       <div class="my-task__details">
-        <p class="my-task__title">Ready for development:</p>
+        <p class="my-task__title">
+          {{ 'Dashboard.JiraTickets.ReadyToDev' | translate }}:
+        </p>
         <p class="my-task__amount">3</p>
       </div>
       <div class="my-task__progress">
@@ -24,7 +28,9 @@
     </div>
     <div class="my-task__container">
       <div class="my-task__details">
-        <p class="my-task__title">In progress:</p>
+        <p class="my-task__title">
+          {{ 'Dashboard.JiraTickets.InProgress' | translate }}:
+        </p>
         <p class="my-task__amount">1</p>
       </div>
       <div class="my-task__progress">
@@ -33,7 +39,9 @@
     </div>
     <div class="my-task__container">
       <div class="my-task__details">
-        <p class="my-task__title">In tests:</p>
+        <p class="my-task__title">
+          {{ 'Dashboard.JiraTickets.InTests' | translate }}:
+        </p>
         <p class="my-task__amount">2</p>
       </div>
       <div class="my-task__progress">
@@ -42,7 +50,9 @@
     </div>
     <div class="my-task__container">
       <div class="my-task__details">
-        <p class="my-task__title">Reopened:</p>
+        <p class="my-task__title">
+          {{ 'Dashboard.JiraTickets.Reopened' | translate }}:
+        </p>
         <p class="my-task__amount">2</p>
       </div>
       <div class="my-task__progress">
@@ -51,7 +61,7 @@
     </div>
   </div>
   <div class="jira__total">
-    <p class="total__title">Total:</p>
+    <p class="total__title">{{ 'Dashboard.JiraTickets.Total' | translate }}:</p>
     <p class="total__amount">19</p>
   </div>
 </div>

@@ -16,6 +16,7 @@ import { AuthOrganisms } from './auth';
 import { DashboardOrganisms } from './dashboard';
 import { SearchComponent } from './search/search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     WebComponentsMoleculesModule,
     RouterModule,
     ReactiveFormsModule,
+    TranslateModule,
     LucideAngularModule.pick({ Menu, GripHorizontal, Search, Check }),
   ],
   declarations: [

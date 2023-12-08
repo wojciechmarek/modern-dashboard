@@ -20,10 +20,11 @@ import {
   Factory,
   Users2,
   Cloud,
-  Settings
+  Settings,
 } from 'lucide-angular';
 import { RouterModule } from '@angular/router';
 import { DashboardTileHeaderComponent } from './dashboard-tile-header/dashboard-tile-header.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { DashboardTileHeaderComponent } from './dashboard-tile-header/dashboard-
     WebComponentsAtomsModule,
     ReactiveFormsModule,
     RouterModule,
+    TranslateModule,
     LucideAngularModule.pick({
       Search,
       Bell,

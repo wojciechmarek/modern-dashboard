@@ -4,7 +4,7 @@
       <md-button color="opacity" (handleClick)="searchOpenClick()">
         <div class="search-button__content">
           <lucide-icon name="search"></lucide-icon>
-          <span>Click or ⌘K</span>
+          <span>{{ 'Navbar.SearchPlaceHolder' | translate }}</span>
         </div>
       </md-button>
     </div>
@@ -21,7 +21,11 @@
         <lucide-icon name="grip"></lucide-icon>
       </md-button>
       <div class="manager__grip-menu" *ngIf="isGripMenuVisible()">
-        <a [routerLink]="menuItem.link" class="grip-menu__link" *ngFor="let menuItem of gripMenuItems" (click)="gripOpenClick()">
+        <a
+          [routerLink]="menuItem.link"
+          class="grip-menu__link"
+          *ngFor="let menuItem of gripMenuItems"
+          (click)="gripOpenClick()">
           <div class="grip-menu__item">
             <lucide-icon [name]="menuItem.icon"></lucide-icon>
             <span class="grip-item__text">{{ menuItem.label }}</span>

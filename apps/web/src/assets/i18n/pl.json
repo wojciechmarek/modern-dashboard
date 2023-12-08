@@ -1,0 +1,16 @@
+{
+  "Navbar.SearchPlaceHolder": "Kliknij lub ⌘K",
+  "Dashboard.Greetings.Title": "Zaczynamy!",
+  "Dashboard.Greetings.Greeting": "Dobry wieczór!",
+  "Dashboard.Greetings.LogTimeButton": "Zapisz czas",
+  "Dashboard.Greetings.TakeDayOffButton": "Wolny dzień",
+  "Dashboard.Greetings.AddExpenseButton": "Dodaj wydatek",
+  "Dashboard.Settings.Title": "Szybkie ustawienia",
+  "Dashboard.JiraTickets.Title": "Zadania Jira",
+  "Dashboard.JiraTickets.Accepted": "Zaakceptowane",
+  "Dashboard.JiraTickets.ReadyToDev": "Gotowe do rozwoju",
+  "Dashboard.JiraTickets.InProgress": "W trakcie realizacji",
+  "Dashboard.JiraTickets.InTests": "W testach",
+  "Dashboard.JiraTickets.Reopened": "Ponownie otwarte",
+  "Dashboard.JiraTickets.Total": "Razem"
+}

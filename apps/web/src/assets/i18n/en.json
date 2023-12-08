@@ -1,0 +1,16 @@
+{
+  "Navbar.SearchPlaceHolder": "Click or ⌘K",
+  "Dashboard.Greetings.Title": "Let's get started!",
+  "Dashboard.Greetings.Greeting": "Good Evening!",
+  "Dashboard.Greetings.LogTimeButton": "Log a time",
+  "Dashboard.Greetings.TakeDayOffButton": "Take a day off",
+  "Dashboard.Greetings.AddExpenseButton": "Add an expense",
+  "Dashboard.Settings.Title": "Quick settings",
+  "Dashboard.JiraTickets.Title": "Jira tickets",
+  "Dashboard.JiraTickets.Accepted": "Accepted",
+  "Dashboard.JiraTickets.ReadyToDev": "Ready to development",
+  "Dashboard.JiraTickets.InProgress": "In progress",
+  "Dashboard.JiraTickets.InTests": "In tests",
+  "Dashboard.JiraTickets.Reopened": "Reopened",
+  "Dashboard.JiraTickets.Total": "Total"
+}

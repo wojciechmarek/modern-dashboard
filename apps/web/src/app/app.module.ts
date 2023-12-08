@@ -11,9 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { InMemoryCache } from '@apollo/client/core';
 import { WebCommonRoutingModule } from '@md/web/common/routing';
 import { WebCommonStoreModule } from '@md/web/common/store';
-import { AuthEffects, WebDataAccessAuthModule } from '@md/web/data-access/auth';
-import { EffectsModule } from '@ngrx/effects';
+import { WebDataAccessAuthModule } from '@md/web/data-access/auth';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { WebCommonTranslationsModule } from '@md/web/common/translations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +26,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ApolloModule,
     HttpClientModule,
     WebDataAccessAuthModule,
+    WebCommonTranslationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable

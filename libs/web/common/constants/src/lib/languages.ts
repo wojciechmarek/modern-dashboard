@@ -12,17 +12,17 @@ export const languages = [
     flag: './assets/flags/poland.svg',
   },
   {
-    id: Language.Polish,
+    id: Language.German,
     name: 'Toggle to german language',
     flag: './assets/flags/germany.svg',
   },
   {
-    id: Language.Polish,
+    id: Language.French,
     name: 'Toggle to french franch',
     flag: './assets/flags/france.svg',
   },
   {
-    id: Language.Polish,
+    id: Language.Spanish,
     name: 'Toggle to spanish language',
     flag: './assets/flags/spain.svg',
   },
