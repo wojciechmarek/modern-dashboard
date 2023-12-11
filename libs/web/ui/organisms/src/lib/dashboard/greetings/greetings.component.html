@@ -1,6 +1,6 @@
 <div class="gettings__container">
   <md-dashboard-tile-header
-    title="Let's get started!"
+    [title]="'Dashboard.Greetings.Title' | translate"
     [isHeaderHighlighted]="true">
     <div class="gettings__calendar">
       <lucide-icon name="calendar"></lucide-icon>
@@ -16,9 +16,15 @@
       <span class="gettings__image"> 👋⛄️ </span>
     </div>
     <div class="gettings__quick-buttons">
-      <md-button color="opacity" class="quick-button">Log a time</md-button>
-      <md-button color="opacity" class="quick-button">Take a dayoff</md-button>
-      <md-button color="opacity" class="quick-button">Add an expense</md-button>
+      <md-button color="opacity" class="quick-button">
+        {{ 'Dashboard.Greetings.LogTimeButton' | translate }}
+      </md-button>
+      <md-button color="opacity" class="quick-button">
+        {{ 'Dashboard.Greetings.TakeDayOffButton' | translate }}
+      </md-button>
+      <md-button color="opacity" class="quick-button">
+        {{ 'Dashboard.Greetings.AddExpenseButton' | translate }}
+      </md-button>
     </div>
   </div>
 </div>

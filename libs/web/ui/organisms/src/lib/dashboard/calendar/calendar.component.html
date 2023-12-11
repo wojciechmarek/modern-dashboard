@@ -1,5 +1,7 @@
 <div class="calendar__container">
-  <md-dashboard-tile-header title="My calendar" [isHeaderHighlighted]="true">
+  <md-dashboard-tile-header
+    [title]="'Dashboard.Calendar.Title' | translate"
+    [isHeaderHighlighted]="true">
     <md-select [items]="items"></md-select>
   </md-dashboard-tile-header>
   <div class="calendar__week-days">

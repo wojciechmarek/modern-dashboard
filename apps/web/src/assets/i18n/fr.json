@@ -12,5 +12,19 @@
   "Dashboard.JiraTickets.InProgress": "En cours",
   "Dashboard.JiraTickets.InTests": "En tests",
   "Dashboard.JiraTickets.Reopened": "Rouvert",
-  "Dashboard.JiraTickets.Total": "Total"
+  "Dashboard.JiraTickets.Total": "Total",
+  "Dashboard.Commits.Title": "Mes commits",
+  "Dashboard.Profile.Title": "Mon profil",
+  "Dashboard.Profile.StartDate": "Date de début",
+  "Dashboard.Profile.NextPayment": "Prochain paiement",
+  "Dashboard.Profile.DaysToEnd": "Jours restants",
+  "Dashboard.Calendar.Title": "Mon calendrier",
+  "Dashboard.Calendar.SelectPlaceholder": "Sélectionner",
+  "Dashboard.Calendar.SelectThisWeek": "Cette semaine",
+  "Dashboard.Calendar.SelectThisMonth": "Ce mois-ci",
+  "Dashboard.Calendar.SelectNextMonth": "Le mois prochain",
+  "Dashboard.WorkTime.Title": "Mes derniers temps enregistrés",
+  "Dashboard.Chart1.Title": "Temps hors ligne",
+  "Dashboard.Chart2.Title": "Temps en ligne",
+  "Dashboard.Chart3.Title": "Jours de congé utilisés"
 }
