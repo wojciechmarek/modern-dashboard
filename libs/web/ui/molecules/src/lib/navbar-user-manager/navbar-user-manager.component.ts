@@ -1,4 +1,15 @@
-import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  Renderer2,
+  ViewChild,
+  inject,
+  signal,
+} from '@angular/core';
 
 export interface GripMenuLinkItem {
   label: string;
@@ -19,6 +30,8 @@ export class NavbarUserManagerComponent {
   @Output() handleSearchOpenClick = new EventEmitter();
 
   isGripMenuVisible = signal(false);
+
+  renderer2 = inject(Renderer2);
 
   themeButtonClick() {
     this.handleThemeButtonClick.emit();

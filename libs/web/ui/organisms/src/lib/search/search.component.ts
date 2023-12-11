@@ -3,10 +3,14 @@ import {
   ElementRef,
   EventEmitter,
   HostListener,
+  Input,
   OnInit,
   Output,
   ViewChild,
+  signal,
 } from '@angular/core';
+
+import { demoData } from './search-data';
 
 @Component({
   selector: 'md-search',
@@ -19,6 +23,8 @@ export class SearchComponent implements OnInit {
 
   @Output() handleCloseSearch = new EventEmitter();
 
+  searchData = signal(demoData);
+
   ngOnInit(): void {
     setTimeout(() => {
       this.searchInput?.nativeElement.focus();
@@ -27,6 +33,20 @@ export class SearchComponent implements OnInit {
 
   closeSearch() {
     this.handleCloseSearch.emit();
+  }
+
+  onSearchChange(event: Event) {
+    const searchValue = (event.target as HTMLInputElement).value;
+
+    if (searchValue.length > 0) {
+      this.searchData.set(
+        demoData.filter(
+          data =>
+            data.title.toLowerCase().includes(searchValue.toLowerCase()) ||
+            data.description.toLowerCase().includes(searchValue.toLowerCase())
+        )
+      );
+    }
   }
 
   @HostListener('document:keydown.esc')

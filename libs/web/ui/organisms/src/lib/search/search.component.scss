@@ -66,6 +66,8 @@
   flex-grow: 1;
   box-sizing: content-box;
   padding: 1em;
+  height: 31.5em;
+  overflow-y: auto;
 }
 
 .search-results__quick-links {
@@ -103,7 +105,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  overflow-y: scroll;
 }
 
 .found-item__container {
