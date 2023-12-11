@@ -27,7 +27,7 @@ A live demo is available at [https://modern-dashboard-ivory.vercel.app/](https:/
 
 ⚠️ The screenshot below is outdated. See a live demo for the current version.
 
-![dash](https://github.com/wojciechmarek/modern-dashboard/assets/27026036/48accec4-bbc9-4faf-a025-ab8f111f5836)
+![demo](./screenshots/demo.png)
 
 Current dashboard:
 
