@@ -23,7 +23,7 @@ To learn the Angular 16 and NestJS frameworks and build a modern application wit
 
 A live demo is available at [https://modern-dashboard-ivory.vercel.app/](https://modern-dashboard-ivory.vercel.app/).
 
-## What does it look like?
+## Screenshots
 
 ![demo](./screenshots/demo.png)
 
