@@ -34,7 +34,7 @@ Current dashboard:
 - does not use actual data,
 - does not allow to change the language,
 - does not support mobile views (due to the `desktop first approach),
-- allows you to change the color theme.
+- allows you to change the color theme and the language.
 
 ## Design style
 
